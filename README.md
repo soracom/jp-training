@@ -1,0 +1,2 @@
+# training
+SORACOM IoT Training
