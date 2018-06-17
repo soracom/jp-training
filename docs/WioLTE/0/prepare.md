@@ -20,7 +20,7 @@
 - [→ 開発環境のインストール(Windows)](prepare-win.html)
 - [→ 開発環境のインストール(Mac)](prepare-mac.html)
 
-### 確認
+### <a name="check">確認</a>
 インストールが終わったら、サンプルのプログラムをコンパイルしてみて、正しくインストールが出来たかを確認しましょう。
 
 1. Arduino IDE で、ツール → ボード から、Wio Tracker LTE を選択
