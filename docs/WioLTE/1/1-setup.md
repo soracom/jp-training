@@ -152,4 +152,4 @@ DFU end
 [![Wio LTE / LedSetRGB](http://img.youtube.com/vi/g9LiH_g-TuE/0.jpg)](http://www.youtube.com/watch?v=g9LiH_g-TuE)
 
 ## 以上で本章は終了です  
-[1-2.SORACOM Air で LTE 接続](2-air.html) に進んで下さい
+[1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime.html) に進んで下さい
