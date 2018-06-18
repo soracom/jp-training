@@ -150,3 +150,6 @@ DFU end
 ここまでの手順の動画です (画面は Windows ですが、 macOS でも同様の手順です)
 
 [![Wio LTE / LedSetRGB](http://img.youtube.com/vi/g9LiH_g-TuE/0.jpg)](http://www.youtube.com/watch?v=g9LiH_g-TuE)
+
+## 以上で本章は終了です  
+[1-2.SORACOM Air で LTE 接続](2-air.html) に進んで下さい
