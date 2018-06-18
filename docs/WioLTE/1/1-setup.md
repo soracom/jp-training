@@ -1,4 +1,4 @@
-[LTEモデム搭載プロトタイプ向けデバイス 「Wio LTE」](https://soracom.jp/products/wio_lte/) を用いたハンズオンテキストです
+# 1-1.セットアップ〜動作確認
 
 ## 準備するもの
 
