@@ -31,8 +31,18 @@
 Wio LTE を使うためには、開発環境の準備を行います  
 OS 毎に準備がありますので、下記を参照の上開発環境を準備してください
 
-* [Windows 編](0/prepare-win.html)
-* [macOS 編](0/prepare-mac.html)
+* [Windows 編](../0/prepare-win.html)
+* [macOS 編](../0/prepare-mac.html)
+
+# 追加のインストール(Windowsのみ)
+
+Windows 環境では、さらに以下のインストールが必要となります。
+
+* Virtual COM Port ドライバ
+* WinUSB ドライバ
+* TeraTerm
+
+これらのインストール方法については、[こちら](1-setup-windows.md)を見ながら、インストールを行って下さい。
 
 # ハンズオン
 
@@ -86,9 +96,57 @@ Wio LTE は２つのモードを持っています
 
 ![Wio LTE を横からみた図](https://docs.google.com/drawings/d/e/2PACX-1vRnhRiZC7-jRCqLaxJO6E7Bmq0_8BxornXgP1y6UHdYXhr6iBm_RNoV148oSzJKeHBYXRjYai9msQoz/pub?w=480&h=249)
 
-### Wio LTE の動作モードを変更する・確認する
+# <a name="LED">【作業】ステップ 1: LED点灯</a>
 
-Wio LTE の動作モードの確認の仕方は、環境構築の準備でご確認ください
+Wio LTE ライブラリに付属しているスケッチ例から、内蔵のLEDを点灯してみましょう
 
-* [Windows で Wio LTE の動作モードを変更する・確認する](https://github.com/soracom/handson/wiki/Wio-LTE-%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89---Windows-%E7%B7%A8#wio-lte-%E3%81%AE-%E9%80%9A%E5%B8%B8%E3%83%A2%E3%83%BC%E3%83%89-%E3%81%A8-dfu%E3%83%A2%E3%83%BC%E3%83%89)
-* [macOS で Wio LTE の動作モードを変更する・確認する](https://github.com/soracom/handson/wiki/Wio-LTE-%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89-macOS-%E7%B7%A8#wio-lte-%E3%81%AE-%E9%80%9A%E5%B8%B8%E3%83%A2%E3%83%BC%E3%83%89-%E3%81%A8-dfu%E3%83%A2%E3%83%BC%E3%83%89)
+※Wio LTE 開発ツールの使い方を学びます
+
+![ステップ1 ovewview](https://docs.google.com/drawings/d/e/2PACX-1vQuxiAIWQlqEF0aIgIZtYGemOl7BFPnqKTU3WxKbyk3F8PG0zkhYBWUrVUpJyq8LDqzQwAiBMFUxPKD/pub?w=371&h=247)
+
+## 最初に. Wio LTE の電源を OFF にする
+
+Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
+
+※いきなり抜いてOKです。また、すでに OFF になっている場合は次に進んでください
+
+## 1. スケッチを作成する
+
+### 1-1. Arduino IDE を起動する
+
+* Windowsの場合: スタートメニュー等から **Arduino** を起動します
+* macOSの場合: アプリケーションフォルダ等の中から **Arduino** を起動します
+
+### 1-2. メニューの [ツール] > [ボード: "Arduino/Genuino UNO] で表示される一覧から **Wio Tracker LTE** を選択
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
+
+### 1-3. メニューの [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [basic] > [LedSetRGB]
+
+### 1-4. Wio LTE を PC を接続して DFUモード にする
+
+### 1-5. 新しく開いたウィンドウの ![マイコンボードに書き込むアイコン](https://docs.google.com/drawings/d/e/2PACX-1vQiO83cFcX3LCXeioiTiaao57T4SGiIV6XZzcBP6poTwssCxmo7hLpoMh5qG3btyqgzs8Q-lAoE6Q0f/pub?w=100&h=100)(マイコンボードに書き込む) をクリック
+
+### 1-6. Arduino IDE のウィンドウ下部に、下記のように表示されたら書き込み完了です  
+
+```
+DFU end
+can't detach
+
+   もしくは
+
+Resetting USB to switch back to runtime mode
+DFU end
+```
+
+### 1-7. Wio LTE を 通常モードにする (RSTボタンを押せば通常モードになります)
+
+## 2. 確認
+
+下図のように Wio LTE 内蔵のLEDがカラフルに光ります  
+
+![Wio LTE / LedSetRGB](https://dev.soracom.io/img/gs_wio-lte/wio-lte_led.gif)
+
+ここまでの手順の動画です (画面は Windows ですが、 macOS でも同様の手順です)
+
+[![Wio LTE / LedSetRGB](http://img.youtube.com/vi/g9LiH_g-TuE/0.jpg)](http://www.youtube.com/watch?v=g9LiH_g-TuE)
