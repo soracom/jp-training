@@ -1,4 +1,4 @@
-# 【作業】1-2: デバイス稼働時間を SORACOM Harvest で可視化
+# 1-2: デバイス稼働時間を SORACOM Harvest で可視化
 
 Wio LTE の稼働時間を SORACOM Harvest で可視化してみましょう
 
@@ -150,3 +150,6 @@ SIM の取り出し方も一緒に紹介いたします
 また、Arduino IDE のシリアルモニターで接続やデータ送信状況が確認できます
 
 ※注意: Windows の Arduino IDE のシリアルモニタは、 Wio LTE 開発においては動作が不安定になることがあるため、Windows の方は TeraTerm を使用してください
+
+## 以上で本章は終了です  
+[1-3.温湿度センサーのデータを SORACOM Harvest で可視化](3-sensor.html) に進んで下さい
