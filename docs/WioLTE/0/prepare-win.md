@@ -16,7 +16,6 @@ Wio LTE を使うためには、開発環境の準備を行います
 * Arduino IDE
     * Wio LTE を扱えるようにする定義のインストール
     * Wio LTE ライブラリのインストール
-* TeraTerm
 
 ## 1. Arduino IDE
 
@@ -72,11 +71,5 @@ https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_see
 一覧の中から **Wio LTE for Arduino** を選択しインストールをクリックします  
 ※ `wio lte` で検索すると見つけやすいです
 
-## 4. TeraTerm
-
-Wio LTE からのシリアルコンソールを読み書きするためのソフトウェアです  
-※Wio LTE 開発の際、Arduino IDE 標準搭載のシリアルモニターは動作が不安定になることがあるため、TeraTermを利用するようにしてください
-
-検索エンジンで TeraTerm を探し、ダウンロードとインストールを行ってください
-
 ## 以上で環境構築は終了です  
+[元のページ](prepare.html#check)に戻り、インストール状態の確認を行って下さい。
