@@ -1,11 +1,11 @@
-<h1 id="step5">【作業】ステップ 5: SORACOM Beam を用いた MQTT Pub/Sub 双方向通信</h1>
+# 3-1: SORACOM Beam を用いた MQTT Pub/Sub 双方向通信
 
 本格的な IoT システムの構築として、データ収集だけでなく、クラウド側からのデータをデバイス側で受信し処理する仕組みを学びます。
 
 今回はオープンソースの MQTT ブローカー(サーバ) である [Eclipse Mosquitto](https://mosquitto.org/) を利用します。  
 ※ **注意:** MQTT 試験用の公開サーバを利用します。誰でも読み書きが可能であるため、実システムでの利用はおやめください
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vSsShyoehwdAURPbQN6THxUFDdSMBXsAgS2egkZYV2SgI_GdHj8WaxmYMeHyXiWx2l609nfuY-GnUMJ/pub?w=922&amp;h=328" alt="ステップ5 全体構成 / step5 MQTT PubSub with Mosquitto / overview">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vSsShyoehwdAURPbQN6THxUFDdSMBXsAgS2egkZYV2SgI_GdHj8WaxmYMeHyXiWx2l609nfuY-GnUMJ/pub?w=922&amp;h=328" alt="全体構成 / MQTT PubSub with Mosquitto / overview">
 
 ## 最初に. Wio LTE の電源を OFF にする
 
