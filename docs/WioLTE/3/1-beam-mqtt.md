@@ -141,6 +141,7 @@ REyPOFdGdhBY2P1FNRy0MDr6xr+D2ZOwxs63dG1nnAnWZg7qwoLgpZ4fESPD3PkA
 * Wio LTE に取り付けている SIM を選択 > [操作] > [所属グループ変更]
 * 先ほど作成した SIMグループ に所属させる
 
+<a name="pubsubclient_install"></a>
 ## 3. PubSubClient ライブラリのインストール
 
 MQTT 通信を行うにあたり PubSubClient というライブラリを利用します
@@ -318,7 +319,7 @@ exit status 1
 ```
 
 * 原因: *PubSubClient* ライブラリが不足しています
-* 対策: ステップ5 の本文を読み *PubSubClient* をインストールした後、再度書き込みを行ってください
+* 対策: [ステップ3](#pubsubclient_install)を参考に *PubSubClient* をインストールした後、再度書き込みを行ってください
 
 **(シリアルモニターで) `### Connecting to "soracom.io".` で止まってしまう**
 
