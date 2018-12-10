@@ -34,31 +34,31 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
-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
+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
 -----END RSA PRIVATE KEY-----
 ```
 
@@ -66,22 +66,22 @@ LOOGVJ38amZag5hvFbfHEHhLoi6VsyW69ch6QIAfZeRfryeOKvgq1A==
 
 ```
 -----BEGIN CERTIFICATE-----
-MIIC7zCCAligAwIBAgIBADANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0Ix
+MIIC+zCCAmSgAwIBAgIBADANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0Ix
 FzAVBgNVBAgMDlVuaXRlZCBLaW5nZG9tMQ4wDAYDVQQHDAVEZXJieTESMBAGA1UE
 CgwJTW9zcXVpdHRvMQswCQYDVQQLDAJDQTEWMBQGA1UEAwwNbW9zcXVpdHRvLm9y
-ZzEfMB0GCSqGSIb3DQEJARYQcm9nZXJAYXRjaG9vLm9yZzAeFw0xODA4MTIxNTIx
-MTFaFw0xODExMTAxNTIxMTFaMEoxCzAJBgNVBAYTAkpQMQ4wDAYDVQQIDAVUb2t5
-bzEWMBQGA1UECgwNU09SQUNPTSwgSU5DLjETMBEGA1UEAwwKc29yYWNvbS5pbzCC
-ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALwqpjtfgAynMUbPgJXWlA8V
-/Rj3VD6CA8+tbPMvY6iiJmOELxGOHvduxwD4kG9qy2ZUiB0xKRB13bjggXamsmnx
-5kFvVQkZvcEG338OqD93GYbH65yhohPNRI567u3RHa8YJvQ38ByUY/ZdZcORDRea
-I59BpoKseH1tVujjG1SZr3Hkx32m5MmygD3dUjIJWNdjxJ/pe606u1NmM4RHCNqf
-AucO2I7TlP9bHfwW0LJ88JUNMDCT9XItjrv0PGfgS4jmzR6oFYehAIG5/0uDO5fu
-MAn3AL3fs6wWdhCji/FujFYyolD3hKYS4OBu59W2o+9OzboIEONM4N7DpfP8ZG8C
-AwEAAaMaMBgwCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAwDQYJKoZIhvcNAQELBQAD
-gYEAKlnfzDxcC37KT7iXO2xTjUYfwUyn6PJF4qAWx46KjzZ5RbWiV74bXrgYMT01
-Gcm6Nmjp9b0+tZ8jhN4JnJQcflcB7Wtc3697gnqd6IbmbC9GPipNPHF9CGfPSO6V
-N6hRBMwzBIJhu+bdZ4f7rDYINWBxq3ThJhSKuF/PA+pmC08=
+ZzEfMB0GCSqGSIb3DQEJARYQcm9nZXJAYXRjaG9vLm9yZzAeFw0xODEyMDEwNzMw
+MDBaFw0xOTAzMDEwNzMwMDBaMFYxCzAJBgNVBAYTAkpQMQ4wDAYDVQQIDAVUb2t5
+bzEWMBQGA1UECgwNU09SQUNPTSwgSU5DLjEfMB0GA1UEAwwWdGVzdG1xdHQuc29y
+YWNvbS5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALqwrlif
+ej45+SMuJ3sw2bFrH5+aBAIvpoh8aw0F+JYoHluIIWF7b8JT3/L1MY5MJFoFjVZQ
+9lkWW44ZUosLc8RmwcbYhsbzBogLXQTVuLOUc1p+fGlnFwDhgBLR0iw2sWxUIXqM
+h9M2InGA2aqRqaxCFeSFOczfGNpKn/LGvNUIwtKa/ZDNGxjOLrpScEz4i5sPd24P
+MNx4NotcP9iy8bjv9MIQkHIF9Atvh+JyVbGE1m27FsRB8cuY7wjTsZxxz+aKY649
+dReDNZh+EvYCWdC8zF6M7zrSJvWi+7FT78OKOtBlmAtnKhUKA9NHBnDbVPPpx5C3
+m0fD7Bc8lU76O5ECAwEAAaMaMBgwCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAwDQYJ
+KoZIhvcNAQELBQADgYEAP+jL1ad+R+RpAXUviWeCYqzF2WOU4As3dERPqFS8N4ym
+lkS2q2/9vfF6zuUTIltEAKi7FtKXjWg4l3B/lL2IjaMhOvmtOlrwG+Fhu0TxIoKw
+cnAurb66+aqMU0Id9dJbrd+Y+BfV3I1Dw3WWXr3Ufmt/Dl/yKgjY7mvQPDd9E2s=
 -----END CERTIFICATE-----
 ```
 
@@ -141,18 +141,22 @@ REyPOFdGdhBY2P1FNRy0MDr6xr+D2ZOwxs63dG1nnAnWZg7qwoLgpZ4fESPD3PkA
 * Wio LTE に取り付けている SIM を選択 > [操作] > [所属グループ変更]
 * 先ほど作成した SIMグループ に所属させる
 
-<a name="pubsubclient_install"></a>
-## 3. PubSubClient ライブラリのインストール
+<h2 id="pubsubclient_install">3. PubSubClient ライブラリのインストール</h2>
 
-MQTT 通信を行うにあたり PubSubClient というライブラリを利用します
+MQTT 通信を行うにあたり PubSubClient というライブラリを利用します  
+※ 公式の PubSubClient では、パケットサイズが小さいため若干不都合が発生することが確認されています。そのため、ハンズオン側で準備した fork ライブラリを使用してください
 
-### 3-1. Arduino IDE を起動する
+### 3-1. fork されたライブラリをダウンロードする
 
-### 3-2. Arduino IDE の [スケッチ] > [ライブラリをインクルード] > [ライブラリを管理…]
+https://github.com/SeeedJP/pubsubclient/releases のページから 2.6 の ZIP をダウンロードします
 
-一覧の中から **PubSubClient** を選択しインストールをクリックします  
+### 3-2. Arduino IDE を起動する
 
-※ `mqtt pubsub` で検索すると見つけやすいです
+### 3-3. Arduino IDE の [スケッチ] > [ライブラリをインクルード] > [.ZIP 形式のライブラリをインストール...]
+
+![wio-lte-handson / zip-lib](https://docs.google.com/drawings/d/e/2PACX-1vSyvtSl8JWQO_D5-pkwQsp0YVrrWOU76GlZohHURcIIEU-5W3PreVa9tCTUyYI94mId_y5zICWpC6xJ/pub?w=555&h=273)
+
+先ほどダウンロードした `pubsubclient-2.6.zip` を探して「開く」をクリックすればインストール完了です
 
 ## 4. スケッチを作成する
 
@@ -187,7 +191,7 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 #define INTERVAL          (60000)
 ```
 
-変更後 ( `ID` や `OUT_TOPIC` や `IN_TOPIC` の値はハンズオン運営から入手してください)
+変更後の例 (この値をそのまま使わずに `ID` や `OUT_TOPIC` や `IN_TOPIC` の値はハンズオン運営から入手してください)
 
 ```
 #define MQTT_SERVER_HOST  "beam.soracom.io"
@@ -253,7 +257,7 @@ MQTT Subscribe メッセージを受信すると、23 行目の `void callback()
 
 今回は「 `#xxxxxx` という文字列を受信したら、 LED の発光色として使う」としてみましょう
 
-変更前;
+変更前 (23 行目付近);
 
 ```c
 void callback(char* topic, byte* payload, unsigned int length) {
@@ -263,7 +267,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 ```
 
-変更後;
+変更後 (23 行目付近);
 
 ```c
 void callback(char* topic, byte* payload, unsigned int length) {
@@ -310,16 +314,31 @@ void callback(char* topic, byte* payload, unsigned int length) {
 **「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
 
 ```
- #include <PubSubClient.h>  // https://github.com/knolleary/pubsubclient
+ #include <PubSubClient.h>  // https://github.com/SeeedJP/pubsubclient
                                                                         ^
 compilation terminated.
 
 exit status 1
-ボードWio Tracker LTEに対するコンパイル時にエラーが発生しました。
+ボードSeeed Wio LTE Cat.1に対するコンパイル時にエラーが発生しました。
 ```
 
 * 原因: *PubSubClient* ライブラリが不足しています
-* 対策: [ステップ3](#pubsubclient_install)を参考に *PubSubClient* をインストールした後、再度書き込みを行ってください
+* 対策: [PubSubClient のインストール](#pubsublib)を行った後、再度書き込みを行ってください
+
+**「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
+
+```
+      yield();
+
+            ^
+
+exit status 1
+ボードSeeed Wio LTE Cat.1に対するコンパイル時にエラーが発生しました。
+```
+
+* 原因: 公式が配布している *PubSubClient* ライブラリを使っています
+* 対策: すでにインストールされてしまった PubSubClient を削除した後、[PubSubClient のインストール](#pubsublib)を行ってから再度書き込みを行ってください
+    * 削除の方法は Arduino スケッチ保存フォルダ内の `libraries` フォルダ内の `PubSubClient` フォルダを削除します。（作業は慎重に行ってください）
 
 **(シリアルモニターで) `### Connecting to "soracom.io".` で止まってしまう**
 
@@ -363,4 +382,5 @@ Publish:{"uptime":23}
 **送信しているように見えるが Websocket Client に全く送信されない**
 
 * 原因: PubSubClient のバッファサイズが不足している場合があります
-* 対策: `PubSubClient.h` の `MQTT_MAX_PACKET_SIZE` を `128` から大きい数字 (e.g. `512`) に変更して再コンパイルしてください
+* 対策: `PubSubClient.h` の `MQTT_MAX_PACKET_SIZE` を `128` から大きい数字 (e.g. `512`) に変更して再コンパイルしてください (本手順で案内している fork されたライブラリでは本修正がされています)
+

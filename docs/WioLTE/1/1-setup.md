@@ -153,3 +153,68 @@ DFU end
 
 ## 以上で本章は終了です  
 [1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime.html) に進んで下さい
+
+## うまく動かなかったら（トラブルシュート）
+
+**[ファイル] > [スケッチ例] の中に "Wio LTE for Arduino" が表示されない**
+
+* 原因: "ボード" が "Seeed Wio LTE Cat.1" になっていません
+* 対策: メニューの [ツール] > [ボード: XXXX] から **Seeed Wio LTE Cat.1** を選択してください
+
+**「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
+
+```
+exit status 1
+ボードArduino/Genuino Unoに対するコンパイル時にエラーが発生しました。
+```
+
+* 原因: "ボード" が "Seeed Wio LTE Cat.1" になっていません
+* 対策: メニューの [ツール] > [ボード: XXXX] から **Seeed Wio LTE Cat.1** を選択してください
+
+**「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
+
+```
+No DFU capable USB device available
+DFU end
+```
+
+* 原因: Wio LTE が「通常モード」で書き込もうとした
+* 対策: Wio LTE を「DFU モード」にしてから、再度「マイコンボードに書き込む」を実行してください
+
+**「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
+
+```
+java.io.IOException: jssc.SerialPortException: ....
+    ... 色々表示されて ...
+    ... 4 more もしくは ... 6 more
+```
+
+* 原因: 主に Windows でシリアルモニタ―を表示した後に発生します。シリアルポートの解放に失敗しています
+* 対策: Arduino IDE 終了＆再度立ち上げてください。また Arduino IDE のシリアルモニターは使わずに TeraTerm を使うことで回避しやすくなります
+
+**「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
+
+```
+dyld: Library not loaded: /opt/local/lib/libusb-1.0.0.dylib
+  Referenced from: /Users/user1/Library/Arduino15/packages/Seeeduino/tools/stm32_dfu_upload_tool/1.0.0/macosx/dfu-util/dfu-util
+  Reason: image not found
+/Users/user1/Library/Arduino15/packages/Seeeduino/tools/stm32_dfu_upload_tool/1.0.0/macosx/dfu_upload: line 5: 15851 Abort trap: 6           $(dirname $0)/dfu-util/dfu-util -d $2 -a $1 -D $3 -s $4 -R
+DFU end
+```
+
+* 原因: macOS で libusb がインストールされていない
+* 対策: [Wio LTE 開発環境の準備 / libusb のインストール](https://github.com/soracom/handson/wiki/Wio-LTE-%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89-macOS-%E7%B7%A8#libusb)を参照して libusb をインストールしてから、再度「マイコンボードに書き込む」を実行してください
+
+**「マイコンボードに書き込む」を実行した結果、ウィンドウに下記のように表示された**
+
+```
+Please select a Port before upload
+```
+
+* 原因: Arduino IDE 1.8.6 もしくは 1.8.7 で確認されています
+* 対策: Arduino IDE 1.8.8 以降の最新版をインストールしてください。もしくは、一度 Wio LTE を通常モードにした後 Arduino IDE の [ツール] > [シリアルポート] に表示される一覧の中から Wio LTE として認識されているシリアルポートを選択してください。その後に Wio LTE を DFU モードにして、再度「マイコンボードに書き込む」を実行してください。
+* Windows の方;
+    * シリアルポートが複数表示される場合はデバイスマネージャーの「ポート」から `STMicroelectoronics Virtual COM Port` を探して割り当てられている番号のものを選択してください 
+    * Wio LTE が接続されたシリアルポートが表示されない場合は Virtual COM Port ドライバのインストールが終わっていません。 [Wio LTE 開発環境の準備 / Virtual COM Port ドライバのインストール](https://github.com/soracom/handson/wiki/Wio-LTE-%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89---Windows-%E7%B7%A8#vcomport) をご覧いただき再確認をしてください。特に「終わってる」と思っていても **よくある間違い** があります。
+* macOS の方;
+    * シリアルポートが複数表示される場合は `/dev/tty.usbmodem1411` もしくは `/dev/tty.usb...` で始まるものをいくつか選んでみてください
