@@ -305,6 +305,12 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 その他の色も試してみてください
 
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [目次ページへ戻る](../)
+
 ## 7. Wio LTE の動作を止める
 
 止める方法は Wio LTE の電源を OFF (= microUSBケーブルを抜く) してください

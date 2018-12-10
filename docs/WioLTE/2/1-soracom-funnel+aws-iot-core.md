@@ -166,9 +166,16 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 AWS IoT Core 上でのデータ着信は、運営側で行います。
 Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM Web コンソールで確認することができます。
 
-**作業は以上で終了です。**
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [3-1.IoTデバイス 双方向通信 / SORACOM Beam + MQTT Pub/Sub 編](../3/1-beam-mqtt) に進んで下さい
+* [目次ページへ戻る](../)
 
 <h2 id="setup-awsiotcore">AWS IoT Core の準備</h2>
+
+ここからは本日使用した AWS IoT Core の環境を自分で作りたい場合の手順です。
 
 SORACOM Funnel から AWS IoT Core を利用するための準備は AWS IAM の設定で完了します。
 AWS IoT Core 上で "モノ" や "ポリシー" の作成や設定は不要です。

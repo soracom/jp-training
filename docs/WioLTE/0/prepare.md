@@ -16,10 +16,11 @@
 ### インストール作業
 以下のリンクから、開発環境のインストールを行って下さい。
 
-- [→ 開発環境のインストール(Windows)](prepare-win.html)
-- [→ 開発環境のインストール(Mac)](prepare-mac.html)
+- [→ 開発環境のインストール(Windows)](prepare-win)
+- [→ 開発環境のインストール(Mac)](prepare-mac)
 
-### <a name="check">確認</a>
+<h3 id="check">確認</h3>
+
 インストールが終わったら、サンプルのプログラムをコンパイルしてみて、正しくインストールが出来たかを確認しましょう。
 
 1. Arduino IDE で、ツール → ボード から、Seeed Wio LTE Cat.1 を選択

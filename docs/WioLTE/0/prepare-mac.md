@@ -117,8 +117,9 @@ https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_see
 一覧の中から **Wio LTE for Arduino** を選択しインストールをクリックします  
 ※ `wio lte` で検索すると見つけやすいです
 
-## 以上で環境構築は終了です  
-[元のページ](prepare.html#check)に戻り、インストール状態の確認を行って下さい。
+## 以上で環境構築は終了です
+
+[元のページ](prepare#check)に戻り、インストール状態の確認を行って下さい。
 
 ## うまく動かなかったら（トラブルシュート）
 

@@ -151,8 +151,12 @@ DFU end
 
 [![Wio LTE / LedSetRGB](http://img.youtube.com/vi/g9LiH_g-TuE/0.jpg)](http://www.youtube.com/watch?v=g9LiH_g-TuE)
 
-## 以上で本章は終了です  
-[1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime.html) に進んで下さい
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime) に進んで下さい
+* [目次ページへ戻る](../)
 
 ## うまく動かなかったら（トラブルシュート）
 

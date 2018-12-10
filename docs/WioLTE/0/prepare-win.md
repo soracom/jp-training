@@ -72,4 +72,5 @@ https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_see
 ※ `wio lte` で検索すると見つけやすいです
 
 ## 以上で環境構築は終了です  
-[元のページ](prepare.html#check)に戻り、インストール状態の確認を行って下さい。
+
+[元のページ](prepare#check)に戻り、インストール状態の確認を行って下さい。

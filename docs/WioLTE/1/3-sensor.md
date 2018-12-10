@@ -69,6 +69,13 @@ SORACOM Harvest 上で温度(temp)・湿度(humi)が表示されるようにな�
 
 止める方法は Wio LTE の電源を OFF (= microUSBケーブルを抜く) してください
 
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [2-1.クラウド連携 / SORACOM Funnel + AWS IoT Core 編](../2/1-soracom-funnel+aws-iot-core.html) に進んで下さい
+* [目次ページへ戻る](../)
+
 ## うまく動かなかったら（トラブルシュート）
 
 **Wio LTE を通常モードで動かして1分経ってもデータが表示されない**
