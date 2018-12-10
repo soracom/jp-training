@@ -24,7 +24,7 @@
 インストールが終わったら、サンプルのプログラムをコンパイルしてみて、正しくインストールが出来たかを確認しましょう。
 
 1. Arduino IDE で、ツール → ボード から、Seeed Wio LTE Cat.1 を選択
-![ボードの選択](images/select_board.png)
+![ボードの選択](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
 
 2. ファイル → スケッチ例 → Wio LTE for Arduino → basic → LedSetRGB を選択
 ![スケッチ例を開く](images/open_sketch.png)
@@ -34,3 +34,9 @@
 
 > もしコンパイルに非常に長い時間がかかってしまう場合、PC のスペックが低い可能性があります。
 > その場合時間内にハンズオンが完了出来ない可能性があるため、より性能の高い PC のご準備をご検討下さい。
+
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [目次ページへ戻る](../)
