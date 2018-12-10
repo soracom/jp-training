@@ -16,14 +16,15 @@
 ### インストール作業
 以下のリンクから、開発環境のインストールを行って下さい。
 
-- [→ 開発環境のインストール(Windows)](prepare-win.html)
-- [→ 開発環境のインストール(Mac)](prepare-mac.html)
+- [→ 開発環境のインストール(Windows)](prepare-win)
+- [→ 開発環境のインストール(Mac)](prepare-mac)
 
-### <a name="check">確認</a>
+<h3 id="check">確認</h3>
+
 インストールが終わったら、サンプルのプログラムをコンパイルしてみて、正しくインストールが出来たかを確認しましょう。
 
-1. Arduino IDE で、ツール → ボード から、Wio Tracker LTE を選択
-![ボードの選択](images/select_board.png)
+1. Arduino IDE で、ツール → ボード から、Seeed Wio LTE Cat.1 を選択
+![ボードの選択](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
 
 2. ファイル → スケッチ例 → Wio LTE for Arduino → basic → LedSetRGB を選択
 ![スケッチ例を開く](images/open_sketch.png)
@@ -33,3 +34,9 @@
 
 > もしコンパイルに非常に長い時間がかかってしまう場合、PC のスペックが低い可能性があります。
 > その場合時間内にハンズオンが完了出来ない可能性があるため、より性能の高い PC のご準備をご検討下さい。
+
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [目次ページへ戻る](../)

@@ -26,9 +26,9 @@ Wio LTE の **D38** に取り付けてください
 
 ### 2-1. Arduino IDE を起動する
 
-### 2-2. メニューの [ツール] で [ボード: "Wio Tracker LTE"] と表示されていることを確認する
+### 2-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
 
-なっていなければ一覧から "Wio Tracker LTE" を選んでください
+なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
 ### 2-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-harvest]
 
@@ -68,6 +68,13 @@ SORACOM Harvest 上で温度(temp)・湿度(humi)が表示されるようにな�
 ## 4. Wio LTE の動作を止める
 
 止める方法は Wio LTE の電源を OFF (= microUSBケーブルを抜く) してください
+
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [2-1.クラウド連携 / SORACOM Funnel + AWS IoT Core 編](../2/1-soracom-funnel+aws-iot-core.html) に進んで下さい
+* [目次ページへ戻る](../)
 
 ## うまく動かなかったら（トラブルシュート）
 

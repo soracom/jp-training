@@ -31,6 +31,8 @@
 Wio LTE を使うためには、開発環境の準備を行います  
 OS 毎に準備がありますので、下記を参照の上開発環境を準備してください
 
+※すでに「0. 事前準備」が終わっている方は[ハンズオン](#start)にお進みください。
+
 * [Windows 編](../0/prepare-win.html)
 * [macOS 編](../0/prepare-mac.html)
 
@@ -44,7 +46,7 @@ Windows 環境では、さらに以下のインストールが必要となりま
 
 これらのインストール方法については、[こちら](1-setup-windows.md)を見ながら、インストールを行って下さい。
 
-# ハンズオン
+<h1 id="start">ハンズオン</h1>
 
 ## 《知識》Wio LTE ハードウェア解説
 
@@ -117,7 +119,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 * Windowsの場合: スタートメニュー等から **Arduino** を起動します
 * macOSの場合: アプリケーションフォルダ等の中から **Arduino** を起動します
 
-### 1-2. メニューの [ツール] > [ボード: "Arduino/Genuino UNO] で表示される一覧から **Wio Tracker LTE** を選択
+### 1-2. メニューの [ツール] > [ボード: "Arduino/Genuino UNO] で表示される一覧から **Seeed Wio LTE Cat.1** を選択
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
 
@@ -151,8 +153,12 @@ DFU end
 
 [![Wio LTE / LedSetRGB](http://img.youtube.com/vi/g9LiH_g-TuE/0.jpg)](http://www.youtube.com/watch?v=g9LiH_g-TuE)
 
-## 以上で本章は終了です  
-[1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime.html) に進んで下さい
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime) に進んで下さい
+* [目次ページへ戻る](../)
 
 ## うまく動かなかったら（トラブルシュート）
 

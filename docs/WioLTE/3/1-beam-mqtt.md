@@ -162,9 +162,9 @@ https://github.com/SeeedJP/pubsubclient/releases のページから 2.6 の ZIP 
 
 ### 4-1. Arduino IDE を起動する
 
-### 4-2. メニューの [ツール] で [ボード: "Wio Tracker LTE"] と表示されていることを確認する
+### 4-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
 
-なっていなければ一覧から "Wio Tracker LTE" を選んでください
+なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
 ### 4-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [mqtt] > [mqtt-client]
 
@@ -304,6 +304,12 @@ void callback(char* topic, byte* payload, unsigned int length) {
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vTrXkJsl_QS3lOgWD7TCN7ayH6uyKGjPTxeobyZKP_hlEaPvZgNbnyLQlrTb1iwViStykwpILg-rR62/pub?w=936&amp;h=410" alt="step5 MQTT PubSub with Mosquitto / ws-result-w-led">
 
 その他の色も試してみてください
+
+## 以上で本章は終了です
+
+達成状況を運営表へご記入ください。
+
+* [目次ページへ戻る](../)
 
 ## 7. Wio LTE の動作を止める
 
