@@ -117,7 +117,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 * Windowsの場合: スタートメニュー等から **Arduino** を起動します
 * macOSの場合: アプリケーションフォルダ等の中から **Arduino** を起動します
 
-### 1-2. メニューの [ツール] > [ボード: "Arduino/Genuino UNO] で表示される一覧から **Wio Tracker LTE** を選択
+### 1-2. メニューの [ツール] > [ボード: "Arduino/Genuino UNO] で表示される一覧から **Seeed Wio LTE Cat.1** を選択
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
 

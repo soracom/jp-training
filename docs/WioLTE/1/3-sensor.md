@@ -26,9 +26,9 @@ Wio LTE の **D38** に取り付けてください
 
 ### 2-1. Arduino IDE を起動する
 
-### 2-2. メニューの [ツール] で [ボード: "Wio Tracker LTE"] と表示されていることを確認する
+### 2-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
 
-なっていなければ一覧から "Wio Tracker LTE" を選んでください
+なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
 ### 2-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-harvest]
 

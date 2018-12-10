@@ -22,7 +22,7 @@
 ### <a name="check">確認</a>
 インストールが終わったら、サンプルのプログラムをコンパイルしてみて、正しくインストールが出来たかを確認しましょう。
 
-1. Arduino IDE で、ツール → ボード から、Wio Tracker LTE を選択
+1. Arduino IDE で、ツール → ボード から、Seeed Wio LTE Cat.1 を選択
 ![ボードの選択](images/select_board.png)
 
 2. ファイル → スケッチ例 → Wio LTE for Arduino → basic → LedSetRGB を選択

@@ -162,9 +162,9 @@ https://github.com/SeeedJP/pubsubclient/releases のページから 2.6 の ZIP 
 
 ### 4-1. Arduino IDE を起動する
 
-### 4-2. メニューの [ツール] で [ボード: "Wio Tracker LTE"] と表示されていることを確認する
+### 4-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
 
-なっていなければ一覧から "Wio Tracker LTE" を選んでください
+なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
 ### 4-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [mqtt] > [mqtt-client]
 
