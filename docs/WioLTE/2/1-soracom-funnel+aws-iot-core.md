@@ -23,10 +23,10 @@ Python や Node.js で書かれたプログラムコードを保存しておく�
 
 今回は Wio LTE からのデータを 「クラウド・アダプタ サービス」 SORACOM Funnel で中継し、AWS IoT Core に送ります。
 
-AWS IoT Core に送信したデータは、最初は `catch_all/` というトピック(メールボックスのようなものです)に送信します。トピックのデータ着信をトリガーに `post-to-slack-max_catch_all` という AWS Lambda 関数が起動します。  
+AWS IoT Core に送信したデータは、最初は `catch_all/` というトピック(メールボックスのようなものです)に送信します。トピックのデータ着信をトリガーに `awsiotcore-post_to_slack-max_catch_all` という AWS Lambda 関数が起動します。  
 この AWS Lambda 関数は `#max_catch_all` というテスト用に用意した Slack チャンネルに送られるようにプログラムされているので、 Wio LTE のデータは最終的に Slack に送信されるようになります。
 
-また、後半では SORACOM Funnel の設定を変更して AWS IoT Core に送信するトピックを `filter/#` に変更します。AWS IoT Core 上でデータの判定を行ったうえで、AWS Lambda 関数の起動を決定するようにします。
+また、後半では SORACOM Funnel の設定を変更して AWS IoT Core に送信するトピックを `filter/#` に変更します。AWS IoT Core 上でデータの判定を行ったうえで、条件に一致した時のみ AWS Lambda 関数 `awsiotcore-post_to_slack-max_filter` の起動するようにしています。
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vR6wusGtYwMFtOCZ-MAUjBkU-WGYbqaQF8oDVhnMBfJpTytZlmzZSYDJVF4mEghzhApkxJ2sry5z5cI/pub?w=929&amp;h=520" alt="step4a Cloud / architecture">
 
@@ -177,8 +177,10 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 
 ここからは本日使用した AWS IoT Core の環境を自分で作りたい場合の手順です。
 
-SORACOM Funnel から AWS IoT Core を利用するための準備は AWS IAM の設定で完了します。
-AWS IoT Core 上で "モノ" や "ポリシー" の作成や設定は不要です。
+### SORACOM Funnel を利用する際の AWS IoT Core の設定
+
+SORACOM Funnel から AWS IoT Core を利用するための準備は AWS IAM の設定 (専用ユーザーの作成) で完了します。  
+AWS IoT Core 上でモノやポリシーの他、X.509 証明書 の作成/設定は不要です。
 
 ### AWS セットアップ内容
 
@@ -204,19 +206,26 @@ $ aws iam delete-user --user-name awsiotcore-dataaccess-for-funnel-handson
 
 ### AWS IoT Core 上のルールについて
 
-AWS IoT Core のルールは以下のように設定されています。
+AWS IoT Core のルールは２つ設定されています。
 
-監視対象のトピックに着信したメッセージが条件に一致した時に、アクションが実行されるようになっています。
+１つ目は監視対象のトピックに着信したメッセージは全て指定されたアクション (Lambda 関数の実行) をするようにしています。
+
+* 監視対象: `catch_all/#` ( `#` はワイルドカード)
+* 条件: (なし)
+* アクション: `awsiotcore-post_to_slack-max_catch_all` Lambda 関数を実行する
+
+２つめは監視対象のトピックに着信したメッセージが条件に一致した時に、アクションが実行されるようになっています。
 
 * 監視対象: `filter/#` ( `#` はワイルドカード)
 * 条件: `payloads.temp` が `30` を上回る時 (JSON のオブジェクト指定形式で宣言可能)
-* アクション: `post-to-slack-max_filter` Lambda 関数を実行する
+* アクション: `awsiotcore-post_to_slack-max_filter` Lambda 関数を実行する
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRq1AuLujKUW3BwUtRGBF8EorM0sS_oGm6prTB45rKUAAgf2c3hE5gHZI8eTb1g3PwjvQgSP9KINPWZ/pub?w=488&amp;h=329" alt="step4a Cloud / awsiotcore-rule">
 
-### post-to-slack-max_filter Lambda 関数について
+### awsiotcore-post_to_slack-max_* Lambda 関数について
 
-AWS Lambda 関数は [post-to-slack_on_aws-lambda.py](https://gist.github.com/ma2shita/a10e062bc1b30a80bf2ee0db2fe79873) で公開しています。
+基になる Lambda 関数は [post_to_slack_on_aws-lambda.py](https://gist.github.com/ma2shita/a10e062bc1b30a80bf2ee0db2fe79873) で公開しています。  
+この関数一つで `SLACK_CHANNEL` に基づき Slack チャンネルに送信できるようになっています。
 
 重要な部分は以下の通りです。この Lambda 関数は AWS IoT Core のルールから、メッセージが着信した毎に実行されます。
 
@@ -231,3 +240,4 @@ def lambda_handler(event, context):
 
 * `event` に AWS IoT Core (= SORACOM Funnel) から渡されたデータが入った状態で実行されます
 * `Request` を利用して `HOOK_URL` へ HTTP POST します
+* `SLACK_CHANNEL` で指定された Slack チャンネルに送信します
