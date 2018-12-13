@@ -26,6 +26,16 @@ Wio LTE に SIM (nanoサイズ) を取り付けます
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vQ_jUPQyYsHnk0v5yFZpdbJ6n7l2U6Pf1SexxpQ1DyvrxYVbiDTmfT2GjyUmZpR7Dc2dtZneXpkFqZz/pub?w=550&amp;h=255">
 
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vT_Z9NNb95SOxW0O0V65dH5icGjbBpvTH5TWyhGYR8LdxmVg0II1eRuJA33zOBlPy4ntbptjJTYVKra/pub?w=473&amp;h=351" alt="wio-lte-handson / sim-ok">
+
+### SIM の失敗例
+
+以下のように、SIM 取り付けの「窓」に SIM が見えている場合は **取り付けに失敗** しています。引き抜いてから再度取り付けてください。
+
+また、奥まで入れてしまった場合は、ピンのようなもので少しずつ押し出すか、ハンズオンの場合はスタッフをお呼びください。
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQOQL4VS42nf7pb8EOwekrJ_gTEmNMeRPIQA42QmD_hjtdrb3ATMlG5np2HN9gwLOnrbVHnZkZ8l8-v/pub?w=412&amp;h=313" alt="wio-lte-handson / sim-ng">
+
 ### SIM の取り出し
 
 SIM の取り出し方も一緒に紹介いたします
