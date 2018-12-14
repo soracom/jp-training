@@ -94,7 +94,7 @@ Wio LTE を Arduino IDE で扱えるようにするための機能を追加し�
 下記URL (https:// から .json まで) を 設定タブ にある **追加のボードマネージャのURL:** へ入力して、保存をクリックします
 
 ```
-https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_seeeduino_boards_index.json
+https://www.seeed.co.jp/package_SeeedJP_index.json
 ```
 
 ![追加の様子](https://docs.google.com/drawings/d/e/2PACX-1vRato9UW98VRjlt3A6oDULm9GTattfeIAdyBse9DnNduv1ZnoOBmJCBW_ZNB5aeGsv3qofMQZS7HcXj/pub?w=723&h=625)
