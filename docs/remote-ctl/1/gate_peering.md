@@ -2,6 +2,10 @@
 
 本章では SORACOM Gate を使用して SORACOM Air SIM 間による遠隔操作を行います。
 
+## ハンズオンのゴール
+
+遠隔操作用の PC から、 Raspberry Pi に SSH でログインし、Raspberry Pi 内の設定を変更します。
+
 ## SORACOM Air SIM を VPG に所属させる
 
 本ハンズオンにおいては VPG は作成せず、既に ソラコムで準備してある "Public Gate" という VPG を使用します。  
