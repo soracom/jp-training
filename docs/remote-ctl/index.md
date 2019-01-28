@@ -6,3 +6,5 @@
 - [SORACOM Gate (Public Gate) を使用して、 IP ベースの遠隔操作](1/gate_peering)
 - [SORACOM Inventory を使用して、アプリケーションベースの遠隔制御](2/inventory)
 - [SORACOM Air メタデータサービスを使用して、デバイス主導の遠隔制御](3/metadata)
+
+- [Raspberry Pi の電源 OFF の方法](0/poweroff)
