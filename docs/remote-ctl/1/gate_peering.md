@@ -110,22 +110,23 @@ ssh pi@10.XXX.XXX.XXX (メモをしてきた Raspberry Pi の IP アドレス)
 ログインができたら、以下のコマンドでログイン先の Raspberry Pi の赤色 LED を点滅させます。
 
 ```console
-echo heartbeat | sudo tee /sys/class/leds/led0/trigger
+echo heartbeat | sudo tee /sys/class/leds/led1/trigger
 ```
 
 ログイン先の Raspberry Pi の 赤色 LED の点滅が始まったことを確認してください。  
 点滅を停止する時は以下のコマンドになります。
 
 ```
-echo none | sudo tee /sys/class/leds/led0/trigger
+echo none | sudo tee /sys/class/leds/led1/trigger
 ```
+
+※ 確認が完了したら `exit` でログアウトしましょう
 
 このように、グローバル IP アドレスが無くとも SORACOM Air SIM 間で IP による遠隔操作が可能となったことが確認できたかと思います。
 
 ## Public Gate VPG の所属を解除する
 
 Public Gate VPG に限らず VPG は有料のサービスです。そのため、利用が済み次第終了することを強くお勧めします。
-
 
 その後、表示されたダイアログで以下のように設定します。
 
@@ -146,7 +147,7 @@ SIM グループの画面から [SORACOM Air for Cellular 設定] をクリッ�
 
 以上の作業で VPG 設定は OFF となるため課金対象ではなくなりますが、 SIM グループから SIM を外しておけば万全です。
 
-#### SIM を SIM グループに所属させる
+#### SIM を SIM グループから解除する
 
 [Menu] ＞ [SIM 管理] と進み、 SIM 一覧画面で操作対象の SIM を選択(チェックボックスをつけ) [操作] をクリックします。  
 表示されたメニューの一覧から [所属グループ変更] をクリックします。
@@ -158,6 +159,8 @@ SIM グループの画面から [SORACOM Air for Cellular 設定] をクリッ�
 すると、以下のように SIM に SIM グループが「空」となるので、確認してください。
 
 ![remote-ctl / 1 gate_peering / unjoined-sim-group](https://docs.google.com/drawings/d/e/2PACX-1vSVV6UxulXlb4JaqAn2nEs-sRfGrvn68jBVUSEWw_unAhHACfW170_lg1O16PuEUpXHgEdFVbNwRckG/pub?w=447&h=100)
+
+※ 完全に SIM グループが不要ならば SIM グループも削除しましょう。
 
 ## 以上で本章は終了です
 

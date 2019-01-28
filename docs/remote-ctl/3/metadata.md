@@ -12,12 +12,14 @@ Raspberry Pi 上で定期的に動く LED 点滅プログラムを設置しま�
 Raspberry Pi にログインし、以下のコマンドを実行します。
 
 ```console
+cd ~
 curl -O https://raw.githubusercontent.com/soracom/jp-training/master/docs/remote-ctl/3/rpi_led_interval.bash
 ```
 
 ### 参考: コマンドの実行結果
 
 ```console
+pi@raspberrypi:~ $ cd ~
 pi@raspberrypi:~ $ curl -O https://raw.githubusercontent.com/soracom/jp-training/master/docs/remote-ctl/3/rpi_led_interval.bash
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
