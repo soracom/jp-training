@@ -160,15 +160,9 @@ Air SIMを取り外します。Air SIMの端子を触らないように気をつ
 ![](images/3-2.jpg)
 ![](images/3-3.jpg)
 
-<!--
-TODO AK-020 版
-![](images/3-4.jpg)
-![](images/3-5.jpg)
+![remote-ctl / 0 prepare / AK-020](https://docs.google.com/drawings/d/e/2PACX-1vShdBTav2dkNnpiiTVDl4pamqktO-4Y74yyZ7xMwtlU8tw4WZBsRhskS-nEf6aKUfy2RJm16Kwj9N6T/pub?w=700&h=619)
 
-#### Air SIMをドングルから取り出す際の注意
-
-![](images/3-6.jpg)
--->
+取り付けが完了したら、USB ドングル型モデムのふたを閉めて、 Raspberry Pi の USB ポートに取り付けてください。（ポートの場所はどこでもかまいません）
 
 ### <a id="3-2">接続スクリプトのダウンロード</a>
 
