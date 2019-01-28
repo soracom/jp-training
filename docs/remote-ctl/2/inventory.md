@@ -151,3 +151,66 @@ SORACOM Inventory はアクティブデバイスに課金されるサービス�
 達成状況を運営表へご記入ください。
 
 * [目次ページへ戻る](../index)
+
+## Appendix
+
+### エージェントの種類について
+
+SORACOM Inventory は LwM2M 準拠です。ハンズオンで使用した SORACOM Inventory Agent (Java 版) はソラコムが同プロトコルに準拠したサンプル実装です。
+
+LwM2M における Bootstrap に対応している必要があります。お持ちの LwM2M 実装が対応しているか否かは、まずお試しいただきつつお問い合わせください。
+
+[SORACOM Inventory: 機能の説明](https://dev.soracom.io/jp/inventory/how-it-works/)
+
+### エージェントの自動起動について
+
+エージェントソフトウェアは、いわゆる「ユーザーランドのアプリケーション」として提供されることが多いです。そのため、 OS 起動時に自動的に起動するといったプロセス管理は OS 側で行う必要があります。
+
+Raspberry Pi で良く使われる OS "Rasbian" においては systemd を用いたり、 他のディストリビューションでは SysVinit や upstart といった init システムを用いるのが一般的です。より簡素な方式として `/etc/rc.local` に `&` をつけてバックグラウンド起動させる方式もありますが、プロセス再起動などの管理が行いにくいので systemd 等を利用するのが良いでしょう。
+
+systemd においてユーザ権限でバックグラウンドプロセス化する例です。
+
+**~/.config/systemd/user/lwm2m-agent.service**
+
+```
+[Unit]
+Description = LwM2M agent
+
+[Service]
+ExecStart = %h/soracom-inventory-agent-example-0.0.6/bin/soracom-inventory-agent-example-start
+Restart = always
+
+[Install]
+WantedBy = default.target
+```
+
+上記ファイルを作成したあと、以下を実行して起動を確認します。
+
+```
+systemctl --user enable lwm2m-agent.service
+systemctl --user start lwm2m-agent.service
+systemctl --user status lwm2m-agent.service
+# 任意 # journalctl -f
+# 任意 # systemctl --user stop lwm2m-agent.service
+```
+
+OS 起動時に自動起動されるようにします。  
+※ `pi` はユーザ名です。
+
+```
+sudo loginctl enable-linger pi
+```
+
+OS 起動時の自動起動を止めるようにします。  
+※ `pi` はユーザ名です。その他にユーザ権限でバックグラウンドプロセスを動かしているものがあれば `loginctl` は実行しないでください。
+
+```
+systemctl --user disable lwm2m-agent.service
+sudo loginctl disable-linger pi
+```
+
+### 実装の拡張について
+
+SORACOM Inventory Agent (Java 版) は Reboot や位置情報(固定値を出力)、pingコマンドの実行/停止といったサンプル実装がされています。
+
+拡張を行う方法については [Inventoryエージェントの拡張(基本的なモデル定義）](https://github.com/soracom/soracom-inventory-agent-for-java/blob/master/README_ja.md#inventory%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%AE%E6%8B%A1%E5%BC%B5%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%83%A2%E3%83%87%E3%83%AB%E5%AE%9A%E7%BE%A9) をご覧ください。
