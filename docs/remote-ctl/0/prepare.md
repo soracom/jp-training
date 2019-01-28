@@ -2,9 +2,22 @@
 
 本章では、受講に先立って必要な環境構築の作業について説明します。
 
-## <a id="software">ソフトウェアの準備</a>
+## <a id="software">準備するもの</a>
 
-ハンズオンで必要なソフトウェアをインストールします。
+* パソコン / 1台
+  * Wi-Fi を用いてインターネットに接続できる環境
+    * 接続先の Wi-Fi アクセスポイントへの制限がかかっていない事
+  * USB ポートが 1つ以上あり、電力供給が 2.5A 以上であること (USB 3.0対応していれば概ね安心です)
+    * Raspberry Pi への電力供給に利用するだけなので、2.5A 以上の出力がある AC アダプタでも可です
+  * OS: Windows(8.1 もしくは 10) もしくは macOS (10.11 El Capitan 以上)
+    * Google Chrome 推奨
+    * ブラウザでのアクセス制限がかかっていない事
+    * Windows の場合は追加でソフトウェアをインストールするため、PCに対する管理者権限を持っている事
+* microUSB ケーブル / 1本
+* Raspberry Pi 3 Model B もしくは Raspberry Pi 3 Model B+ / 1台
+* [事前構成済み Raspbian OS](#presetup) インストール済み micro SD カード / 1つ
+* USB ドングル型モデム / 1個
+* SORACOM Air SIM / 1枚
 
 ### Windows の場合
 
@@ -355,3 +368,36 @@ pi@raspberrypi:~ $ curl -o /dev/null http://soracom-files.s3.amazonaws.com/1MB
 達成状況を運営表へご記入ください。
 
 * [目次ページへ戻る](../index)
+
+## Appendix
+
+### <a id="presetup">事前構成済み Raspbian OS</a>
+
+本ハンズオンで配布している事前構成済み Raspbian OS の仕様は以下の通りです。
+
+* `/etc/wpa_supplicant/wpa_supplicant.conf`
+  * `soracom-event` という Wi-Fi アクセスポイントに接続するように構成
+* 起動時の SSH 有効化
+
+これらの設定は https://www.raspberrypi.org/documentation/configuration/wireless/headless.md に基づいて行っています。
+
+### Raspberry Pi への IP アドレス割り当て
+
+ハンズオンでは `192.168.123.xxx` というアドレスが割り当てられるようになっていました。
+これは DHCP サーバ側で MAC アドレスに対して配布アドレスを静的に行っています。
+
+### 自習をする際の作業
+
+本ハンズオンで使用した事前構成済み Raspbian OS は、ハンズオン向けとなっているため、自習用の環境に合わせ直す必要があります。  
+特に `wpa_supplicant.conf` の書き換えが必要となります。
+
+書き換えを行う方法をいくつかご紹介します。(難易度が易しい順)
+
+* Raspberry Pi で直接設定する
+  * HDMI ケーブル、HDMI モニター、そしてUSB キーボードが必要となります
+* Raspberry Pi に有線ネットワークで接続し、SSH 経由で設定する
+  * 有線ネットワークポートと、mDNS が動作する PC が必要となります
+* SORACOM Gate (Public Gate) を利用して、 SSH 経由で設定する
+  * もう１つの SORACOM Air SIM と、 USB ドングル型モデム、もしくはモバイル Wi-Fi ルータが必要となります
+* SD カードを他の Linux OS 上で設定する
+  * ext4 ファイルシステムが読み書きできる OS (= Linux) が動く端末が必要となります
