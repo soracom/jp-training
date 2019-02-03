@@ -101,10 +101,11 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ### 4-3. メニューの [ツール] > [ボード] > [ボードマネージャ]
 
-一覧の中から **Seeed STM32F4 Boards by Seeed Studio** を選択しインストールをクリックします  
-※ `seeed stm32` で検索すると見つけやすいです
+一覧の中から **Seeed STM32F4 Boards by Seeed Studio (JP mirror)** を選択しインストールをクリックします  
+※ `seeed stm32` で検索すると見つけやすいです  
+※ (JP mirror) がついている方をインストールしてください
 
-![インストールの様子](https://github.com/SeeedJP/WioLTEforArduino/wiki/img-ja/2.png)  
+![インストールの様子 wio-lte-handson / board-manager-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vR9IdCB5yo0Zvks5QG9XEVR1MAWilwUoeKHu0ebC0xmjLaUpC7wgwNTuzBS3jH4ER6L2m3I6JVdhrDS/pub?w=781&h=436)  
 
 ## 5. Wio LTE ライブラリのインストール
 
@@ -116,6 +117,8 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 一覧の中から **Wio LTE for Arduino** を選択しインストールをクリックします  
 ※ `wio lte` で検索すると見つけやすいです
+
+![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
 
 ## 以上で環境構築は終了です
 
