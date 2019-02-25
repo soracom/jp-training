@@ -58,7 +58,7 @@ SIM の取り出し方も一緒に紹介いたします
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-menu-sim-group](https://docs.google.com/drawings/d/e/2PACX-1vTqI-f2K8n-TuUvVEGPnmDcFxG2f87so3Qfe5K11sn0pXG8Q4v2lJX0UT9tjlH7sDQRb1FC7aFfckjb/pub?w=353&h=290)
 
-### 3-2. [追加] で、SIMグループを作成します (グループ名 `harvest` もしくは任意でかまいません)
+### 3-2. [追加] で、SIMグループを作成します (グループ名 `handson1` もしくは任意でかまいません)
 
 ![soracom-menu-sim-group-create](https://docs.google.com/drawings/d/e/2PACX-1vQ-wJ7Ixk-BQDtxXweBkhl-deBJzh3behOo_rQNNxm3gO73sKHEV_RvqO7cWrSKJT0AZltPaF_K0qPf/pub?w=381&h=315)
 
@@ -97,9 +97,11 @@ SIM の取り出し方も一緒に紹介いたします
 
 なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
-### 4-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-harvest]
+### 4-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-unified]
 
 新しいウィンドウが開きます
+
+※スケッチ例に `soracom-unified` が表示されない場合は、ライブラリを最新にする必要があります。Arduino IDE のライブラリマネージャーからインストール済みのライブラリの更新を行ってください。
 
 ### 4-4. Wio LTE と PC を接続して DFUモード にする
 
@@ -160,7 +162,7 @@ SIM の取り出し方も一緒に紹介いたします
 * Wio LTE へアンテナが正しく取り付けられているか？
 * SIM が正しく挿入されているか？
 * SIM が SORACOM に登録されているか？
-* SORACOM Harvest が ON なグループに SIM が所属しているか？
+* SORACOM Harvest が ON になっている SIM グループに SIM が所属しているか？
 
 以上を確認しても、まだ尚データ送信されない場合は RST ボタンを押して Wio LTE の再起動を行ってみてください
 
