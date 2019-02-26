@@ -76,7 +76,7 @@ SORACOM Harvest 上で温度(temp)・湿度(humi)が表示されるようにな�
 達成状況を運営表へご記入ください。
 
 * [2-1.クラウド連携 / SORACOM Funnel + AWS IoT Core 編](../2/1-soracom-funnel+aws-iot-core) に進んで下さい
-* [目次ページへ戻る](../)
+* [目次ページへ戻る](../index)
 
 ## うまく動かなかったら（トラブルシュート）
 

@@ -107,15 +107,15 @@ Wio LTE を PC と接続してみてください
 
 Wio LTE を DFU モード に切り替えてファイル書き込みを行う際に必要なドライバです
 
-### 2-1. [Zadigサイト](http://zadig.akeo.ie/) の Download にある **Zadig 2.3** をクリックして、zadig-2.3.exeをダウンロードします
+### 2-1. [Zadigサイト](http://zadig.akeo.ie/) の Download にある **Zadig 2.4** をクリックして、zadig-2.4.exeをダウンロードします
 
 ### 2-2. Wio LTE を DFUモード に切り替えます
 
 DFUモードへの切り替え方は、このページの前半で確認してください
 
-### 2-3. zadig-2.3.exe を起動する
+### 2-3. zadig-2.4.exe を起動する
 
-### 2-4. zadig-2.3.exe の [Options] > [List All Devices]
+### 2-4. zadig-2.4.exe の [Options] > [List All Devices]
 
 ### 2-5. **STM32 BOOTLOADER** を選んだ後、Driver欄の左を *STTub30* 、右を *WinUSB* に変更してから、Replace Driverをクリックします  
 
