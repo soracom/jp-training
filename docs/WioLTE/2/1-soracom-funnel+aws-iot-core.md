@@ -28,7 +28,7 @@ AWS IoT Core に送信したデータは、最初は `catch_all/` というト�
 
 また、後半では SORACOM Funnel の設定を変更して AWS IoT Core に送信するトピックを `filter/#` に変更します。AWS IoT Core 上でデータの判定を行ったうえで、条件に一致した時のみ AWS Lambda 関数 `awsiotcore-post_to_slack-max_filter` の起動するようにしています。
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vR6wusGtYwMFtOCZ-MAUjBkU-WGYbqaQF8oDVhnMBfJpTytZlmzZSYDJVF4mEghzhApkxJ2sry5z5cI/pub?w=929&amp;h=520" alt="step4a Cloud / architecture">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vS1zLBGoASVzgjQjc2jlX-K0DKBfAuJZ-AMnqpYhGPZPkYkEox6MwX1v5Aze1qdU3hQSkqln8Gd45G3/pub?w=1121&h=623" alt="step4a Cloud / architecture1">
 
 ## 最初に. Wio LTE の電源を OFF にする
 
@@ -65,11 +65,11 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 2-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
 
-[追加] で、SIMグループを作成します (グループ名は `funnel` もしくは任意でかまいません)
+1-2 で作成した SIM グループ (テキストの通りであれば `handson1`) を選択します。
 
-### 2-2. 先ほど作成した SIM グループ をクリックし、 SORACOM Funnel の設定を開きます
+※ もしくは [追加] で、SIM グループを作成します (グループ名は `handson1` もしくは任意でかまいません)
 
-### 2-3. SORACOM Funnel の設定では、下記の通り入力し、保存してください
+### 2-2. SORACOM Funnel の設定で下記の通り入力し、保存してください
 
 * 転送先サービス: *AWS IoT*
 * 転送先URL: **ハンズオン運営から入手 (endpoint-url)**
@@ -78,69 +78,22 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ![soracom-funnel](https://docs.google.com/drawings/d/e/2PACX-1vQ1u87_1m7Mlk-t9G33ho7s8f_4-F8pIGjksjJxBFRhgYYVwJiBWAOVRr0_XWv5ehjU_4hqDvH7kXI_/pub?w=926&h=435)
 
-### 2-4. 左上[Menu] > [SIM 管理]
+## 3. スケッチの確認
 
-* Wio LTE に取り付けている SIM を選択 > [操作] > [所属グループ変更]
-* 先ほど作成した SIMグループ に所属させる
-
-## 3. スケッチを作成する
-
-### 3-1. Arduino IDE を起動する
-
-### 3-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
-
-なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
-
-### 3-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-harvest]
-
-※上記の通り新規に始めてもかまいませんが、1-3 の続きから始めても構いません
-
-### 3-4. スケッチの 8 行目の行頭 `//` を取り除きます (アンコメント)
-
-8 行目が下記の通りになっていることを確認してください。なっていない場合は先頭の `//` を取り除いて、下記と同じようにしてください
-
-```c++
-#define SENSOR_PIN    (WIOLTE_D38)
-```
-
-### 3-5. スケッチの69行目の `harvest.soracom.io` と `8514` の2か所を `funnel.soracom.io` と `23080` へ変更します
-
-変更前
-
-```c++
-  connectId = Wio.SocketOpen("harvest.soracom.io", 8514, WIOLTE_UDP);
-```
-
-変更後
-
-```c++
-  connectId = Wio.SocketOpen("funnel.soracom.io", 23080, WIOLTE_UDP);
-```
-
-### 3-6. Wio LTE と PC を接続して DFUモード にする
-
-### 3-7. 新しく開いたウィンドウの ![マイコンボードに書き込むアイコン](https://docs.google.com/drawings/d/e/2PACX-1vQiO83cFcX3LCXeioiTiaao57T4SGiIV6XZzcBP6poTwssCxmo7hLpoMh5qG3btyqgzs8Q-lAoE6Q0f/pub?w=100&h=100)(マイコンボードに書き込む) をクリック
-
-### 3-8. 書き込みが完了したら、Wio LTE を 通常モードにする (RSTボタンを押せば通常モードになります)
-
-通常モードで起動次第 SORACOM Funnel へデータを送信し始めます (電源投入から送信開始までは15~20秒程度かかります)
-
-※標準では送信間隔が60秒です。早めたい場合は [1-2 のやってみよう](../1/2-uptime.html#6-やってみよう送信間隔の変更)を参考に `INTERVAL` を `5000` などに変えてください
+Wio LTE には [1-3](../1/3-sensor#sketch) で作成されたスケッチが書き込まれている状態であることを確認してください。そうでなければ [1-3](../1/3-sensor#sketch) を参考に、スケッチを再度書き込んでください。
 
 ## 4. 確認
 
-AWS IoT Core 上でのデータ着信は、運営側で行います。  
+AWS IoT Core 上でのデータ着信は、運営側で行います。
+
 Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM Web コンソールで確認することができます。
+
+※標準では送信間隔が60秒です。早めたい場合は [1-2 のやってみよう](../1/2-uptime#try)を参考に、 `INTERVAL` を例えば `5000` (= 5秒) に変更して、Wio LTE に書込んでみてください。
 
 ## ※ うまく動かなかったら（トラブルシュート）
 
 利用可能なツールは「シリアルモニター」「SORACOM Webコンソール上のSIMのログ」です。  
 ※運営側は CloudWatch や AWS IoT Core ダッシュボードも利用できます
-
-**(シリアルモニターを見ると) 1回しかデータを送っていない**
-
-* 原因: SORACOM Funnel へのホスト名やポート番号が違う
-    * 対策: スケッチ69行目の SORACOM Funnel へのホスト名やポート番号を確認し、再度マイコンへ書き込んでください
 
 **データは送られているが AWS IoT Core 上で確認できない**
 
@@ -155,7 +108,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 
 #### 5-2-1. [SORACOM Web コンソール](https://console.soracom.io) で 左上[Menu] > [SIM グループ]
 
-#### 5-2-2. 先ほど作成し設定した SORACOM Funnel のグループを開きます
+#### 5-2-2. 先ほど設定した SORACOM Funnel のグループを開きます
 
 #### 5-2-3. SORACOM Funnel の設定を下記の通りに入力（変更）し、保存してください
 
@@ -164,6 +117,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 ### 5-3. 確認
 
 AWS IoT Core 上でのデータ着信は、運営側で行います。
+
 Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM Web コンソールで確認することができます。
 
 ## 以上で本章は終了です
@@ -171,7 +125,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 達成状況を運営表へご記入ください。
 
 * [3-1.IoTデバイス 双方向通信 / SORACOM Beam + MQTT Pub/Sub 編](../3/1-beam-mqtt) に進んで下さい
-* [目次ページへ戻る](../)
+* [目次ページへ戻る](../index)
 
 <h2 id="setup-awsiotcore">AWS IoT Core の準備</h2>
 
@@ -241,3 +195,9 @@ def lambda_handler(event, context):
 * `event` に AWS IoT Core (= SORACOM Funnel) から渡されたデータが入った状態で実行されます
 * `Request` を利用して `HOOK_URL` へ HTTP POST します
 * `SLACK_CHANNEL` で指定された Slack チャンネルに送信します
+
+<h2 id="unified-endpoint">Unified Endpoint について</h2>
+
+本ハンズオンでは Unified Endpoint という機能を使い、 SORACOM Harvest と SORACOM Funnel へ **同時に** データを送信しています。機能の詳細は [ブログをご覧いただく](https://blog.soracom.jp/blog/2019/02/14/unified-endpoint/)として、使い方としては `unified.soracom.io` にデータを送信するだけで、SORACOM Beam/Funnel/Harvest へのデータ送信が制御できるようになります。
+
+従来は SORACOM Harvest への送信は `harvest.soracom.io` 、そして SORACOM Funnel への送信は `funnel.soracom.io` と、デバイス上での送信先切り替えが必要でしたが、Unified Endpoint により SORACOM プラットフォーム上で変更できるようになりました。
