@@ -22,7 +22,7 @@ Wio LTE の **D38** に取り付けてください
 
 ![Wio LTE にデジタル温湿度センサーを取り付けたところ](https://docs.google.com/drawings/d/e/2PACX-1vTZiJ7ep0q7IR2KoNJPnvHcTA_JMGEWTn5qwrlp8AC2YLAtETPRAGXss98LMKm061OlM76hDasUyIoS/pub?w=640&h=480)
 
-## 2. スケッチを作成する
+<h2 id="sketch">2. スケッチを作成する</h2>
 
 ### 2-1. Arduino IDE を起動する
 
@@ -30,11 +30,13 @@ Wio LTE の **D38** に取り付けてください
 
 なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
-### 2-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-harvest]
+### 2-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-unified]
 
 ※上記の通り新規に始めても、ステップ2の続きから始めても構いません
 
-### 2-4. スケッチの8行目の行頭 `//` を取り除きます (アンコメントする)
+※スケッチ例に `soracom-unified` が表示されない場合は、ライブラリを最新にする必要があります。Arduino IDE のライブラリマネージャーからインストール済みのライブラリの更新を行ってください。
+
+### 2-4. スケッチの 8 行目の行頭 `//` を取り除きます (アンコメントする)
 
 変更前
 
@@ -73,8 +75,8 @@ SORACOM Harvest 上で温度(temp)・湿度(humi)が表示されるようにな�
 
 達成状況を運営表へご記入ください。
 
-* [2-1.クラウド連携 / SORACOM Funnel + AWS IoT Core 編](../2/1-soracom-funnel+aws-iot-core.html) に進んで下さい
-* [目次ページへ戻る](../)
+* [2-1.クラウド連携 / SORACOM Funnel + AWS IoT Core 編](../2/1-soracom-funnel+aws-iot-core) に進んで下さい
+* [目次ページへ戻る](../index)
 
 ## うまく動かなかったら（トラブルシュート）
 

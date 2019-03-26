@@ -28,23 +28,13 @@
 
 # 開発環境の準備
 
-Wio LTE を使うためには、開発環境の準備を行います  
-OS 毎に準備がありますので、下記を参照の上開発環境を準備してください
+Wio LTE を使うためには、開発環境の準備を行います。OS 毎に準備がありますので、下記を参照の上開発環境を準備してください
+
+* [Windows 編](../0/prepare-win)
+    * Windows の方は**ハンズオン当日に行う追加のインストールがあります**。 [Windows 向け追加のインストール](1-setup-windows)を行ってからハンズオンを行ってください。
+* [macOS 編](../0/prepare-mac)
 
 ※すでに「0. 事前準備」が終わっている方は[ハンズオン](#start)にお進みください。
-
-* [Windows 編](../0/prepare-win.html)
-* [macOS 編](../0/prepare-mac.html)
-
-# 追加のインストール(Windowsのみ)
-
-Windows 環境では、さらに以下のインストールが必要となります。
-
-* Virtual COM Port ドライバ
-* WinUSB ドライバ
-* TeraTerm
-
-これらのインストール方法については、[こちら](1-setup-windows.md)を見ながら、インストールを行って下さい。
 
 <h1 id="start">ハンズオン</h1>
 
@@ -97,6 +87,65 @@ Wio LTE は２つのモードを持っています
 各ボタンの位置は下記のとおりです（ Wio LTE の表裏にボタンがあるため、横からみた図で確認ください）
 
 ![Wio LTE を横からみた図](https://docs.google.com/drawings/d/e/2PACX-1vRnhRiZC7-jRCqLaxJO6E7Bmq0_8BxornXgP1y6UHdYXhr6iBm_RNoV148oSzJKeHBYXRjYai9msQoz/pub?w=480&h=249)
+
+### 「通常モード」での動作のさせ方
+
+microUSBをPC等に接続して電源が供給されると Wio LTE は 通常モード で起動します  
+もしくは、起動中の Wio LTE の *RSTボタン* を押すと 通常モード に移行します
+
+RSTボタンを利用した通常モードへの移行
+
+![RSTボタンを利用した通常モードへの移行動画](http://drive.google.com/uc?export=view&id=1YkxHW6LBtDQP6SKi1ytw3snOMe-Vt6HQ)
+
+※動画ではmicroUSB接続をしていませんが、実際は接続した状態で行ってください
+
+#### 確認方法
+
+##### Windows の場合
+
+後述する「Virtual COM Port ドライバ」がインストールされていれば、デバイスマネージャの *ユニバーサル シリアル バス デバイス* (Windows 7 の場合は *Universal Serial Bus Devices*) の一覧に **STMicroelectronics Virtual COM Port** が表示されていれば、通常モードで動作しています
+
+「不明なデバイス」等になっている場合は [Windows 向け追加のインストール](1-setup-windows)の「Virtual COM Port ドライバ」をインストールしてください
+
+![Windows 通常モードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-normal-win.png)
+
+##### macOS の場合
+
+「システム情報」で、動作モードが確認できます
+
+![システム情報の出し方](https://docs.google.com/drawings/d/e/2PACX-1vRZ3vYr9qLtFYKL3gCZTJ7facHM7RBNsvenVCMyJ6acozLCOh4h4rcc9WMpRL0QVXJhgDbfZKBXB0sS/pub?w=669&h=402)
+
+システム情報の *USB* の一覧に **STM32 Virtual ComPort in FS Mode** が表示されていれば、通常モードで動作しています
+
+![macOS 通常モードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-normal-macos.png)
+
+### 「DFUモード」での動作のさせ方
+
+「通常モード」の Wio LTE に対して、下記操作を行います
+
+1. *BOOTボタン* を押し、 **押し続けてください**
+2. *RSTボタン* を押し、離します
+3. 押し続けていた *BOOTボタン* を離します
+
+DFUモードへの移行方法  
+※動画ではmicroUSB接続をしていませんが、実際は接続した状態で行ってください
+
+![DFUモードへの移行](http://drive.google.com/uc?export=view&id=1447mCTbYS7iMTtVWaTkXJzHD8vJ8lprJ)
+
+#### 確認
+
+##### Windows の場合
+
+デバイスマネージャの *ユニバーサル シリアル バス デバイス* (Windows 7 の場合は *Universal Serial Bus Devices*) の一覧に **STM32 BOOTLOADER** が表示されていれば、DFUモードで動作しています
+
+![Windows DFUモードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-dfu-win.png)
+
+##### macOS の場合
+
+システム情報の *USB* の一覧に **STM32 BOOTLOADER** が表示されていれば、DFUモードで動作しています  
+※すでにシステム情報を表示している場合は [ファイル]-[情報の更新] をしてください
+
+![macOS DFUモードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-dfu-macos.png)
 
 # <a name="LED">【作業】ステップ 1: LED点灯</a>
 
@@ -158,7 +207,7 @@ DFU end
 達成状況を運営表へご記入ください。
 
 * [1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime) に進んで下さい
-* [目次ページへ戻る](../)
+* [目次ページへ戻る](../index)
 
 ## うまく動かなかったら（トラブルシュート）
 
