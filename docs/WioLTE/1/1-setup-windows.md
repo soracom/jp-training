@@ -51,7 +51,7 @@ microUSBをPC等に接続して電源が供給されると Wio LTE は 通常モ
 
 RSTボタンを利用した通常モードへの移行
 
-![RSTボタンを利用した通常モードへの移行動画](http://drive.google.com/uc?export=view&id=1YkxHW6LBtDQP6SKi1ytw3snOMe-Vt6HQ)
+![to-normal.gif](https://drive.google.com/uc?export=view&id=1UiIRR8Uhzt-WJSkGvj2ja9RQ3_7--YnS)
 
 ※動画ではmicroUSB接続をしていませんが、実際は接続した状態で行ってください
 
@@ -74,7 +74,7 @@ RSTボタンを利用した通常モードへの移行
 DFUモードへの移行方法  
 ※動画ではmicroUSB接続をしていませんが、実際は接続した状態で行ってください
 
-![DFUモードへの移行](http://drive.google.com/uc?export=view&id=1447mCTbYS7iMTtVWaTkXJzHD8vJ8lprJ)
+![to-dfu.gif](https://drive.google.com/uc?export=view&id=1d6UmE2_SXy7bkwZ30NSpSIK1Px0ErU9U)
 
 #### 確認
 

@@ -89,7 +89,7 @@ Wio LTE を Arduino IDE で扱えるようにするための機能を追加し�
 
 ### 4-2. メニューの [Arduino] > [Preferences...]  
 
-![Preferences](http://drive.google.com/uc?export=view&id=14ohj6_a8k-ENlQKHelaalB_iid-W4Zg3)
+![arduino-ide-preference-macos](https://docs.google.com/drawings/d/e/2PACX-1vREQ-eB07cNZXDjqQgnRR9rgKdp-PNEYL_partr41CApadlssk30V2Npu0bSBOMAX-qnT2fz0ULNwG8/pub?w=275&h=314)
 
 下記URL (https:// から .json まで) を 設定タブ にある **追加のボードマネージャのURL:** へ入力して、保存をクリックします
 
@@ -97,13 +97,12 @@ Wio LTE を Arduino IDE で扱えるようにするための機能を追加し�
 https://www.seeed.co.jp/package_SeeedJP_index.json
 ```
 
-![追加の様子](https://docs.google.com/drawings/d/e/2PACX-1vRato9UW98VRjlt3A6oDULm9GTattfeIAdyBse9DnNduv1ZnoOBmJCBW_ZNB5aeGsv3qofMQZS7HcXj/pub?w=723&h=625)
+![arduino-pref](https://docs.google.com/drawings/d/e/2PACX-1vRato9UW98VRjlt3A6oDULm9GTattfeIAdyBse9DnNduv1ZnoOBmJCBW_ZNB5aeGsv3qofMQZS7HcXj/pub?w=723&h=625)
 
 ### 4-3. メニューの [ツール] > [ボード] > [ボードマネージャ]
 
-一覧の中から **Seeed STM32F4 Boards by Seeed Studio (JP mirror)** を選択しインストールをクリックします  
-※ `seeed stm32` で検索すると見つけやすいです  
-※ (JP mirror) がついている方をインストールしてください
+一覧の中から **SeeedJP STM32F4 Board (JP Mirror) by Seeed K.K.** を選択しインストールをクリックします  
+※ `wio lte` で検索すると見つけやすいです  
 
 ![インストールの様子 wio-lte-handson / board-manager-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vR9IdCB5yo0Zvks5QG9XEVR1MAWilwUoeKHu0ebC0xmjLaUpC7wgwNTuzBS3jH4ER6L2m3I6JVdhrDS/pub?w=781&h=436)  
 
@@ -116,7 +115,8 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 ### 5-2. Arduino IDE の [スケッチ] > [ライブラリをインクルード] > [ライブラリを管理…]
 
 一覧の中から **Wio LTE for Arduino** を選択しインストールをクリックします  
-※ `wio lte` で検索すると見つけやすいです
+※ `wio lte` で検索すると見つけやすいです  
+※ バージョンの表示は `2.4.0` となっていますが、インストール時の最新バージョンを選択するようにしてください
 
 ![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
 

@@ -2,8 +2,8 @@
 
 本格的な IoT システムの構築として、データ収集だけでなく、クラウド側からのデータをデバイス側で受信し処理する仕組みを学びます。
 
-今回はオープンソースの MQTT ブローカー(サーバ) である [Eclipse Mosquitto](https://mosquitto.org/) を利用します。  
-※ **注意:** MQTT 試験用の公開サーバを利用します。誰でも読み書きが可能であるため、実システムでの利用はおやめください
+MQTT ブローカー (サーバ) には [Amazon MQ](https://aws.amazon.com/jp/amazon-mq/) を利用します。
+※ Amazon MQ は運営側で準備済みです。
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vSsShyoehwdAURPbQN6THxUFDdSMBXsAgS2egkZYV2SgI_GdHj8WaxmYMeHyXiWx2l609nfuY-GnUMJ/pub?w=922&amp;h=328" alt="全体構成 / MQTT PubSub with Mosquitto / overview">
 
@@ -206,15 +206,19 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 Wio LTE 上の LED の色を制御できること確認してみてください。
 
+## 6. Wio LTE の動作を止める
+
+止める方法は Wio LTE の電源を OFF (= microUSBケーブルを抜く) してください
+
 ## 以上で本章は終了です
 
 達成状況を運営表へご記入ください。
 
 * [目次ページへ戻る](../)
 
-## 7. Wio LTE の動作を止める
+## Amazon MQ 構築方法
 
-止める方法は Wio LTE の電源を OFF (= microUSBケーブルを抜く) してください
+Amazon MQ の構築方法は [Qiita: Amazon MQにmosquitto(MQTT)とMQTT over Websocketで接続してみる](https://qiita.com/ma2shita/items/bfdd99a5b99c6baaba82#amazon-mq-%E3%81%AE%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%BC%E4%BD%9C%E6%88%90) をご覧ください。
 
 ## うまく動かなかったら（トラブルシュート）
 
