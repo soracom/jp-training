@@ -101,8 +101,9 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ### 4-3. メニューの [ツール] > [ボード] > [ボードマネージャ]
 
-一覧の中から **SeeedJP STM32F4 Board (JP Mirror) by Seeed K.K.** を選択しインストールをクリックします  
+一覧の中から **SeeedJP STM32 Boards by Seeed K.K.** を選択しインストールをクリックします  
 ※ `wio lte` で検索すると見つけやすいです  
+※ `(JP Mirror)` となっているボードは選択しないでください
 
 ![インストールの様子 wio-lte-handson / board-manager-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vR9IdCB5yo0Zvks5QG9XEVR1MAWilwUoeKHu0ebC0xmjLaUpC7wgwNTuzBS3jH4ER6L2m3I6JVdhrDS/pub?w=781&h=436)  
 
