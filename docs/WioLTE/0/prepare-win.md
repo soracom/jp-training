@@ -75,6 +75,8 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
 
-## 以上で環境構築は終了です  
+## 以上で、事前準備は終了です
 
-[元のページ](prepare#check)に戻り、インストール状態の確認を行って下さい。
+Wio LTE の実機をお持ちの方は、[Windows 向けの追加セットアップ](../1/1-setup-windows)を行い、引き続き[元のページ](prepare#check)から作業を続けてください。
+
+実機をお持ちでない方はここで終了となります。当日に追加セットアップを行います。

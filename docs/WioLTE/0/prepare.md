@@ -14,19 +14,44 @@
 
 ## 開発環境のインストール
 
-### インストール作業
+<h3 id="install">インストール作業</h3>
 
 以下のリンクから、開発環境のインストールを行って下さい。
 
 - [→ 開発環境のインストール(Windows)](prepare-win)
-    * Windows の方は**ハンズオン当日に行う追加のインストールがあります**。 ハンズオン当日に[Windows 向け追加のインストール](../1/1-setup-windows)を行うようにしておいてください。
+    * Windows の方は**ハンズオン当日に行う追加のインストールがあります**。ハンズオン当日に Wio LTE の実機を使って[Windows 向けの追加セットアップ](../1/1-setup-windows)を行います。
 - [→ 開発環境のインストール(Mac)](prepare-mac)
 
 <h3 id="check">確認</h3>
 
+#### チェックリスト
+
+以下のリストですべてがインストールされているか確認してください。
+
+**Windows の方**
+
+* **Arduino IDE** のインストール
+* ボード定義 **SeeedJP STM32 Boards by Seeed K.K.** のインストール
+* ライブラリ **Wio LTE for Arduino** のインストール
+* **Virtual COM Port ドライバ** のインストール
+* **WinUSB ドライバ** のインストール
+* **TeraTerm** のインストール
+
+**macOS の方**
+
+* **Arduino IDE** のインストール
+* ボード定義 **SeeedJP STM32 Boards by Seeed K.K.** のインストール
+* ライブラリ **Wio LTE for Arduino** のインストール
+* **Homebrew** のインストール
+* **libusb** のインストール
+
+不足している場合は [インストール作業](#install) を参照しながら完了させてください。
+
+#### 実際にスケッチを動作させてみる
+
 Wio LTE の実機がある場合はセットアップが正しく行われているか確認することができます。サンプルのプログラムをコンパイルしてみて、正しくインストールが出来たかを確認しましょう。
 
-※この時点で Wio LTE が手元にない場合はハンズオン当日に確認することになります。
+※この時点で Wio LTE の実機が手元にない場合はハンズオン当日に確認することになります。
 
 1. Arduino IDE で、ツール → ボード から、Seeed Wio LTE Cat.1 を選択
 ![ボードの選択](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
