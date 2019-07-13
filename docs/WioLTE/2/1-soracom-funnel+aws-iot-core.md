@@ -40,9 +40,8 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ## 1. SORACOM へ認証情報を保管する
 
-### 1-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [セキュリティ]
+### 1-1. [SORACOM Webコンソール](https://console.soracom.io/) で [右上のユーザー名] > [セキュリティ]
 
-![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-menu-security](https://docs.google.com/drawings/d/e/2PACX-1vRjYW4eP-Cv1GTPmgGD01OEGiszvYmy1gmbsAQx50O6knq0UEPBozSQ8W3ezngFS6Z7B-8ArZkIXSWW/pub?w=344&h=334)
 
 ### 1-2. [認証情報ストア] > [認証情報を登録] で 認証情報入力画面を開きます
