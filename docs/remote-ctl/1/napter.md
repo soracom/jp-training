@@ -53,7 +53,7 @@ echo heartbeat | sudo tee /sys/class/leds/led1/trigger
 ログイン先の Raspberry Pi の 赤色 LED の点滅が始まったことを確認してください。  
 点滅を停止する時は以下のコマンドになります。
 
-```
+```console
 echo input | sudo tee /sys/class/leds/led1/trigger
 ```
 
