@@ -12,27 +12,27 @@ NapterでSSH(22番ポート)とWebサーバー(80番ポート)にリモートア
 
 SORACOM ユーザーコンソールの左上 [Menu] から [SIM 管理] をクリックし、 「操作」 - 「オンデマンドリモートアクセス」を選択します。
 
-![Napter設定画面0](images/napter00.png)
+![remote-ctl / 1 napter / napter00](https://drive.google.com/file/d/1Jdq_fVcpDoacEFljbHNe2GjPR0EERqD6/view?usp=sharing)
 
 「オンデマンドリモートアクセス」画面では、リモートアクセスするデバイス側ポートの接続設定やリモートアクセスを許可するアクセス元IPアドレス帯域などを設定します。今回はSSHのポート番号 `22` 、接続時間30分(どちらも既定値)のまま [OK] をクリックします。
 
-![Napter設定画面1](images/napter01.png)
+![remote-ctl / 1 napter / napter01](https://drive.google.com/file/d/1IulnzbbjnXyuUFpW3MRu15DDgXme3Yqb/view?usp=sharing)
 
 画面が切り替わり「オンデマンドリモートアクセスが正常に構成されました」とメッセージが表示されたら、 [全てのリモート接続設定を表示] ボタンを押します。
 
-![Napter設定画面2](images/napter02.png)
+![remote-ctl / 1 napter / napter02](https://drive.google.com/file/d/1mwov88PxkFpDFEvEielE1X93B-CPxhAK/view?usp=sharing)
 
 続けて [作成] ボタンを押し、Webサーバーの設定を追加する画面を表示します。
 
-![Napter設定画面3](images/napter03.png)
+![remote-ctl / 1 napter / napter03](https://drive.google.com/file/d/1FkmpgVw9b34M2vdHamuawO3cuO_2Kscw/view?usp=sharing)
 
 今度は [TLS] のチェックボックスをオンにし、 [デバイス側ポート] に `80` を入力、 [OK] ボタン、 [全てのリモート接続設定を表示] ボタンを続けて押します。
 
-![Napter設定画面4](images/napter04.png)
+![remote-ctl / 1 napter / napter04](https://drive.google.com/file/d/1u1_E-uKSV3GiIWj_Fv3cdjoJz9OzXoSe/view?usp=sharing)
 
 オンデマンドリモートアクセス画面に表示される80番ポート、22番ポートの [アクセス] 列にある `xx-xx-xx-xx.napter.soracom.io:12345` のうち `:` の前をホスト名、後ろをアクセスポート番号としてそれぞれメモしておきます。
 
-![Napter設定画面5](images/napter05.png)
+![remote-ctl / 1 napter / napter05](https://drive.google.com/file/d/1Fh-Dle-iKojLlk9ak9bCw_JkTb1_QnU2/view?usp=sharing)
 
 ## 遠隔操作用の PC からログインする
 
@@ -62,7 +62,7 @@ echo heartbeat | sudo tee /sys/class/leds/led1/trigger
 点滅を停止する時は以下のコマンドになります。
 
 ```
-echo none | sudo tee /sys/class/leds/led1/trigger
+echo input | sudo tee /sys/class/leds/led1/trigger
 ```
 
 ※ 確認が完了したら `exit` でログアウトしましょう
