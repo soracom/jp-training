@@ -28,7 +28,7 @@ Raspberry Pi + USBドングルの機材では「遠隔制御」、スタータ�
   - **`setup_air.sh` のダウンロードと実行済みです。**
 - [2. SORACOM Napterを使用して、IPベースの遠隔操作](/jp-training/remote-ctl/1/napter)
 - [3. SORACOM Inventory を使用して、アプリケーションベースの遠隔制御](/jp-training/remote-ctl/2/inventory)
-  - **手順に必要なソフトウェアパッケージはダウンロード済みです。**
+  - **手順に必要なソフトウェアパッケージはダウンロード済みです。USBドングルは取り外さずにコマンドを実行してください**
 - [4. SORACOM Air メタデータサービスを使用して、デバイス主導の遠隔制御](/jp-training/remote-ctl/3/metadata)
 
 - [Raspberry Pi の電源 OFF の方法](/jp-training/remote-ctl/0/poweroff)
