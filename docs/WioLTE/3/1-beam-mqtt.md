@@ -28,8 +28,8 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 ### 1-4. SORACOM Beam の設定では、下記の通り入力し、保存してください
 
 * 設定名: `to-amazon-mq` (任意の文字列)
-* 種別: *Other MQTT Broker*
-* プロトコル: *MQTTS*
+* 種別: *Standard MQTT Broker*
+* プロトコル: *MQTTS* (変更し忘れが多いので注意)
 * ホスト名: **ハンズオン運営から入手した値 (amazonmq-host)**
 * ポート番号: **ハンズオン運営から入手した値 (amazonmq-port)**
 * ユーザ名: **ハンズオン運営から入手した値 (amazonmq-username)**
