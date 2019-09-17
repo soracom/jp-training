@@ -1,4 +1,4 @@
-本テキストは [Wio LTE](https://soracom.jp/products/wio_lte/) を使用するために必要なソフトウェアを Windows にインストール手順を説明します。
+本テキストは [Wio LTE](https://soracom.jp/products/module/wio_lte/) を使用するために必要なソフトウェアを Windows にインストール手順を説明します。
 
 ## 準備するもの
 
