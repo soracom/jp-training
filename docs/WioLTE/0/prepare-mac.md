@@ -1,4 +1,4 @@
-本テキストは [Wio LTE](https://soracom.jp/products/wio_lte/) を開発する際に必要な環境を macOS 上に構築する手順です
+本テキストは [Wio LTE](https://soracom.jp/products/module/wio_lte/) を開発する際に必要な環境を macOS 上に構築する手順です
 
 ## 準備するもの
 
