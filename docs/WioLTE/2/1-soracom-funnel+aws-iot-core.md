@@ -64,9 +64,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 2-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
 
-1-2 で作成した SIM グループ (テキストの通りであれば `handson1`) を選択します。
-
-※ もしくは [追加] で、SIM グループを作成します (グループ名は `handson1` もしくは任意でかまいません)
+1-2 で作成した SIM グループを選択します。
 
 ### 2-2. SORACOM Funnel の設定で下記の通り入力し、保存してください
 
