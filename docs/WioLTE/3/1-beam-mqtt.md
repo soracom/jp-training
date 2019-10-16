@@ -17,7 +17,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 1-1. [SORACOM Web コンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
 
-[追加] で、SIMグループを作成します (グループ名 `beam` もしくは任意でかまいません)
+[追加] で、SIMグループを作成します (グループ名は進捗表の **sim-group-name2** を利用してください)
 
 ### 1-2. 先ほど作成した SIMグループ をクリックし、 SORACOM Beam の設定を開きます
 
@@ -27,7 +27,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 1-4. SORACOM Beam の設定では、下記の通り入力し、保存してください
 
-* 設定名: `to-amazon-mq` (任意の文字列)
+* 設定名: `to-amazon-mq`
 * 種別: *Standard MQTT Broker*
 * プロトコル: *MQTTS* (変更し忘れが多いので注意)
 * ホスト名: **進捗表から入手した値 (amazonmq-host)**
