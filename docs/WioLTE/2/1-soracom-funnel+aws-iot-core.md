@@ -50,15 +50,15 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 1-3. 認証情報を登録する画面では下記の通り入力し、保存してください
 
-* 認証情報ID: `awsiotcore-dataaccess`
+* 認証情報 ID: **進捗表から入手 (cred-name1)**
 * 概要: `AWS IoT Core DataAccess`
 * 種別: *AWS 認証情報* (これを選択すると、下記IDを入力するテキストボックスが増えます)
-* AWS Access Key ID: **ハンズオン運営から入手 (aws-accesskey-id)**
-* AWS Secret Access Key ID: **ハンズオン運営から入手 (aws-secret-accesskey-id)**
+* AWS Access Key ID: **進捗表から入手 (aws-accesskey-id)**
+* AWS Secret Access Key ID: **進捗表から入手 (aws-secret-accesskey-id)**
 
 ![soracom-cred-save](https://docs.google.com/drawings/d/e/2PACX-1vR6S9T-9TZbcdB8XwcUrBE7MQCyIsT-zOA2LQGspbv5r72CxT_qc1pyIdgmIXqVU79qOEKfOzuA8vXZ/pub?w=644&h=642)
 
-※ハンズオン運営から入手する情報は、本来ご自身でご用意いただくことになります。実際の準備方法は [AWS IoT Core の準備](#setup-awsiotcore) をご覧ください
+※進捗表から入手する情報は、本来ご自身でご用意いただくことになります。実際の準備方法は [AWS IoT Core の準備](#setup-awsiotcore) をご覧ください
 
 ## 2. SORACOM Funnel 設定
 
@@ -69,8 +69,8 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 ### 2-2. SORACOM Funnel の設定で下記の通り入力し、保存してください
 
 * 転送先サービス: *AWS IoT*
-* 転送先URL: **ハンズオン運営から入手 (endpoint-url)**
-* 認証情報: *awsiotcore-dataaccess (AWS IoT Core DataAccess)* (先ほど作成した認証情報を選ぶ)
+* 転送先URL: **進捗表から入手 (endpoint-url)**
+* 認証情報: (先ほど作成した認証情報 進捗表の **cred-name1** を選ぶ)
 * 送信データ形式: *JSON*
 
 ![soracom-funnel](https://docs.google.com/drawings/d/e/2PACX-1vQ1u87_1m7Mlk-t9G33ho7s8f_4-F8pIGjksjJxBFRhgYYVwJiBWAOVRr0_XWv5ehjU_4hqDvH7kXI_/pub?w=926&h=435)
@@ -109,7 +109,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 
 #### 5-2-3. SORACOM Funnel の設定を下記の通りに入力（変更）し、保存してください
 
-* 転送先 URL: **ハンズオン運営から入手 (filter-endpoint-url)**
+* 転送先 URL: **進捗表から入手 (filter-endpoint-url)**
 
 ### 5-3. 確認
 
