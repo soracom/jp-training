@@ -30,10 +30,10 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 * 設定名: `to-amazon-mq` (任意の文字列)
 * 種別: *Standard MQTT Broker*
 * プロトコル: *MQTTS* (変更し忘れが多いので注意)
-* ホスト名: **ハンズオン運営から入手した値 (amazonmq-host)**
-* ポート番号: **ハンズオン運営から入手した値 (amazonmq-port)**
-* ユーザ名: **ハンズオン運営から入手した値 (amazonmq-username)**
-* パスワード: **ハンズオン運営から入手した値 (amazonmq-password)**
+* ホスト名: **進捗表から入手した値 (amazonmq-host)**
+* ポート番号: **進捗表から入手した値 (amazonmq-port)**
+* ユーザ名: **進捗表から入手した値 (amazonmq-username)**
+* パスワード: **進捗表から入手した値 (amazonmq-password)**
 * IMSI 付与: *ON*
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRSDWtOWelYGw9paqusSx3AEfC4nQPGzJ_xjZD8pb7bT3e1aaWtDYNt5iDi8rRGzVmxfq8FjjH5QXnu/pub?w=471&h=879" alt="step5 MQTT PubSub with Mosquitto / beam-setting">
@@ -73,9 +73,9 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 ### 3-4. スケッチを下記の通りに変更します (変更例は後述)
 
 * 10行目: `hostname` を `beam.soracom.io` に変更
-* 13行目: `WioLTE` を **ハンズオン運営から入手した値 (mqtt-iid)** に変更
-* 14行目: `outTopic` を **ハンズオン運営から入手した値 (mqtt-pub-topic)** に変更
-* 15行目: `inTopic` を **ハンズオン運営から入手した値 (mqtt-sub-topic)** に変更
+* 13行目: `WioLTE` を **進捗表から入手した値 (mqtt-iid)** に変更
+* 14行目: `outTopic` を **進捗表から入手した値 (mqtt-pub-topic)** に変更
+* 15行目: `inTopic` を **進捗表から入手した値 (mqtt-sub-topic)** に変更
 * 17行目: `60000` を `5000` に変更
 
 **スケッチの変更例**
@@ -94,7 +94,7 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 ```
 
 変更後の例  
-(この値をそのまま使わずに `ID` や `OUT_TOPIC` や `IN_TOPIC` の値はハンズオン運営から入手してください)
+(この値をそのまま使わずに `ID` や `OUT_TOPIC` や `IN_TOPIC` の値は進捗表から入手してください)
 
 ```
 #define MQTT_SERVER_HOST  "beam.soracom.io"
@@ -121,7 +121,7 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 
 下記の値を入力して [Connect] をクリックしてください
 
-* WebSocket server address: **ハンズオン運営から入手した値 (ws-host)**
+* WebSocket server address: **進捗表から入手した値 (ws-host)**
 
 ※その他は変更する必要はありません
 
@@ -132,7 +132,7 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 #### Subscribe (Wio LTE → クラウド)
 
 * [SUBSCRIBE] タブをクリック
-* 表示されたダイアログで **Topic** に **ハンズオン運営から入手した値 (ws-sub-topic)** を入力  
+* 表示されたダイアログで **Topic** に **進捗表から入手した値 (ws-sub-topic)** を入力  
 例: `sroot/h0813/02/#`
 * [ADD SBSCRIBE] をクリック
 
@@ -146,7 +146,7 @@ Monitoring に Wio LTE からのデータが表示され始めます。
 #### Publish (クラウド → Wio LTE)
 
 * [PUBLISH] タブをクリック
-* **Topic** に **ハンズオン運営から入手した値 (ws-pub-topic)** を入力  
+* **Topic** に **進捗表から入手した値 (ws-pub-topic)** を入力  
 例: `sroot/h0813/02/device`
 * **Content** に任意の文字を入力する
 * [Publish] をクリック
@@ -212,7 +212,7 @@ Wio LTE 上の LED の色を制御できること確認してみてください�
 
 ## 以上で本章は終了です
 
-達成状況を運営表へご記入ください。
+達成状況を進捗表へご記入ください。
 
 * [目次ページへ戻る](../)
 
