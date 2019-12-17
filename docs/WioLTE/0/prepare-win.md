@@ -115,7 +115,7 @@ Wio LTE にプログラムを書き込む際に必要なドライバです。
 
 ![インストールの様子 wio-lte-handson / download-zadig](https://docs.google.com/drawings/d/e/2PACX-1vTX0TOFbG8GpppIHkN3u5gEjnHQOW-Uu26KFuK8sja4B6GzJslDGLmtdU620LYjW2jW3g8FfiGkigvY/pub?w=455&h=233)
 
-※ 上記でダウンロードできない場合は [ここからダウンロード](https://1drv.ms/u/s!Auk44HCq4iKog4BP5WiPepqRJ9sLpg?e=o0h0J6) してください
+※ 上記でダウンロードできない場合は [ここからダウンロード](https://1drv.ms/u/s!Auk44HCq4iKog4BP5WiPepqRJ9sLpg?e=o0h0J6){:target="_blank"} してください
 
 ### 5-2. zadig-2.4.exe を起動する
 
