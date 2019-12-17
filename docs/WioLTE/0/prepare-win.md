@@ -11,23 +11,39 @@
 
 # 開発環境構築の手順
 
-Wio LTE を使うためには、開発環境の準備を行います
+Windows 上で Wio LTE を用いた開発を行うための環境準備を行います
 
 * Arduino IDE
     * Wio LTE を扱えるようにする定義のインストール
     * Wio LTE ライブラリのインストール
+* Virtual COM Port ドライバ
+* WinUSB ドライバ
 
 ## 1. Arduino IDE
 
-Wio LTE の開発（ソースコード記述、コンパイル、バイナリファイル転送）には、Arduino IDEを利用します。 Arduino のサイトから [Arduino IDE をダウンロード](https://www.arduino.cc/en/main/software)し、表記に従ってインストールしてください
+Wio LTE の開発（ソースコード記述、コンパイル、バイナリファイル転送）には、Arduino IDEを利用します。
 
-### 1-1. ダウンロード
+### 1-1. Windows 10 の設定を確認する
+
+Windows 10 の方は以下の手順を行ってください。それ以外のバージョンの方は "ダウンロード" へ進んでください。
+
+[スタートメニュー] > [設定] > [アプリと機能] > [アプリを入手する場所の選択] を開き、 **場所を選ばない** を選びます。
+
+![windows10-avoid-storeinstall](https://docs.google.com/drawings/d/e/2PACX-1vQGyXWteZi1AUiwGmRQPyWPfR3GIM9SjjYjWF0V2kbwo6SjkG4qPSPWsYbbsRr4pOn2z43BeTAYLomd/pub?w=928&h=374)
+
+※ "Microsoft Store のみ" となっている場合、 Microsoft Store 版 Arduino IDE が強制的にインストールされ、本ハンズオンを進めることができません。
+
+### 1-2. ダウンロード
+
+Arduino のサイトから [Arduino IDE をダウンロード](https://www.arduino.cc/en/main/software){:target="_blank"} し、表記に従ってインストールしてください
+
+#### ダウンロードの手順
 
 ![download-arduino](https://docs.google.com/drawings/d/e/2PACX-1vTOGgidIrsQ6NwO4fGlVHHaO_7kHsxBDDq-GzoFM-yZlvDHfjrSXvakwLhTZsYwyE6BTDcVDc4oJ01m/pub?w=841&h=544)
 
 ![arduino-ide-download-justdownload](https://docs.google.com/drawings/d/e/2PACX-1vSxk2FHGBqwe5MmiLxMCaJsXfruEOcZH8I_evvvE6jOiuXOKvs2o9Sj7WvG5i7n_-dK8nhZcpd6stgp/pub?w=745&h=472)
 
-### 1-2. インストール
+### 1-3. インストール
 
 * ダウンロードした EXE ファイルをダブルクリックしてセットアップを開始してください
 
@@ -75,8 +91,58 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
 
+## 4. Virtual COM Port ドライバ
+
+Wio LTE のシリアルポートを PC で認識するためのドライバです。
+
+### 4-1. [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} から `stsw-stm32102.zip` をダウンロードします。
+
+### 4-2. ダウンロードしてきた ZIP ファイルの中の `VCP_V1.4.0_Setup.exe` を実行します。
+
+この時「インストーラーのような画面」が表示されますが、これは **インストーラーではありません** 。この後の手順を必ず実行してください。
+
+### 4-3. [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} のページに記載されている表を見ながら、 使用している OS に対応する **インストールファイル** を確認してください。
+
+### 4-4. スタートボタンを右クリックして [ファイル名を指定して実行] の [名前] に 3 で得た **インストールファイル** を入力して [OK] を押します。
+
+<h2 id="winusb">5. WinUSB ドライバ</h2>
+
+Wio LTE にプログラムを書き込む際に必要なドライバです。
+
+### 5-1. [Zadigサイト](http://zadig.akeo.ie/){:target="_blank"} の Download にある **Zadig 2.4** をクリックして `zadig-2.4.exe` をダウンロードします
+
+### 5-2. zadig-2.4.exe を起動する
+
+### 5-3. zadig-2.4.exe の [Options] > [List All Devices] を選択する
+
+### 5-4. Wio LTE を DFUモード に切り替えます
+
+**ここからは Wio LTE 本体が必要です。**  
+無い場合はここで終了です。後日、Wio LTE 本体を入手した後に、ここから再開することになります。
+
+#### 「DFUモード」への切り替え方
+
+Wio LTE に microUSB を挿した状態(電源ONの状態) にしてから、下記操作を行います。
+
+1. *BOOTボタン* を押し、 **押し続けてください**
+2. *RSTボタン* を押し、離します
+3. 押し続けていた *BOOTボタン* を離します
+
+DFU モードへの移行方法  
+※動画ではmicroUSB接続をしていませんが、実際は接続した状態で行ってください
+
+![to-dfu.gif](https://drive.google.com/uc?export=view&id=1d6UmE2_SXy7bkwZ30NSpSIK1Px0ErU9U)
+
+### 5-5. **STM32 BOOTLOADER** を選んだ後、Driver欄の左を *STTub30* 、右を *WinUSB* に変更してから、Replace Driverをクリックします
+
+`STM32 BOOTLOADER` が一覧に表示されない場合はDFU モードへの移行へ失敗しています。（Wio LTE 本体がない場合も同様に表示されません）  
+「DFU モードへの切り替え方」を再度行ってください。（成功すれば一覧に表示されます）
+
+![](https://github.com/SeeedJP/WioLTEforArduino/wiki/img/11.png)
+
+Replace Driver が失敗する時は PC への管理者権限、インターネット接続を確認してください。  
+※ `zadig-2.4.exe` は必要なファイルをインターネットから入手することがあります。アンチウィルスソフトによっては、不定のソフトウェアからの通信をブロックするものがあるため、通信設定を管理者に確認するようにしてください。
+
 ## 以上で、事前準備は終了です
 
-Wio LTE の実機をお持ちの方は、[Windows 向けの追加セットアップ](../1/1-setup-windows)を行い、引き続き[元のページ](prepare#check)から作業を続けてください。
-
-実機をお持ちでない方はここで終了となります。当日に追加セットアップを行います。
+[元のページ](prepare#check)に戻り、インストール状態の確認を行って下さい。
