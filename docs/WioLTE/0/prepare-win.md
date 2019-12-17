@@ -27,9 +27,9 @@ Wio LTE の開発（ソースコード記述、コンパイル、バイナリフ
 
 Windows 10 の方は以下の手順を行ってください。それ以外のバージョンの方は "ダウンロード" へ進んでください。
 
-[スタートメニュー] > [設定] > [アプリと機能] > [アプリを入手する場所の選択] を開き、 **場所を選ばない** を選びます。
+[スタートメニュー] > [設定] > [アプリ] > [アプリと機能] > [アプリを入手する場所の選択] を開き、 **場所を選ばない** を選びます。（すでに選択されている場合は次に進みます）
 
-![windows10-avoid-storeinstall](https://docs.google.com/drawings/d/e/2PACX-1vQGyXWteZi1AUiwGmRQPyWPfR3GIM9SjjYjWF0V2kbwo6SjkG4qPSPWsYbbsRr4pOn2z43BeTAYLomd/pub?w=928&h=374)
+![インストールの様子 wio-lte-handson / windows10-avoid-storeinstall](https://docs.google.com/drawings/d/e/2PACX-1vQGyXWteZi1AUiwGmRQPyWPfR3GIM9SjjYjWF0V2kbwo6SjkG4qPSPWsYbbsRr4pOn2z43BeTAYLomd/pub?w=928&h=374)
 
 ※ "Microsoft Store のみ" となっている場合、 Microsoft Store 版 Arduino IDE が強制的にインストールされ、本ハンズオンを進めることができません。
 
@@ -39,9 +39,9 @@ Arduino のサイトから [Arduino IDE をダウンロード](https://www.ardui
 
 #### ダウンロードの手順
 
-![download-arduino](https://docs.google.com/drawings/d/e/2PACX-1vTOGgidIrsQ6NwO4fGlVHHaO_7kHsxBDDq-GzoFM-yZlvDHfjrSXvakwLhTZsYwyE6BTDcVDc4oJ01m/pub?w=841&h=544)
+![インストールの様子 wio-lte-handson / download-arduino](https://docs.google.com/drawings/d/e/2PACX-1vTOGgidIrsQ6NwO4fGlVHHaO_7kHsxBDDq-GzoFM-yZlvDHfjrSXvakwLhTZsYwyE6BTDcVDc4oJ01m/pub?w=841&h=544)
 
-![arduino-ide-download-justdownload](https://docs.google.com/drawings/d/e/2PACX-1vSxk2FHGBqwe5MmiLxMCaJsXfruEOcZH8I_evvvE6jOiuXOKvs2o9Sj7WvG5i7n_-dK8nhZcpd6stgp/pub?w=745&h=472)
+![インストールの様子 wio-lte-handson / arduino-ide-download-justdownload](https://docs.google.com/drawings/d/e/2PACX-1vSxk2FHGBqwe5MmiLxMCaJsXfruEOcZH8I_evvvE6jOiuXOKvs2o9Sj7WvG5i7n_-dK8nhZcpd6stgp/pub?w=745&h=472)
 
 ### 1-3. インストール
 
@@ -59,7 +59,7 @@ Wio LTE を Arduino IDE で扱えるようにするための機能を追加し�
 
 ### 2-2. Arduino IDE の [ファイル] > [環境設定]  
 
-![arduino-ide-preference-win](https://docs.google.com/drawings/d/e/2PACX-1vRfOPHq6O844LQMs1CAdR-FpQ6-fKCaZux-OP42_GWksmxDcj6SFrcefLhuNiEsgPr9UPtn9EnTIAAK/pub?w=285&amp;h=387)
+![インストールの様子 wio-lte-handson / arduino-ide-preference-win](https://docs.google.com/drawings/d/e/2PACX-1vRfOPHq6O844LQMs1CAdR-FpQ6-fKCaZux-OP42_GWksmxDcj6SFrcefLhuNiEsgPr9UPtn9EnTIAAK/pub?w=285&amp;h=387)
 
 下記URL (https:// から .json まで) を 設定タブ にある **追加のボードマネージャのURL:** へ入力して、保存をクリックします
 
@@ -67,7 +67,7 @@ Wio LTE を Arduino IDE で扱えるようにするための機能を追加し�
 https://www.seeed.co.jp/package_SeeedJP_index.json
 ```
 
-![arduino-pref](https://docs.google.com/drawings/d/e/2PACX-1vRato9UW98VRjlt3A6oDULm9GTattfeIAdyBse9DnNduv1ZnoOBmJCBW_ZNB5aeGsv3qofMQZS7HcXj/pub?w=723&h=625)
+![インストールの様子 wio-lte-handson / arduino-pref](https://docs.google.com/drawings/d/e/2PACX-1vRato9UW98VRjlt3A6oDULm9GTattfeIAdyBse9DnNduv1ZnoOBmJCBW_ZNB5aeGsv3qofMQZS7HcXj/pub?w=723&h=625)
 
 ### 2-3. メニューの [ツール] > [ボード] > [ボードマネージャ]
 
@@ -105,15 +105,25 @@ Wio LTE のシリアルポートを PC で認識するためのドライバで�
 
 ### 4-4. スタートボタンを右クリックして [ファイル名を指定して実行] の [名前] に 3 で得た **インストールファイル** を入力して [OK] を押します。
 
+![インストールの様子 wio-lte-handson / exec-stm32-serialport-setup](https://docs.google.com/drawings/d/e/2PACX-1vQ4MRWBOb1-JorXUkDl8N1dh7rF78DfHSPpdERCFfjAwe3h-PNc3VYElAbwkEmgagv7vKLvRAqKTs_x/pub?w=396&h=205)
+
 <h2 id="winusb">5. WinUSB ドライバ</h2>
 
 Wio LTE にプログラムを書き込む際に必要なドライバです。
 
 ### 5-1. [Zadigサイト](http://zadig.akeo.ie/){:target="_blank"} の Download にある **Zadig 2.4** をクリックして `zadig-2.4.exe` をダウンロードします
 
+![インストールの様子 wio-lte-handson / download-zadig](https://docs.google.com/drawings/d/e/2PACX-1vTX0TOFbG8GpppIHkN3u5gEjnHQOW-Uu26KFuK8sja4B6GzJslDGLmtdU620LYjW2jW3g8FfiGkigvY/pub?w=455&h=233)
+
+※ 上記でダウンロードできない場合は [ここからダウンロード](https://1drv.ms/u/s!Auk44HCq4iKog4BP5WiPepqRJ9sLpg?e=o0h0J6) してください
+
 ### 5-2. zadig-2.4.exe を起動する
 
+※ 最初に表示されるダイアログ(Zadig update policy)は [No] としておいてください
+
 ### 5-3. zadig-2.4.exe の [Options] > [List All Devices] を選択する
+
+![インストールの様子 wio-lte-handson / zadig-list-all-devices](https://docs.google.com/drawings/d/e/2PACX-1vQ0BPpg4cOZXuuvSl2X7mN3Z86WjTb0LmZ-NCpgwhSmop_S8zCYyR-9RevO9OrQmAFsFA06NI1GSDeb/pub?w=573&h=253)
 
 ### 5-4. Wio LTE を DFUモード に切り替えます
 
@@ -133,7 +143,7 @@ DFU モードへの移行方法
 
 ![to-dfu.gif](https://drive.google.com/uc?export=view&id=1d6UmE2_SXy7bkwZ30NSpSIK1Px0ErU9U)
 
-### 5-5. **STM32 BOOTLOADER** を選んだ後、Driver欄の左を *STTub30* 、右を *WinUSB* に変更してから、Replace Driverをクリックします
+### 5-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左を *STTub30* 、右を *WinUSB* に変更してから、Replace Driverをクリックします
 
 `STM32 BOOTLOADER` が一覧に表示されない場合はDFU モードへの移行へ失敗しています。（Wio LTE 本体がない場合も同様に表示されません）  
 「DFU モードへの切り替え方」を再度行ってください。（成功すれば一覧に表示されます）
