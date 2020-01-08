@@ -106,15 +106,36 @@ Wio LTE のシリアルポートを PC で認識するためのドライバで�
 
 ### 4-1. [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} から `stsw-stm32102.zip` をダウンロードします。
 
-### 4-2. ダウンロードしてきた ZIP ファイルの中の `VCP_V1.4.0_Setup.exe` を実行します。
+![vcom-download](https://docs.google.com/drawings/d/e/2PACX-1vQ-DzZZ-IWEUoDD4apPOFQsHcMWK55_j_TxWWY5tnRcPPi-2Sh9_E1B25jW1nZFIZ0SLafdcmSdqcIa/pub?w=723&h=557)
 
-この時「インストーラーのような画面」が表示されますが、これは **インストーラーではありません** 。この後の手順を必ず実行してください。
+### 4-2. ダウンロードした `stsw-stm32102.zip` 内の `VCP_V1.4.0_Setup.exe` を実行します。
 
-### 4-3. [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} のページに記載されている表を見ながら、 使用している OS に対応する **インストールファイル** を確認してください。
+※ `stsw-stm32102.zip` の中に、さらに `en.stsw-stm32102.zip` があり、その中に `VCP_V1.4.0_Setup.exe` があります。
 
-### 4-4. スタートボタンを右クリックして [ファイル名を指定して実行] の [名前] に 3 で得た **インストールファイル** を入力して [OK] を押します。
+![vcom-setup](https://docs.google.com/drawings/d/e/2PACX-1vQcDH6yTtM2zQY-zP7FUFBN9r49pgfxXz9m7Ks43NuUSY9I-1LR0dbBNSKEV7S3sujL7FwQKJnJ0o4W/pub?w=351&h=199)
+
+ここから「インストーラーのような画面」が表示されますが、これは **インストーラーではありません** 。この後の手順を必ず実行してください。
+
+![vcom-extract1](https://docs.google.com/drawings/d/e/2PACX-1vTreV9zQj6J6k1O1toIIHGUee_s-g05uFEueMh1JQIhQEyuiR4vMhLK6zG_inLP39G7MKlq9xLlaKDn/pub?w=505&h=388)
+
+![vcom-extract2](https://docs.google.com/drawings/d/e/2PACX-1vR6S8FHVKl1oqCw-WGjfFxi_uMXvikhYlmXE1frtwPmzhPnN4JE98hy8Q_iliNOrBWZPXnuf9jioCLD/pub?w=504&h=386)
+
+### 4-4. スタートボタンを右クリックして [ファイル名を指定して実行] をクリックした後、 [名前] へ以下のファイル名を入力して [OK] を押します。
+
+```
+C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\dpinst_amd64.exe
+```
+
+※ 上記ファイル名は Windows 10 / 8.1 / 8 で 64 bit の場合です。 Windows 7 の場合、また、32 bit の場合は [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} を参照して、バージョンに合ったインストールファイルを実行してください。
 
 ![インストールの様子 wio-lte-handson / exec-stm32-serialport-setup](https://docs.google.com/drawings/d/e/2PACX-1vQ4MRWBOb1-JorXUkDl8N1dh7rF78DfHSPpdERCFfjAwe3h-PNc3VYElAbwkEmgagv7vKLvRAqKTs_x/pub?w=396&h=205)
+
+ファイル名の指定に成功していれば、以下のようにドライバがインストールされます。  
+※ バージョンが異なる等のエラーが表示された場合は、[Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} を参照して、バージョンに合ったインストールファイルを実行してください。
+
+![vcom-install](https://docs.google.com/drawings/d/e/2PACX-1vTSGmAPLm8EyiPcC0tCDatDVajRx_s_OOBn3JwwUKQ7PP8Gr5hqVIGjlWSUu-N7lqAaC8RDxua48tP4/pub?w=599&h=249)
+
+![vcom-complete](https://docs.google.com/drawings/d/e/2PACX-1vS3V1dIRn71wIs-FPb5_YbPOAa0fFtTfcOsIc2bqGGDbYNI-x3FRvh1nsQ1R1oQLgdYzuIXCqfxYAho/pub?w=589&h=388)
 
 <h2 id="winusb">5. WinUSB ドライバ</h2>
 
