@@ -41,7 +41,7 @@ Wio LTE の開発（ソースコード記述、コンパイル、バイナリフ
 
 ※アプリケーションフォルダに移動した **Arduino** が「Arduino IDE」です。これをダブルクリックで Arduino IDE を起動することになります
 
-## 2. ボード定義のインストール
+<h2 id="board">2. ボード定義のインストール</h2>
 
 Wio LTE を Arduino IDE で扱えるようにするための機能を追加します
 
@@ -71,7 +71,7 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ![インストールの様子 wio-lte-handson / board-manager-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vR9IdCB5yo0Zvks5QG9XEVR1MAWilwUoeKHu0ebC0xmjLaUpC7wgwNTuzBS3jH4ER6L2m3I6JVdhrDS/pub?w=781&h=436)  
 
-## 3. Wio LTE ライブラリのインストール
+<h2 id="lib">3. Wio LTE ライブラリのインストール</h2>
 
 実際のプログラム（Arduino では スケッチと称します）で Wio LTE が使えるようにするライブラリを追加します
 
