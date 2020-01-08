@@ -39,7 +39,13 @@ Arduino のサイトから [Arduino IDE をダウンロード](https://www.ardui
 
 #### ダウンロードの手順
 
-![インストールの様子 wio-lte-handson / download-arduino](https://docs.google.com/drawings/d/e/2PACX-1vTOGgidIrsQ6NwO4fGlVHHaO_7kHsxBDDq-GzoFM-yZlvDHfjrSXvakwLhTZsYwyE6BTDcVDc4oJ01m/pub?w=841&h=544)
+ダウンロードページの **Windows Installer** をクリックします。  
+（"Windows app" は使用しないため、クリックしないでください）
+
+![インストールの様子 wio-lte-handson / download-arduino-win](https://docs.google.com/drawings/d/e/2PACX-1vTOGgidIrsQ6NwO4fGlVHHaO_7kHsxBDDq-GzoFM-yZlvDHfjrSXvakwLhTZsYwyE6BTDcVDc4oJ01m/pub?w=711&h=542)
+
+次のページでは **JUST DOWNLOAD** をクリックしてください。  
+（隣のリンクをクリックした場合はバックボタンで戻ってから再度 JUST DOWNLOAD をクリックします）
 
 ![インストールの様子 wio-lte-handson / arduino-ide-download-justdownload](https://docs.google.com/drawings/d/e/2PACX-1vSxk2FHGBqwe5MmiLxMCaJsXfruEOcZH8I_evvvE6jOiuXOKvs2o9Sj7WvG5i7n_-dK8nhZcpd6stgp/pub?w=745&h=472)
 

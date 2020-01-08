@@ -25,7 +25,12 @@ Wio LTE の開発（ソースコード記述、コンパイル、バイナリフ
 
 ### 1-1. ダウンロード
 
-![download-arduino](https://docs.google.com/drawings/d/e/2PACX-1vTOGgidIrsQ6NwO4fGlVHHaO_7kHsxBDDq-GzoFM-yZlvDHfjrSXvakwLhTZsYwyE6BTDcVDc4oJ01m/pub?w=841&h=544)
+ダウンロードページの **Mac OS X** をクリックします。
+
+![download-arduino-mac](https://docs.google.com/drawings/d/e/2PACX-1vSe_Vtwx_u5tCiaPSZufz1br9SdwMmEwNoW3E9skJoDpD7bBxS9QUwKArVRzDizVAYMkIHfZY4T5ist/pub?w=711&h=544)
+
+次のページでは **JUST DOWNLOAD** をクリックしてください。  
+（隣のリンクをクリックした場合はバックボタンで戻ってから再度 JUST DOWNLOAD をクリックします）
 
 ![arduino-ide-download-justdownload](https://docs.google.com/drawings/d/e/2PACX-1vSxk2FHGBqwe5MmiLxMCaJsXfruEOcZH8I_evvvE6jOiuXOKvs2o9Sj7WvG5i7n_-dK8nhZcpd6stgp/pub?w=745&h=472)
 
