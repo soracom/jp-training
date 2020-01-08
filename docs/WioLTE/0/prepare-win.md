@@ -148,18 +148,21 @@ Wio LTE に microUSB を挿した状態(電源ONの状態) にしてから、下
 3. 押し続けていた *BOOTボタン* を離します
 
 DFU モードへの移行方法  
-※動画ではmicroUSB接続をしていませんが、実際は接続した状態で行ってください
+※動画では microUSB 接続をしていませんが、実際は接続した状態で行ってください
 
 ![to-dfu.gif](https://drive.google.com/uc?export=view&id=1d6UmE2_SXy7bkwZ30NSpSIK1Px0ErU9U)
 
-### 5-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左を *STTub30* 、右を *WinUSB* に変更してから、Replace Driverをクリックします
+### 5-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左が *STTub30* になっていることを確認し、右を *WinUSB* に変更してから、 Replace Driver をクリックします
+
+※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「5-2. zadig-2.4.exe を起動する」からやり直してください。
 
 `STM32 BOOTLOADER` が一覧に表示されない場合はDFU モードへの移行へ失敗しています。（Wio LTE 本体がない場合も同様に表示されません）  
 「DFU モードへの切り替え方」を再度行ってください。（成功すれば一覧に表示されます）
 
-![](https://github.com/SeeedJP/WioLTEforArduino/wiki/img/11.png)
+![zadig-replace-driver](https://docs.google.com/drawings/d/e/2PACX-1vSQurVlc2XF6MJQcMlXi4kl7Gxn3QF6ltK_FIAk0pxepeC5WXczCxw5w60Y-Erok7Ht9Hv0MjiUbKEt/pub?w=562&h=253)
 
-Replace Driver が失敗する時は PC への管理者権限、インターネット接続を確認してください。  
+Replace Driver が失敗する時は PC への管理者権限、インターネット接続を確認してください。
+
 ※ `zadig-2.4.exe` は必要なファイルをインターネットから入手することがあります。アンチウィルスソフトによっては、不定のソフトウェアからの通信をブロックするものがあるため、通信設定を管理者に確認するようにしてください。
 
 ## 以上で、事前準備は終了です
