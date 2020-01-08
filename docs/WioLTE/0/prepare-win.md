@@ -187,7 +187,7 @@ Wio LTE にプログラムを書き込む際に必要なドライバです。
 
 ※ 上記でダウンロードできない場合は [ここからダウンロード](https://1drv.ms/u/s!Auk44HCq4iKog4BP5WiPepqRJ9sLpg?e=o0h0J6){:target="_blank"} してください
 
-### 6-2. zadig-2.4.exe を起動する
+<h3 id="bootzadig">6-2. zadig-2.4.exe を起動する</h3>
 
 ※ 最初に表示されるダイアログ(Zadig update policy)は [No] としておいてください
 
@@ -215,7 +215,7 @@ DFU モードへの移行方法
 
 ### 6-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左が *STTub30* になっていることを確認し、右を *WinUSB* に変更してから、 Replace Driver をクリックします
 
-※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「5-2. zadig-2.4.exe を起動する」からやり直してください。
+※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「[6-2. zadig-2.4.exe を起動する](#bootzadig)」からやり直してください。
 
 `STM32 BOOTLOADER` が一覧に表示されない場合はDFU モードへの移行へ失敗しています。（Wio LTE 本体がない場合も同様に表示されません）  
 「DFU モードへの切り替え方」を再度行ってください。（成功すれば一覧に表示されます）
