@@ -8,9 +8,10 @@
   - Arduino IDE のインストール
   - WioLTE ボード定義のインストール
   - Arduino ライブラリのインストール
+  - OS に応じた必要なソフトウェアのインストール
   - テストプログラムのビルド
 
-ダウンロードするファイルサイズも大きいため、当日に行うとかなり時間がかかる可能性がありますので、必ず事前に済ませるようにして下さい。
+ダウンロードするファイルサイズも大きいため、当日に行うとかなり時間がかかる可能性があります。 **必ず事前に済ませるようにして下さい。**
 
 ## 開発環境のインストール
 
@@ -18,9 +19,8 @@
 
 以下のリンクから、開発環境のインストールを行って下さい。
 
-- [→ 開発環境のインストール(Windows)](prepare-win)
-    * Windows の方は**ハンズオン当日に行う追加のインストールがあります**。ハンズオン当日に Wio LTE の実機を使って[Windows 向けの追加セットアップ](../1/1-setup-windows)を行います。
-- [→ 開発環境のインストール(Mac)](prepare-mac)
+- [開発環境のインストール(Windows)](prepare-win){:target="_blank"}
+- [開発環境のインストール(Mac)](prepare-mac){:target="_blank"}
 
 <h3 id="check">確認</h3>
 
@@ -35,7 +35,6 @@
 * ライブラリ **Wio LTE for Arduino** のインストール
 * **Virtual COM Port ドライバ** のインストール
 * **WinUSB ドライバ** のインストール
-* **TeraTerm** のインストール
 
 **macOS の方**
 
@@ -56,8 +55,13 @@ Wio LTE の実機がある場合はセットアップが正しく行われてい
 1. Arduino IDE で、ツール → ボード から、Seeed Wio LTE Cat.1 を選択
 ![ボードの選択](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
 
+※ もし "Seeed Wio LTE Cat.1" が一覧にない場合は、ボード定義のインストール ([Windows](prepare-win#board){:target="_blank"} / [Mac](prepare-mac#board){:target="_blank"}) の作業を確認してください。  
+
 2. ファイル → スケッチ例 → Wio LTE for Arduino → basic → LedSetRGB を選択
 ![スケッチ例を開く](images/open_sketch.png)
+
+※ "Wio LTE for Arduino" が一覧にない場合は、 Wio LTE ライブラリのインストール ([Windows](prepare-win#lib){:target="_blank"} / [Mac](prepare-mac#lib){:target="_blank"}) の作業を確認してください。  
+※ "Wio LTE for Arduino" が "互換性なし" の中にある場合は、一つ前の手順 ([ツール] > [ボード: ...] から "Seeed Wio LTE Cat.1" を選択) をしてから、再度この手順をおこなってください。
 
 3. ファイル のすぐ下にあるチェックアイコンをクリックし、しばらくして「コンパイルが完了しました。」と表示されれば、インストール状態は正常です。
 ![検証](images/verify.png)

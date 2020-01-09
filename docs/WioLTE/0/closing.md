@@ -5,8 +5,13 @@ Wio LTE ハンズオンは以上で終了です。最後に注意点の確認を
 
 ## 《知識》今後の費用について
 
-SORACOM Air SIM は**実際の通信の有無に限らず**日当たりの基本料金が発生いたします    
-詳細は [ご利用料金 - 日本向け Air SIM](https://soracom.jp/services/air/price/) をご覧ください
+### SORACOM IoT SIM
+
+SORACOM IoT SIM (plan-D) は **実際の通信の有無に限らず** 基本料金が発生します
+
+![soracom-air-fee](https://docs.google.com/drawings/d/e/2PACX-1vTyDaN2Byyqo_yBajXD8ozVEvXkQUqdcNWkfKc-H0EKWzUEKXwfMh4Sy7d1Bh80ZzVQ9FXCZwT02bTN/pub?w=928&h=523)
+
+詳細は [ご利用料金 - 特定地域向け IoT SIM](https://soracom.jp/services/air/cellular/price_specific_area_sim/) をご覧ください
 
 ### SORACOM Harvest
 
@@ -26,27 +31,9 @@ SORACOM Air SIM は**実際の通信の有無に限らず**日当たりの基本
 
 ### 長期利用割引
 
-Air SIM のご契約期間をお約束いただくことで、基本料金が割引になる仕組みをご検討ください
+IoT SIM のご契約期間をお約束いただくことで、基本料金が割引になる仕組みをご検討ください
 
-* [長期利用割引 - 日本向け Air SIM](https://soracom.jp/services/air/cellular/discount_price/)
-* [長期利用割引に関する手続きやFAQ](https://blog.soracom.jp/blog/2017/05/23/long-term-discount/)
-
-### MQTT ブローカーについて
-
-今回利用した Mosquitto の MQTT ブローカーは、試験用の公開サーバです。誰でも読み書きが可能であるため、実システムでの利用はおやめください。
-
-代替するプロダクトは以下の通りです
-
-* オンプレ型
-    * [Mosquitto](https://mosquitto.org/)
-* フルマネージド型
-    * [Amazon MQ](https://aws.amazon.com/jp/amazon-mq/)
-    * [AWS IoT Core](https://aws.amazon.com/jp/iot-core/)
-    * [Azure IoT Hub](https://azure.microsoft.com/ja-jp/services/iot-hub/)
-    * [Google Cloud IoT Core](https://cloud.google.com/iot-core/)
-    * [PubNub](https://www.pubnub.com/)
-
-※ すべてが MQTT の機能をサポートしているわけでは無いので要件に応じてご選択ください。
+[長期利用割引 - 特定地域向け IoT SIM](https://soracom.jp/services/air/cellular/discount_price/)
 
 ## 【作業】Wio LTE を片付ける
 

@@ -131,27 +131,25 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 
 #### Subscribe (Wio LTE → クラウド)
 
-* [SUBSCRIBE] タブをクリック
+* ブラウザ上の [SUBSCRIBE] タブをクリック
 * 表示されたダイアログで **Topic** に **進捗表から入手した値 (ws-sub-topic)** を入力  
 例: `sroot/h0813/02/#`
 * [ADD SBSCRIBE] をクリック
 
-PC 上でシリアルモニター(Windows なら TeraTerm、 macOS なら Arduino IDE のシリアルモニター) を立ち上げると、Wio LTE をモニタリングすることができます。
+その後、 Arduino IDE > [ツール] > [シリアルモニタ] で表示されるウィンドウには Wio LTE の稼働状況が表示されます。  
+ブラウザ上の "Monitoring" に Wio LTE から Publish されたデータが表示され始めます。
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vQsc6capNMYLbbUduifhMyZiyT2GTm1NE79BHqBqSIh3gYN7w38r0Hb2Wdym_LkDTF6Nnn-d5IwshUm/pub?w=891&h=714" alt="step5 MQTT PubSub with Mosquitto / mqtt-sub">
 
-Monitoring に Wio LTE からのデータが表示され始めます。
-（表示されている様子は後述します）
-
 #### Publish (クラウド → Wio LTE)
 
-* [PUBLISH] タブをクリック
+* ブラウザ上の [PUBLISH] タブをクリック
 * **Topic** に **進捗表から入手した値 (ws-pub-topic)** を入力  
 例: `sroot/h0813/02/device`
-* **Content** に任意の文字を入力する
+* **Content** に任意の文字 (例: `Hello from Cloud via SORACOM Beam!!`) を入力する
 * [Publish] をクリック
 
-Content で入力した文字が Wio LTE 側のシリアルモニターに表示されていることが確認できます。(同時に monitor の Subscribe の方にも表示されます)
+Content で入力した文字がシリアルモニタ(= Wio LTE に送信された)に表示されていることが確認できます。
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vT2KoOzkGfflDShd412jVb1fm7qPUDg6u9prKrx4p636rE3behb8geswVNQweenKaXxfX1nNSAyU2kU/pub?w=892&h=502" alt="step5 MQTT PubSub with Mosquitto / mqtt-pub">
 
@@ -160,7 +158,7 @@ Content で入力した文字が Wio LTE 側のシリアルモニターに表示
 Wio LTE が MQTT Subscribe メッセージを受信すると、23 行目の `void callback()` という関数が実行されます。
 ここを修正することで、クラウドからのコマンドを処理することができるようになります。
 
-今回は「 `#xxxxxx` という文字列を受信したら、 LED の発光色として使う」としてみましょう
+今回は「 `#xxxxxx` という文字列を Wio LTE が受信したら、 LED の発光色として使う」としてみましょう
 
 変更前 (23 行目付近);
 

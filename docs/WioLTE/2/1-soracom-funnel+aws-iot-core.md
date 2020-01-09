@@ -89,13 +89,16 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 
 ## ※ うまく動かなかったら（トラブルシュート）
 
-利用可能なツールは「シリアルモニター」「SORACOM Webコンソール上のSIMのログ」です。  
-※運営側は CloudWatch や AWS IoT Core ダッシュボードも利用できます
+まず SORACOM Harvest を確認してみてください。  
+**SORACOM Harvest にデータが表示されている**: データ送信自体は成功しています。 SORACOM Funnel の設定不備の可能性があるため、以下のトラブルシュートを確認してください。  
+**SORACOM Harvest でデータが確認できない**: Wio LTE の接続を確認してください。
+
+また、 SORACOM Harvest 以外にトラブルシュートで利用可能なツールは「Arduino IDE のシリアルモニター」「SORACOM Webコンソール上の SIM のログ」です。
 
 **データは送られているが AWS IoT Core 上で確認できない**
 
 * 原因: SORACOM Funnel が ON なグループに SIM が所属していない
-    * 対策: SIM を SIM グループへ所属させるようにしてください
+* 対策: SIM を SIM グループへ所属させるようにしてください
 
 ## 5.  送信先を変更し、クラウド上での条件付けを行う
 
