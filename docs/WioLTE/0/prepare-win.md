@@ -116,39 +116,15 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
 
-## 4. Arduino IDE 環境の確認
-
-Arduino IDE とライブラリ群のインストール状況を確認します。
-
-### 4-1. Arduino IDE の [ツール] > [ボード: ...] と進み "Seeed Wio LTE Cat.1" を選択
-
-![ボードの選択](https://docs.google.com/drawings/d/e/2PACX-1vQKCIKzOA6NSb0-3kNvL5i9lpZSNAS5OXklLbFITCP2vHvEjM2gL3qKdo8WzYZjifjajFe3YovtiUEI/pub?w=333&h=507)
-
-* "Seeed Wio LTE Cat.1" が一覧にない場合は、 [ボード定義のインストール](#board) の作業を確認してください。
-
-### 4-2. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [basic] > [LedSetRGB] を選択
-
-![スケッチ例を開く](images/open_sketch.png)
-
-* "Wio LTE for Arduino" が一覧にない場合は、 [Wio LTE ライブラリのインストール](#lib) の作業を確認してください。
-* "Wio LTE for Arduino" が "互換性なし" の中にある場合は、 [ツール] > [ボード: ...] から "Seeed Wio LTE Cat.1" を選択してから、再度スケッチ例に進んでください。
-
-### 4-3. Arduino IDE の [ファイル] のすぐ下にある "チェックアイコン" をクリックし、しばらくして「コンパイルが完了しました。」と表示されれば、インストール状態は正常です。
-
-![検証](images/verify.png)
-
-> もしコンパイルに非常に長い時間がかかってしまう場合、PC のスペックが低い可能性があります。
-> その場合時間内にハンズオンが完了出来ない可能性があるため、より性能の高い PC のご準備をご検討下さい。
-
-## 5. Virtual COM Port ドライバ
+## 4. Virtual COM Port ドライバ
 
 Wio LTE のシリアルポートを PC で認識するためのドライバです。
 
-### 5-1. [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} から `stsw-stm32102.zip` をダウンロードします。
+### 4-1. [Virtual COM Portデバイスドライバーのインストール](https://seeedjp.github.io/Wiki/Wio_LTE_for_Arduino/InstallVCOMDriver-ja.html){:target="_blank"} から `stsw-stm32102.zip` をダウンロードします。
 
 ![vcom-download](https://docs.google.com/drawings/d/e/2PACX-1vQ-DzZZ-IWEUoDD4apPOFQsHcMWK55_j_TxWWY5tnRcPPi-2Sh9_E1B25jW1nZFIZ0SLafdcmSdqcIa/pub?w=723&h=557)
 
-### 5-2. ダウンロードした `stsw-stm32102.zip` 内の `VCP_V1.4.0_Setup.exe` を実行します。
+### 4-2. ダウンロードした `stsw-stm32102.zip` 内の `VCP_V1.4.0_Setup.exe` を実行します。
 
 ※ `stsw-stm32102.zip` の中に、さらに `en.stsw-stm32102.zip` があり、その中に `VCP_V1.4.0_Setup.exe` があります。
 
@@ -160,7 +136,7 @@ Wio LTE のシリアルポートを PC で認識するためのドライバで�
 
 ![vcom-extract2](https://docs.google.com/drawings/d/e/2PACX-1vR6S8FHVKl1oqCw-WGjfFxi_uMXvikhYlmXE1frtwPmzhPnN4JE98hy8Q_iliNOrBWZPXnuf9jioCLD/pub?w=504&h=386)
 
-### 5-3. スタートボタンを右クリックして [ファイル名を指定して実行] をクリックした後、 [名前] へ以下のファイル名を入力して [OK] を押します。
+### 4-3. スタートボタンを右クリックして [ファイル名を指定して実行] をクリックした後、 [名前] へ以下のファイル名を入力して [OK] を押します。
 
 ```
 C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\dpinst_amd64.exe
@@ -177,25 +153,25 @@ C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\d
 
 ![vcom-complete](https://docs.google.com/drawings/d/e/2PACX-1vS3V1dIRn71wIs-FPb5_YbPOAa0fFtTfcOsIc2bqGGDbYNI-x3FRvh1nsQ1R1oQLgdYzuIXCqfxYAho/pub?w=589&h=388)
 
-<h2 id="winusb">6. WinUSB ドライバ</h2>
+<h2 id="winusb">5. WinUSB ドライバ</h2>
 
 Wio LTE にプログラムを書き込む際に必要なドライバです。
 
-### 6-1. [Zadigサイト](http://zadig.akeo.ie/){:target="_blank"} の Download にある **Zadig 2.4** をクリックして `zadig-2.4.exe` をダウンロードします
+### 5-1. [Zadigサイト](http://zadig.akeo.ie/){:target="_blank"} の Download にある **Zadig 2.4** をクリックして `zadig-2.4.exe` をダウンロードします
 
 ![インストールの様子 wio-lte-handson / download-zadig](https://docs.google.com/drawings/d/e/2PACX-1vTX0TOFbG8GpppIHkN3u5gEjnHQOW-Uu26KFuK8sja4B6GzJslDGLmtdU620LYjW2jW3g8FfiGkigvY/pub?w=455&h=233)
 
 ※ 上記でダウンロードできない場合は [ここからダウンロード](https://1drv.ms/u/s!Auk44HCq4iKog4BP5WiPepqRJ9sLpg?e=o0h0J6){:target="_blank"} してください
 
-<h3 id="bootzadig">6-2. zadig-2.4.exe を起動する</h3>
+<h3 id="bootzadig">5-2. zadig-2.4.exe を起動する</h3>
 
 ※ 最初に表示されるダイアログ(Zadig update policy)は [No] としておいてください
 
-### 6-3. zadig-2.4.exe の [Options] > [List All Devices] を選択する
+### 5-3. zadig-2.4.exe の [Options] > [List All Devices] を選択する
 
 ![インストールの様子 wio-lte-handson / zadig-list-all-devices](https://docs.google.com/drawings/d/e/2PACX-1vQ0BPpg4cOZXuuvSl2X7mN3Z86WjTb0LmZ-NCpgwhSmop_S8zCYyR-9RevO9OrQmAFsFA06NI1GSDeb/pub?w=573&h=253)
 
-### 6-4. Wio LTE を DFUモード に切り替えます
+### 5-4. Wio LTE を DFUモード に切り替えます
 
 **ここからは Wio LTE 本体が必要です。**
 Wio LTE 本体が無い場合はここで終了です。後日、Wio LTE 本体を入手した後に、ここから再開することになります。
@@ -213,9 +189,9 @@ DFU モードへの移行方法
 
 ![to-dfu.gif](https://drive.google.com/uc?export=view&id=1d6UmE2_SXy7bkwZ30NSpSIK1Px0ErU9U)
 
-### 6-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左が *STTub30* になっていることを確認し、右を *WinUSB* に変更してから、 Replace Driver をクリックします
+### 5-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左が *STTub30* になっていることを確認し、右を *WinUSB* に変更してから、 Replace Driver をクリックします
 
-※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「[6-2. zadig-2.4.exe を起動する](#bootzadig)」からやり直してください。
+※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「[5-2. zadig-2.4.exe を起動する](#bootzadig)」からやり直してください。
 
 `STM32 BOOTLOADER` が一覧に表示されない場合はDFU モードへの移行へ失敗しています。（Wio LTE 本体がない場合も同様に表示されません）  
 「DFU モードへの切り替え方」を再度行ってください。（成功すれば一覧に表示されます）
