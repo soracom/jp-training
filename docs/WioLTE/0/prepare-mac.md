@@ -65,9 +65,10 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 一覧の中から **SeeedJP STM32 Boards by Seeed K.K.** を選択しインストールをクリックします  
 ※ `wio lte` で検索すると見つけやすいです  
-※ `(JP Mirror)` となっているボードは選択しないでください
-※ インターネットから必要なファイルをダウンロードしながらインストールされるため、ネットに接続した環境で行ってください
-※ 約 350MB 分のダウンロードとファイルの展開が行われるため、15分～1時間くらいかかることがあります。受講当日に行うと時間が不足する可能性がありますので事前に済ませるようにお願いします
+※ `[DEPRECATED]` となっているボードは選択しないでください  
+※ バージョンの表示は `1.3.0` となっていますが、インストール時の最新バージョンを選択するようにしてください
+※ インターネットから必要なファイルをダウンロードしながらインストールされるため、ネットに接続した環境で行ってください  
+※ 約 __350MB__ 分のダウンロードとファイルの展開が行われるため、 __15分～1時間__ くらいかかることがあります。受講当日に行うと時間が不足する可能性がありますので事前に済ませるようにお願いします
 
 ![インストールの様子 wio-lte-handson / board-manager-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vR9IdCB5yo0Zvks5QG9XEVR1MAWilwUoeKHu0ebC0xmjLaUpC7wgwNTuzBS3jH4ER6L2m3I6JVdhrDS/pub?w=781&h=436)  
 
@@ -81,7 +82,7 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 一覧の中から **Wio LTE for Arduino** を選択しインストールをクリックします  
 ※ `wio lte` で検索すると見つけやすいです  
-※ バージョンの表示は `2.4.0` となっていますが、インストール時の最新バージョンを選択するようにしてください
+※ バージョンの表示は `2.9.0` となっていますが、インストール時の最新バージョンを選択するようにしてください
 ※ インターネットから必要なファイルをダウンロードしながらインストールされるため、ネットに接続した環境で行ってください
 
 ![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
