@@ -63,8 +63,26 @@ Wio LTE を初期化しておくことで、次回起動時に不用意な通信
 
 手渡された時同様に箱へ格納してください
 
+![put-away](https://docs.google.com/drawings/d/e/2PACX-1vTptJ283N0Fq2wdr-cvGAljZDDZASVW3kxT1SYx-_JzZO81-Uelms8VUpTY_GHoYTqa9lpy89x4TFSb/pub?w=460&h=516)
+
 * アンテナは取り外して Wio LTE 本体が格納されていた白いトレーのミゾに入れてください
 * microUSB ケーブルは白いトレーを取り外した中に入れてください
+
+## 【作業】SIM からグループを解除する
+
+### 解除対象の SIM(sim-name 参照)を選択 > [操作] > [所属グループ変更]
+
+![select-sim-for-unjoin-group](https://docs.google.com/drawings/d/e/2PACX-1vQkkRsAJ7T2qT2cbxaB08FFgIHzdTOT2Bkm3gCHesGNCyUFnO5MIbLQlrVXSbVxdEVKJkXjWwWt7Dqz/pub?w=519&h=398)
+
+### [グループを解除]
+
+![dialog-for-unjoin-group](https://docs.google.com/drawings/d/e/2PACX-1vS3LV8AjZCeJSinZWKHO40L5hx8BIFpdC9RLoY9ebhvxdbSBHrFphDtYS5jjqTUHQU8cEH-LPUqOVnu/pub?w=616&h=325)
+
+解除されると SIM 一覧で "グループ" が空欄となります
+
+![sim-list-empty-group](https://docs.google.com/drawings/d/e/2PACX-1vSTSwapE1H6qSFTYj04Jzq5WDzsCHmfDUBxei1F0LD3xadH7yuV13L-TawmIbUdI6sNlzS_AH0coAiB/pub?w=554&h=100)
+
+以上で終了です
 
 ### 本コンテンツについて
 
