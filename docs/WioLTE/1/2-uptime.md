@@ -46,40 +46,70 @@ SIM の取り出し方も一緒に紹介いたします
 
 **抜く際フックを引っ張りすぎると金具が取れてしまうため、図示されている程度まで引っ張り出したらSIMを取り出し、金具を元に戻してください**
 
-## 3. SORACOM Harvest の設定をする
+## 3. SORACOM IoT SIM を SORACOM ユーザーコンソールに登録する
 
 **※ SORACOM のアカウントをお持ちでない方:** [SORACOM アカウントの作成](https://dev.soracom.io/jp/start/console/#account) の手順に沿って作成してください   
 （有効なクレジットカード(1枚) と この場で確認可能なメールアドレス(1つ)が必要です）
 
-**※ SORACOM アカウントを持っているが SIM を登録していない場合:** [Air SIM の登録](https://dev.soracom.io/jp/start/console/#registsim) の手順に沿って登録してください
+**※ すでに SIM が登録済みの方:** 利用する SIM(sim-name を参照)が登録されているかを確認してください    
+登録されている場合は、 "4 SORACOM Harvest の設定をする" に進んでください   
+登録されていない場合は、運営にお声がけください  
 
-### 3-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
+### 3-1. [SORACOM Webコンソール](https://console.soracom.io/) にログインする
+
+### 3-2. [SIM 登録] をクリックする
+
+![sim-register-button](https://docs.google.com/drawings/d/e/2PACX-1vQlsXN8RA0XyZ_DlohtCiA8_6_j1IJANSe_Tx_loU_EaBn9CjC6YBcVtnpLf92F1x0BsMQijvFskOtf/pub?w=434&h=408)
+
+※ [SIM 登録] が表示されていない場合は、[Menu] > [SIM 管理] をクリックしてください。
+
+### 3-3. SIM 登録に必要な情報を入力する画面では下記の通り入力し [登録] してください
+
+* IMSI: SIM カード裏面の **IMSI** と記載されている右側 15 桁の番号です
+* パスコード: SIM カード裏面の **PASSCODE** と記載されている右側 5 桁の番号です。
+* 名前: **進捗表から入手 (sim-name)**
+* グループ: <何も設定しないでください>
+* 技術基準適合証明等について確認しました: **チェックを付ける**
+
+![sim-register-form](https://docs.google.com/drawings/d/e/2PACX-1vRefT1skPGVPhIUBM4BDSU5CAsh_JT3QtltfozlUO6wNj2YMmkhCA5BhHlzLxk9p-e-2f-XrbVRkwXi/pub?w=559&h=775)
+
+※ SIM カードの裏面のサンプル
+
+![sim-card](https://docs.google.com/drawings/d/e/2PACX-1vSB1d6f9SFu0AALOl32ry0lLpb9bO3tJfmWoiS_QPsJ0Dbjc6V9VfE-fOiPkKXuUkI4hcXlirTvn6Zw/pub?w=451&h=287)
+
+登録に成功すると「SIM の登録が成功しました」というダイアログが出るので [終了して元の画面に戻る] をクリックします。
+
+![sim-register-success](https://docs.google.com/drawings/d/e/2PACX-1vT8s2Laen43TSrPAv_NO1ErPLEh1Gl-MSedFi74AVn65PJufdXNqpcWwZKRzyElizMVbQLe__iC3st-/pub?w=641&h=245)
+
+## 4. SORACOM Harvest の設定をする
+
+### 4-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
 
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-menu-sim-group](https://docs.google.com/drawings/d/e/2PACX-1vTqI-f2K8n-TuUvVEGPnmDcFxG2f87so3Qfe5K11sn0pXG8Q4v2lJX0UT9tjlH7sDQRb1FC7aFfckjb/pub?w=353&h=290)
 
-### 3-2. [追加] で、SIMグループを作成します (グループ名は進捗表の **sim-group-name1** を利用してください)
+### 4-2. [追加] で、SIMグループを作成します (グループ名は進捗表の **sim-group-name1** を利用してください)
 
 ![soracom-menu-sim-group-create](https://docs.google.com/drawings/d/e/2PACX-1vQ-wJ7Ixk-BQDtxXweBkhl-deBJzh3behOo_rQNNxm3gO73sKHEV_RvqO7cWrSKJT0AZltPaF_K0qPf/pub?w=381&h=315)
 
 ![soracom-menu-sim-group-create-dialog](https://docs.google.com/drawings/d/e/2PACX-1vRjDUj0AzCWEBNyy9GTqWf6jPANTk4WIEZcarMaYd9GhbM-_2AhBru9WglGRplqo0jUroC9rIq82G8h/pub?w=631&h=306)
 
-### 3-3. 先ほど作成した SIMグループ をクリックし、 SORACOM Harvest の設定を ON にして保存をクリック
+### 4-3. 先ほど作成した SIMグループ をクリックし、 SORACOM Harvest の設定を ON にして保存をクリック
 
 ![soracom-menu-sim-group-list](https://docs.google.com/drawings/d/e/2PACX-1vTpWazZ3_xwnViyK1XJXVo3Aa8BeqhLsdeE4v1SHsUNUhKQw-mS15ZovR4kEzNfhJZw2PYdGEcLB9Fr/pub?w=316&h=334)
 
 ![soracom-harvest-on](https://docs.google.com/drawings/d/e/2PACX-1vRjSkL7huwCXXSSknkDnuVbPqYSo9a-rJ0PInLFa-mmgBx1fhhHdVu339RbtSuAuhY2bcFlyMxsGWs1/pub?w=504&h=685)
 
-### 3-4. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
+### 4-4. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
 
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-sim-mgr](https://docs.google.com/drawings/d/e/2PACX-1vTUi6LN6Hsctv4KdaZj8uOUFg_ZyROx73f1TzFq41KIlRzjUmE_bc2NR5UnS8cn15TD_S2s8FA-DHzA/pub?w=353&h=290)
 
-### 3-5. Wio LTE に取り付けている SIM を選択 > [操作] > [所属グループ変更]
+### 4-5. Wio LTE に取り付けている SIM (sim-name を参照) を選択 > [操作] > [所属グループ変更]
 
 ![soracom-select-sim](https://docs.google.com/drawings/d/e/2PACX-1vQpULGXvkk5htY266aDd2iWJueVphdm8DFRVy_BF5JnWnZfBBLF19U42ni5lU6VxN5ucmwqKHx4ACjg/pub?w=526&h=489)
 
-### 3-6. 先ほど作成した SIMグループ に所属させる
+### 4-6. 先ほど作成した SIM グループ に所属させる
 
 ![sim-group-select](https://docs.google.com/drawings/d/e/2PACX-1vR1DJQnKw0NVvv83qxiTiDkh0AYfF6u8g3En7EDQtt2M2OjCRzl_tmlB-02cyiLBHLwWHjpOshFKTAA/pub?w=643&h=334)
 
@@ -89,36 +119,36 @@ SIM の取り出し方も一緒に紹介いたします
 
 ![sim-list](https://docs.google.com/drawings/d/e/2PACX-1vSjr7j-ld8piy6POBYX1r8Ib2nW1DLjwanI1bqDXS0VsWh6SFK8RXvfDop5X0hzg2Auq2aSvdH8eDPm/pub?w=520&h=464)
 
-## 4. スケッチを作成する
+## 5. スケッチを作成する
 
-### 4-1. Arduino IDE を起動する
+### 5-1. Arduino IDE を起動する
 
-### 4-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
+### 5-2. メニューの [ツール] で [ボード: "Seeed Wio LTE Cat.1"] と表示されていることを確認する
 
 なっていなければ一覧から "Seeed Wio LTE Cat.1" を選んでください
 
-### 4-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-unified]
+### 5-3. Arduino IDE の [ファイル] > [スケッチ例] > [Wio LTE for Arduino] > [soracom] > [soracom-unified]
 
 新しいウィンドウが開きます
 
 ※スケッチ例に `soracom-unified` が表示されない場合は、ライブラリを最新にする必要があります。Arduino IDE のライブラリマネージャーからインストール済みのライブラリの更新を行ってください。
 
-### 4-4. Wio LTE と PC を接続して DFUモード にする
+### 5-4. Wio LTE と PC を接続して DFUモード にする
 
-### 4-5. 新しく開いたウィンドウの ![マイコンボードに書き込むアイコン](https://docs.google.com/drawings/d/e/2PACX-1vQiO83cFcX3LCXeioiTiaao57T4SGiIV6XZzcBP6poTwssCxmo7hLpoMh5qG3btyqgzs8Q-lAoE6Q0f/pub?w=100&h=100)(マイコンボードに書き込む) をクリック
+### 5-5. 新しく開いたウィンドウの ![マイコンボードに書き込むアイコン](https://docs.google.com/drawings/d/e/2PACX-1vQiO83cFcX3LCXeioiTiaao57T4SGiIV6XZzcBP6poTwssCxmo7hLpoMh5qG3btyqgzs8Q-lAoE6Q0f/pub?w=100&h=100)(マイコンボードに書き込む) をクリック
 
-### 4-6. 書き込みが完了したら、Wio LTE を 通常モードにする (RSTボタンを押せば通常モードになります)
+### 5-6. 書き込みが完了したら、Wio LTE を 通常モードにする (RSTボタンを押せば通常モードになります)
 
 通常モードで起動次第 SORACOM Harvest へデータを送信し始めます (電源投入から送信開始までは20~25秒程度かかります)
 
-## 5. 確認
+## 6. 確認
 
-### 5-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
+### 6-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
 
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-sim-mgr](https://docs.google.com/drawings/d/e/2PACX-1vTUi6LN6Hsctv4KdaZj8uOUFg_ZyROx73f1TzFq41KIlRzjUmE_bc2NR5UnS8cn15TD_S2s8FA-DHzA/pub?w=353&h=290)
 
-### 5-2. Wio LTE に取り付けている SIM を SORACOM Webコンソール上で選択し [操作] > [データを確認]
+### 6-2. Wio LTE に取り付けている SIM を SORACOM Webコンソール上で選択し [操作] > [データを確認]
 
 ![harvest-view](https://docs.google.com/drawings/d/e/2PACX-1vRGN09AF9n0GafAg8Ut9s8QYAmEd4h5Oj4fTYUQjqKEFXCj_aIRjyS3u5zpim0eqtnnh-csIl6sAHaU/pub?w=526&h=489)
 
@@ -128,7 +158,7 @@ SIM の取り出し方も一緒に紹介いたします
 
 ![SORACOM Harvest で表示している様子](https://dev.soracom.io/img/gs_wio-lte/soracom-harvest-rendering.png)
 
-<h2 id="try">6. やってみよう(送信間隔の変更)</h2>
+<h2 id="try">7. やってみよう(送信間隔の変更)</h2>
 
 スケッチを編集して稼働時間の送信間隔を変えてみましょう
 
@@ -144,7 +174,7 @@ SIM の取り出し方も一緒に紹介いたします
 #define INTERVAL  (5000)
 ```
 
-## 7. Wio LTE の動作を止める
+## 8. Wio LTE の動作を止める
 
 止める方法は Wio LTE の電源を OFF (= microUSBケーブルを抜く) してください
 
