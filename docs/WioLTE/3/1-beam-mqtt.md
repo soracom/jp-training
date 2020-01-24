@@ -117,7 +117,7 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 
 ## 4. 確認
 
-### 4-1. [MQTT over WebScoket monitor](http://ma2shita.s3.amazonaws.com/mqtt-monitor/wss.html) を新しいタブで開きます
+### 4-1. [MQTT over WebSocket monitor](http://ma2shita.s3.amazonaws.com/mqtt-monitor/wss.html) を新しいタブで開きます
 
 下記の値を入力して [Connect] をクリックしてください
 
@@ -134,7 +134,7 @@ MQTT 通信を行うにあたり PubSubClient というライブラリを利用�
 * ブラウザ上の [SUBSCRIBE] タブをクリック
 * 表示されたダイアログで **Topic** に **進捗表から入手した値 (ws-sub-topic)** を入力  
 例: `sroot/h0813/02/#`
-* [ADD SBSCRIBE] をクリック
+* [ADD SUBSCRIBE] をクリック
 
 その後、 Arduino IDE > [ツール] > [シリアルモニタ] で表示されるウィンドウには Wio LTE の稼働状況が表示されます。  
 ブラウザ上の "Monitoring" に Wio LTE から Publish されたデータが表示され始めます。
@@ -282,13 +282,13 @@ Publish:{"uptime":23}
 2. 認証情報に埋めるべき文字列が間違っている → 認証情報を新たに作り、Beam の設定で新しい方を指定してみてください
 3. SORACOM Beam が有効になっている SIM グループに SIM を所属させることを忘れている → SIM の設定から SIM グループに所属しているか確認してみてください
 
-**最初の数回だけ Websockets Client 側で受信ができて、その後の受信が確認できない / Websockets Client 側からの Publish が Wio LTE に届かない**
+**最初の数回だけ WebSocket Client 側で受信ができて、その後の受信が確認できない / WebSocket Client 側からの Publish が Wio LTE に届かない**
 
 * 対策: 下記手順を実施してみてください
     1. (Wio LTE の電源が入ったままで) SORACOM Webコンソール上で、当該の SIM のセッションを切断
     2. Wio LTE を再起動 (RST ボタンなど)
 
-**送信しているように見えるが Websocket Client に全く送信されない**
+**送信しているように見えるが WebSocket Client に全く送信されない**
 
 * 原因: PubSubClient のバッファサイズが不足している場合があります
 * 対策: `PubSubClient.h` の `MQTT_MAX_PACKET_SIZE` を `128` から大きい数字 (e.g. `512`) に変更して再コンパイルしてください (本手順で案内している fork されたライブラリでは本修正がされています)
