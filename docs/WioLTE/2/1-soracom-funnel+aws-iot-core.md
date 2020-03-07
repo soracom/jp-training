@@ -1,4 +1,4 @@
-# 2-1: クラウド連携 / SORACOM Funnel + AWS IoT Core 編
+<h1 id="funnel-awsiotcore">【作業】ステップ 2-1: クラウド連携 / SORACOM Funnel + AWS IoT Core 編</h1>
 
 本格的なデータ収集 IoT システムの構築としてクラウド連携を学びます。  
 ここでは AWS IoT Core を活用した構成です。

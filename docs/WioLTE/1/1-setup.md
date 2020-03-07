@@ -1,4 +1,4 @@
-# 1-1.セットアップ〜動作確認
+<h1 id="setup">1-1.セットアップ〜動作確認</h1>
 
 ## 準備するもの
 
@@ -148,9 +148,9 @@ DFUモードへの移行方法
 
 ![macOS DFUモードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-dfu-macos.png)
 
-# <a name="LED">【作業】ステップ 1: LED点灯</a>
+<h1 id="LED">【作業】 LED を点灯してみる</h1>
 
-Wio LTE ライブラリに付属しているスケッチ例から、内蔵のLEDを点灯してみましょう
+Wio LTE ライブラリに付属しているスケッチ例から、内蔵の LED を点灯してみましょう。
 
 ※Wio LTE 開発ツールの使い方を学びます
 

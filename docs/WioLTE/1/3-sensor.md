@@ -1,4 +1,4 @@
-# 1-3: 温湿度センサーのデータを SORACOM Harvest で可視化
+<h1 id="sensor">【作業】ステップ 1-3: 温湿度センサーのデータを SORACOM Harvest で可視化</h1>
 
 デジタル温湿度センサーのデータを SORACOM Harvest で可視化してみましょう
 

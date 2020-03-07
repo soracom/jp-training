@@ -1,4 +1,4 @@
-# 1-2: デバイス稼働時間を SORACOM Harvest で可視化
+<h1 id="uptime">【作業】1-2: デバイス稼働時間を SORACOM Harvest で可視化</h1>
 
 Wio LTE の稼働時間を SORACOM Harvest で可視化してみましょう
 
