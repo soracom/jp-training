@@ -70,7 +70,7 @@ Wio LTE を初期化しておくことで、次回起動時に不用意な通信
 
 ## 【作業】SIM からグループを解除する
 
-### 解除対象の SIM(sim-name 参照)を選択 > [操作] > [所属グループ変更]
+### 解除対象の SIM(sim-name1 参照)を選択 > [操作] > [所属グループ変更]
 
 ![select-sim-for-unjoin-group](https://docs.google.com/drawings/d/e/2PACX-1vQkkRsAJ7T2qT2cbxaB08FFgIHzdTOT2Bkm3gCHesGNCyUFnO5MIbLQlrVXSbVxdEVKJkXjWwWt7Dqz/pub?w=519&h=398)
 

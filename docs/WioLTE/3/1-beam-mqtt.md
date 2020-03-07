@@ -40,7 +40,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 1-5. 左上[Menu] > [SIM 管理]
 
-* Wio LTE に取り付けている SIM (sim-name を参照) を選択 > [操作] > [所属グループ変更]
+* Wio LTE に取り付けている SIM (sim-name1 を参照) を選択 > [操作] > [所属グループ変更]
 * 先ほど作成した SIMグループ に所属させる
 
 <h2 id="pubsubclient_install">3. PubSubClient ライブラリのインストール</h2>
