@@ -55,7 +55,7 @@ SIM の取り出し方も一緒に紹介いたします
 登録されている場合は、 "4 SORACOM Harvest の設定をする" に進んでください   
 登録されていない場合は、運営にお声がけください  
 
-### 3-1. [SORACOM Webコンソール](https://console.soracom.io/) にログインする
+### 3-1. [SORACOM ユーザーコンソール](https://console.soracom.io/){:target="_blank"} にログインする
 
 ### 3-2. [SIM 登録] をクリックする
 
@@ -83,7 +83,7 @@ SIM の取り出し方も一緒に紹介いたします
 
 ## 4. SORACOM Harvest の設定をする
 
-### 4-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
+### 4-1. SORACOM ユーザーコンソールで 左上[Menu] > [SIM グループ]
 
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-menu-sim-group](https://docs.google.com/drawings/d/e/2PACX-1vTqI-f2K8n-TuUvVEGPnmDcFxG2f87so3Qfe5K11sn0pXG8Q4v2lJX0UT9tjlH7sDQRb1FC7aFfckjb/pub?w=353&h=290)
@@ -100,7 +100,7 @@ SIM の取り出し方も一緒に紹介いたします
 
 ![soracom-harvest-on](https://docs.google.com/drawings/d/e/2PACX-1vRjSkL7huwCXXSSknkDnuVbPqYSo9a-rJ0PInLFa-mmgBx1fhhHdVu339RbtSuAuhY2bcFlyMxsGWs1/pub?w=504&h=685)
 
-### 4-4. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
+### 4-4. [SORACOM ユーザーコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
 
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-sim-mgr](https://docs.google.com/drawings/d/e/2PACX-1vTUi6LN6Hsctv4KdaZj8uOUFg_ZyROx73f1TzFq41KIlRzjUmE_bc2NR5UnS8cn15TD_S2s8FA-DHzA/pub?w=353&h=290)
@@ -113,7 +113,7 @@ SIM の取り出し方も一緒に紹介いたします
 
 ![sim-group-select](https://docs.google.com/drawings/d/e/2PACX-1vR1DJQnKw0NVvv83qxiTiDkh0AYfF6u8g3En7EDQtt2M2OjCRzl_tmlB-02cyiLBHLwWHjpOshFKTAA/pub?w=643&h=334)
 
-以上で SORACOM Web コンソール上での作業は終了です
+以上で SORACOM ユーザーコンソール上での作業は終了です
 
 下記のように Wio LTE に取り付けている SIM の "グループ" が、先ほど作った SIM グループ名になっていれば成功です
 
@@ -143,12 +143,12 @@ SIM の取り出し方も一緒に紹介いたします
 
 ## 6. 確認
 
-### 6-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
+### 6-1. [SORACOM ユーザーコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
 
 ![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
 ![soracom-sim-mgr](https://docs.google.com/drawings/d/e/2PACX-1vTUi6LN6Hsctv4KdaZj8uOUFg_ZyROx73f1TzFq41KIlRzjUmE_bc2NR5UnS8cn15TD_S2s8FA-DHzA/pub?w=353&h=290)
 
-### 6-2. Wio LTE に取り付けている SIM を SORACOM Webコンソール上で選択し [操作] > [データを確認]
+### 6-2. Wio LTE に取り付けている SIM を SORACOM ユーザーコンソール上で選択し [操作] > [データを確認]
 
 ![harvest-view](https://docs.google.com/drawings/d/e/2PACX-1vRGN09AF9n0GafAg8Ut9s8QYAmEd4h5Oj4fTYUQjqKEFXCj_aIRjyS3u5zpim0eqtnnh-csIl6sAHaU/pub?w=526&h=489)
 

@@ -40,7 +40,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ## 1. SORACOM へ認証情報を保管する
 
-### 1-1. [SORACOM Webコンソール](https://console.soracom.io/) で [右上のユーザー名] > [セキュリティ]
+### 1-1. [SORACOM ユーザーコンソール](https://console.soracom.io/) で [右上のユーザー名] > [セキュリティ]
 
 ![soracom-menu-security](https://docs.google.com/drawings/d/e/2PACX-1vRjYW4eP-Cv1GTPmgGD01OEGiszvYmy1gmbsAQx50O6knq0UEPBozSQ8W3ezngFS6Z7B-8ArZkIXSWW/pub?w=344&h=334)
 
@@ -62,7 +62,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ## 2. SORACOM Funnel 設定
 
-### 2-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
+### 2-1. [SORACOM ユーザーコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
 
 1-2 で作成した SIM グループを選択します。
 
@@ -83,7 +83,7 @@ Wio LTE には [1-3](../1/3-sensor#sketch) で作成されたスケッチが書�
 
 AWS IoT Core 上でのデータ着信は、運営側で行います。
 
-Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM Web コンソールで確認することができます。
+Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM ユーザーコンソールで確認することができます。
 
 ※標準では送信間隔が60秒です。早めたい場合は [1-2 のやってみよう](../1/2-uptime#try)を参考に、 `INTERVAL` を例えば `5000` (= 5秒) に変更して、Wio LTE に書込んでみてください。
 
@@ -93,7 +93,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 **SORACOM Harvest にデータが表示されている**: データ送信自体は成功しています。 SORACOM Funnel の設定不備の可能性があるため、以下のトラブルシュートを確認してください。  
 **SORACOM Harvest でデータが確認できない**: Wio LTE の接続を確認してください。
 
-また、 SORACOM Harvest 以外にトラブルシュートで利用可能なツールは「Arduino IDE のシリアルモニター」「SORACOM Webコンソール上の SIM のログ」です。
+また、 SORACOM Harvest 以外にトラブルシュートで利用可能なツールは「Arduino IDE のシリアルモニター」「SORACOM ユーザーコンソール上の SIM のログ」です。
 
 **データは送られているが AWS IoT Core 上で確認できない**
 
@@ -106,7 +106,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 
 ### 5-2. SORACOM Funnel 設定
 
-#### 5-2-1. [SORACOM Web コンソール](https://console.soracom.io) で 左上[Menu] > [SIM グループ]
+#### 5-2-1. [SORACOM ユーザーコンソール](https://console.soracom.io) で 左上[Menu] > [SIM グループ]
 
 #### 5-2-2. 先ほど設定した SORACOM Funnel のグループを開きます
 
@@ -118,7 +118,7 @@ Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は 
 
 AWS IoT Core 上でのデータ着信は、運営側で行います。
 
-Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM Web コンソールで確認することができます。
+Wio LTE に挿した SIM の IMSI を運営に伝えてください。 IMSI は SORACOM ユーザーコンソールで確認することができます。
 
 ## 以上で本章は終了です
 

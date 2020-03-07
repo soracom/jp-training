@@ -15,7 +15,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ## 1. SORACOM Beam 設定
 
-### 1-1. [SORACOM Web コンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
+### 1-1. [SORACOM ユーザーコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
 
 [追加] で、SIMグループを作成します (グループ名は進捗表の **sim-group-name2** を利用してください)
 
@@ -285,7 +285,7 @@ Publish:{"uptime":23}
 **最初の数回だけ Websockets Client 側で受信ができて、その後の受信が確認できない / Websockets Client 側からの Publish が Wio LTE に届かない**
 
 * 対策: 下記手順を実施してみてください
-    1. (Wio LTE の電源が入ったままで) SORACOM Webコンソール上で、当該の SIM のセッションを切断
+    1. (Wio LTE の電源が入ったままで) SORACOM ユーザーコンソール上で、当該の SIM のセッションを切断
     2. Wio LTE を再起動 (RST ボタンなど)
 
 **送信しているように見えるが Websocket Client に全く送信されない**
