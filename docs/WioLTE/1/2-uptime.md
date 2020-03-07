@@ -105,7 +105,7 @@ SIM の取り出し方も一緒に紹介いたします
 
 #### 4-5. 変更後のグループが先ほど作成した **sim-group-name1** になっていることを確認して [グループ変更]
 
-![2020ui/do-change-group](https://docs.google.com/drawings/d/e/2PACX-1vT6I2WTkoE6_J2J4IBIrbAw4TSgcVcptmQWkE8KsUvc3bGZXdIfWnWLVN148gEvlyhN0XGr0yt0firC/pub?w=359&h=354)
+![2020ui/do-change-group](https://docs.google.com/drawings/d/e/2PACX-1vSqolUxOD7iC3ztSxtOUcw4V6fYz61hFBPCSZ2IOCot0VdwvTI6owqWQ_qEP4WrnJk1sg0AbIix5Poo/pub?w=776&h=393)
 
 ここまでの作業の結果、SIM に SIM グループが設定されます。
 
