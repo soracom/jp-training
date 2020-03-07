@@ -105,7 +105,7 @@ RSTボタンを利用した通常モードへの移行
 
 後述する「Virtual COM Port ドライバ」がインストールされていれば、デバイスマネージャの *ユニバーサル シリアル バス デバイス* (Windows 7 の場合は *Universal Serial Bus Devices*) の一覧に **STMicroelectronics Virtual COM Port** が表示されていれば、通常モードで動作しています
 
-「不明なデバイス」等になっている場合は [Windows 向け追加のインストール](1-setup-windows)の「Virtual COM Port ドライバ」をインストールしてください
+「不明なデバイス」等になっている場合は [Windows 向け追加のインストール](../0/prepare-win){:target="_blank"} の「Virtual COM Port ドライバ」をインストールしてください
 
 ![Windows 通常モードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-normal-win.png)
 
