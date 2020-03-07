@@ -116,7 +116,7 @@ https://www.seeed.co.jp/package_SeeedJP_index.json
 
 ![インストールの様子 wio-lte-handson / lib-wiolte](https://docs.google.com/drawings/d/e/2PACX-1vRaUkBbjhKKwgX3VBlW644SPUoWibASHvIro6Bxxk28XOjrZjiWX9Y5tGexIe96stSQlFepAUxJfMv2/pub?w=969&h=554)  
 
-## 4. Virtual COM Port ドライバ
+<h2 id="vcomport">4. Virtual COM Port ドライバ</h2>
 
 Wio LTE のシリアルポートを PC で認識するためのドライバです。
 

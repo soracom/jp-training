@@ -1,4 +1,4 @@
-# 3-1: SORACOM Beam を用いた MQTT Pub/Sub 双方向通信
+<h1 id="beam-amazonmq">【作業】3-1: SORACOM Beam を用いた MQTT Pub/Sub 双方向通信</h1>
 
 本格的な IoT システムの構築として、データ収集だけでなく、クラウド側からのデータをデバイス側で受信し処理する仕組みを学びます。
 
@@ -15,13 +15,43 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ## 1. SORACOM Beam 設定
 
-### 1-1. [SORACOM Web コンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
+### 1-1. SORACOM ユーザーコンソールで 左上 [Menu] > [SIM 管理] をクリック
 
-[追加] で、SIMグループを作成します (グループ名は進捗表の **sim-group-name2** を利用してください)
+※ 画面が切り替わらない場合は、左上の SORACOM ロゴをクリックしてください。
 
-### 1-2. 先ほど作成した SIMグループ をクリックし、 SORACOM Beam の設定を開きます
+![2020ui/go-subscribers](https://docs.google.com/drawings/d/e/2PACX-1vTBanBl1fCksfHzKv4oWGIFHMC1wqPht7FOVK41P1x5eDNVvR9p0wL7KknihZ_oWZrV-AlPsOQHm58P/pub?w=522&h=432)
 
-### 1-3. SORACOM Beam の「＋」をクリックし、一覧の中から **MQTT エントリポイント** をクリック
+### 1-2. Wio LTE に取り付けている SIM(sim-name1 を参照) を選択 > [操作] > [所属グループ変更] をクリック
+
+![2020ui/go-change-group](https://docs.google.com/drawings/d/e/2PACX-1vT6I2WTkoE6_J2J4IBIrbAw4TSgcVcptmQWkE8KsUvc3bGZXdIfWnWLVN148gEvlyhN0XGr0yt0firC/pub?w=364&h=290)
+
+### 1-3. [新しい所属グループ] > [新しいグループを作成...] をクリック
+
+![2020ui/new-group-on-change-group-dialog](https://docs.google.com/drawings/d/e/2PACX-1vS8QdSqoUUN2M5xy4uYEmvCycgFD4WjP73iD6BHzWn_FQ6ebbbk-nKef_9NdQdU3ifLPdZSRwYc7bjr/pub?w=442&h=358)
+
+#### 1-4. グループ名を入力して [グループ作成] をクリック
+
+* グループ名: **進捗表から入手 (sim-group-name2)**
+
+![2020ui/set-new-group-name/sim-group-name2](https://docs.google.com/drawings/d/e/2PACX-1vQU5ABHteOKTijjkPnyiYqWpV4qRqM8nthW0COw_c8WcV-PPKA08KeCgNncaH3xNFc0O43gGDPxHPKE/pub?w=475&h=272)
+
+#### 1-5. 変更後のグループが先ほど作成した **sim-group-name1** になっていることを確認して [グループ変更] をクリック
+
+![2020ui/do-change-group/sim-group-name2](https://docs.google.com/drawings/d/e/2PACX-1vT8Af1jq_X5z6kCusmUjBqO2TE_4oZUHloITWhYRTEJkkLkbL95657jQSjFLRPPeFxqnh22-JIf5qgQ/pub?w=776&h=393)
+
+ここまでの作業の結果、SIM に SIM グループが設定されます。
+
+![2020ui/check-sim-group/sim-group-name2](https://docs.google.com/drawings/d/e/2PACX-1vTsBHkblOOQPpS27XWmL7hlCfzW9CAFzMzBnxFT5WIucOOvqqSUnex3g1ivuT_97D4EfuAuFQ0YfGh5/pub?w=498&h=100)
+
+### 1-6. SIM 管理画面で、先ほど作成した "SIM グループ名" をクリック
+
+![2020ui/go-sim-group-config/sim-group-name2](https://docs.google.com/drawings/d/e/2PACX-1vSe3yVSjzgpdo7Bf4y7vuJOfyTZkZyzfefcJOTLcLEw8_SaoDDw6G48n5tw1RZZ1CXAluZTe9rUe6gg/pub?w=498&h=100)
+
+### 1-7. SIM グループ設定画面で [SORACOM Beam 設定] をクリック
+
+![2020ui/open-soracom-beam-config](https://docs.google.com/drawings/d/e/2PACX-1vSyUFEcMbSdEBiRFupWrcuvN6QTo3XdTmpKzSh3UXRJ7wDueeZ0n5P8xFXZ19x1Lq7qCNB2cqKU0bBl/pub?w=765&h=196)
+
+### 1-3. SORACOM Beam の［＋］をクリックし、一覧の中から **MQTT エントリポイント** をクリック
 
 ![beam-menu](https://docs.google.com/drawings/d/e/2PACX-1vTomsQdSLg-QaoYG591c1-NJYobwgXI6YqppP8h16NnxBLi8sd-QXFJvrrKrKCz6JW4d0oVp-UXCIdT/pub?w=435&h=407)
 
@@ -38,14 +68,12 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRSDWtOWelYGw9paqusSx3AEfC4nQPGzJ_xjZD8pb7bT3e1aaWtDYNt5iDi8rRGzVmxfq8FjjH5QXnu/pub?w=471&h=879" alt="step5 MQTT PubSub with Mosquitto / beam-setting">
 
-### 1-5. 左上[Menu] > [SIM 管理]
-
-* Wio LTE に取り付けている SIM (sim-name を参照) を選択 > [操作] > [所属グループ変更]
-* 先ほど作成した SIMグループ に所属させる
+以上で SORACOM ユーザーコンソール上での作業は終了です。
 
 <h2 id="pubsubclient_install">3. PubSubClient ライブラリのインストール</h2>
 
-MQTT 通信を行うにあたり PubSubClient というライブラリを利用します  
+MQTT 通信を行うにあたり PubSubClient というライブラリを利用します。
+
 ※ 公式の PubSubClient では、パケットサイズが小さいため若干不都合が発生することが確認されています。そのため、ハンズオン側で準備した fork ライブラリを使用してください
 
 ### 2-1. 追加のライブラリをダウンロードする
@@ -285,7 +313,7 @@ Publish:{"uptime":23}
 **最初の数回だけ Websockets Client 側で受信ができて、その後の受信が確認できない / Websockets Client 側からの Publish が Wio LTE に届かない**
 
 * 対策: 下記手順を実施してみてください
-    1. (Wio LTE の電源が入ったままで) SORACOM Webコンソール上で、当該の SIM のセッションを切断
+    1. (Wio LTE の電源が入ったままで) SORACOM ユーザーコンソール上で、当該の SIM のセッションを切断
     2. Wio LTE を再起動 (RST ボタンなど)
 
 **送信しているように見えるが Websocket Client に全く送信されない**

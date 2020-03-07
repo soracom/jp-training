@@ -1,4 +1,4 @@
-# 1-2: デバイス稼働時間を SORACOM Harvest で可視化
+<h1 id="uptime">【作業】1-2: デバイス稼働時間を SORACOM Harvest で可視化</h1>
 
 Wio LTE の稼働時間を SORACOM Harvest で可視化してみましょう
 
@@ -51,23 +51,23 @@ SIM の取り出し方も一緒に紹介いたします
 **※ SORACOM のアカウントをお持ちでない方:** [SORACOM アカウントの作成](https://dev.soracom.io/jp/start/console/#account) の手順に沿って作成してください   
 （有効なクレジットカード(1枚) と この場で確認可能なメールアドレス(1つ)が必要です）
 
-**※ すでに SIM が登録済みの方:** 利用する SIM(sim-name を参照)が登録されているかを確認してください    
+**※ すでに SIM が登録済みの方:** 利用する SIM(sim-name1 を参照)が登録されているかを確認してください    
 登録されている場合は、 "4 SORACOM Harvest の設定をする" に進んでください   
 登録されていない場合は、運営にお声がけください  
 
-### 3-1. [SORACOM Webコンソール](https://console.soracom.io/) にログインする
+### 3-1. [SORACOM ユーザーコンソール](https://console.soracom.io/){:target="_blank"} にログインする
 
-### 3-2. [SIM 登録] をクリックする
+### 3-2. [SIM 登録] をクリック
 
 ![sim-register-button](https://docs.google.com/drawings/d/e/2PACX-1vQlsXN8RA0XyZ_DlohtCiA8_6_j1IJANSe_Tx_loU_EaBn9CjC6YBcVtnpLf92F1x0BsMQijvFskOtf/pub?w=434&h=408)
 
 ※ [SIM 登録] が表示されていない場合は、[Menu] > [SIM 管理] をクリックしてください。
 
-### 3-3. SIM 登録に必要な情報を入力する画面では下記の通り入力し [登録] してください
+### 3-3. SIM 登録に必要な情報を入力する画面では下記の通り入力し [登録] をクリック
 
 * IMSI: SIM カード裏面の **IMSI** と記載されている右側 15 桁の番号です
 * パスコード: SIM カード裏面の **PASSCODE** と記載されている右側 5 桁の番号です。
-* 名前: **進捗表から入手 (sim-name)**
+* 名前: **進捗表から入手 (sim-name1)**
 * グループ: <何も設定しないでください>
 * 技術基準適合証明等について確認しました: **チェックを付ける**
 
@@ -83,41 +83,43 @@ SIM の取り出し方も一緒に紹介いたします
 
 ## 4. SORACOM Harvest の設定をする
 
-### 4-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM グループ]
+### 4-1. SORACOM ユーザーコンソールで 左上 [Menu] > [SIM 管理] をクリック
 
-![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
-![soracom-menu-sim-group](https://docs.google.com/drawings/d/e/2PACX-1vTqI-f2K8n-TuUvVEGPnmDcFxG2f87so3Qfe5K11sn0pXG8Q4v2lJX0UT9tjlH7sDQRb1FC7aFfckjb/pub?w=353&h=290)
+※ 画面が切り替わらない場合は、左上の SORACOM ロゴをクリックしてください。
 
-### 4-2. [追加] で、SIMグループを作成します (グループ名は進捗表の **sim-group-name1** を利用してください)
+![2020ui/go-subscribers](https://docs.google.com/drawings/d/e/2PACX-1vTBanBl1fCksfHzKv4oWGIFHMC1wqPht7FOVK41P1x5eDNVvR9p0wL7KknihZ_oWZrV-AlPsOQHm58P/pub?w=522&h=432)
 
-![soracom-menu-sim-group-create](https://docs.google.com/drawings/d/e/2PACX-1vQ-wJ7Ixk-BQDtxXweBkhl-deBJzh3behOo_rQNNxm3gO73sKHEV_RvqO7cWrSKJT0AZltPaF_K0qPf/pub?w=381&h=315)
+### 4-2. Wio LTE に取り付けている SIM(sim-name1 を参照) を選択 > [操作] > [所属グループ変更] をクリック
 
-![soracom-menu-sim-group-create-dialog](https://docs.google.com/drawings/d/e/2PACX-1vRjDUj0AzCWEBNyy9GTqWf6jPANTk4WIEZcarMaYd9GhbM-_2AhBru9WglGRplqo0jUroC9rIq82G8h/pub?w=631&h=306)
+![2020ui/go-change-group](https://docs.google.com/drawings/d/e/2PACX-1vT6I2WTkoE6_J2J4IBIrbAw4TSgcVcptmQWkE8KsUvc3bGZXdIfWnWLVN148gEvlyhN0XGr0yt0firC/pub?w=364&h=290)
 
-### 4-3. 先ほど作成した SIMグループ をクリックし、 SORACOM Harvest の設定を ON にして保存をクリック
+### 4-3. [新しい所属グループ] > [新しいグループを作成...] をクリック
 
-![soracom-menu-sim-group-list](https://docs.google.com/drawings/d/e/2PACX-1vTpWazZ3_xwnViyK1XJXVo3Aa8BeqhLsdeE4v1SHsUNUhKQw-mS15ZovR4kEzNfhJZw2PYdGEcLB9Fr/pub?w=316&h=334)
+![2020ui/new-group-on-change-group-dialog](https://docs.google.com/drawings/d/e/2PACX-1vS8QdSqoUUN2M5xy4uYEmvCycgFD4WjP73iD6BHzWn_FQ6ebbbk-nKef_9NdQdU3ifLPdZSRwYc7bjr/pub?w=442&h=358)
 
-![soracom-harvest-on](https://docs.google.com/drawings/d/e/2PACX-1vRjSkL7huwCXXSSknkDnuVbPqYSo9a-rJ0PInLFa-mmgBx1fhhHdVu339RbtSuAuhY2bcFlyMxsGWs1/pub?w=504&h=685)
+#### 4-4. グループ名を入力して [グループ作成] をクリック
 
-### 4-4. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
+* グループ名: **進捗表から入手 (sim-group-name1)**
 
-![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
-![soracom-sim-mgr](https://docs.google.com/drawings/d/e/2PACX-1vTUi6LN6Hsctv4KdaZj8uOUFg_ZyROx73f1TzFq41KIlRzjUmE_bc2NR5UnS8cn15TD_S2s8FA-DHzA/pub?w=353&h=290)
+![2020ui/set-new-group-name/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vQUpB8qLOk5kfqzl9xkCO0c-LLZdxTe6EN88TO6WTy5lMWsDPSZIqfWLSUA4La4JTs7Lijzk2rM9I46/pub?w=475&h=272)
 
-### 4-5. Wio LTE に取り付けている SIM (sim-name を参照) を選択 > [操作] > [所属グループ変更]
+#### 4-5. 変更後のグループが先ほど作成した **sim-group-name1** になっていることを確認して [グループ変更] をクリック
 
-![soracom-select-sim](https://docs.google.com/drawings/d/e/2PACX-1vQpULGXvkk5htY266aDd2iWJueVphdm8DFRVy_BF5JnWnZfBBLF19U42ni5lU6VxN5ucmwqKHx4ACjg/pub?w=526&h=489)
+![2020ui/do-change-group/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vSqolUxOD7iC3ztSxtOUcw4V6fYz61hFBPCSZ2IOCot0VdwvTI6owqWQ_qEP4WrnJk1sg0AbIix5Poo/pub?w=776&h=393)
 
-### 4-6. 先ほど作成した SIM グループ に所属させる
+ここまでの作業の結果、SIM に SIM グループが設定されます。
 
-![sim-group-select](https://docs.google.com/drawings/d/e/2PACX-1vR1DJQnKw0NVvv83qxiTiDkh0AYfF6u8g3En7EDQtt2M2OjCRzl_tmlB-02cyiLBHLwWHjpOshFKTAA/pub?w=643&h=334)
+![2020ui/check-sim-group/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vQYm7QZVFjbgohMSLaSg9Jn9vVvzAi2-8NZz0T1e4umQ048ZISEi5IPipvwoeFOCo-maJSjafKRgHLi/pub?w=498&h=100)
 
-以上で SORACOM Web コンソール上での作業は終了です
+### 4-6. SIM 管理画面で、先ほど作成した "SIM グループ名" をクリック
 
-下記のように Wio LTE に取り付けている SIM の "グループ" が、先ほど作った SIM グループ名になっていれば成功です
+![2020ui/go-sim-group-config/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vTxef9ZRuhhjbTDPhrTsRYKq2q-ezDbYpjTJ0uOPkplUNlKF7q5yP575l2l7Jfe0NPddkG5mIENyZFn/pub?w=498&h=100)
 
-![sim-list](https://docs.google.com/drawings/d/e/2PACX-1vSjr7j-ld8piy6POBYX1r8Ib2nW1DLjwanI1bqDXS0VsWh6SFK8RXvfDop5X0hzg2Auq2aSvdH8eDPm/pub?w=520&h=464)
+### 4-7. SIM グループ設定画面で [SORACOM Harvest 設定] > スイッチを "ON" にして [保存] をクリック
+
+![2020ui/soracom-harvest-on](https://docs.google.com/drawings/d/e/2PACX-1vRjSkL7huwCXXSSknkDnuVbPqYSo9a-rJ0PInLFa-mmgBx1fhhHdVu339RbtSuAuhY2bcFlyMxsGWs1/pub?w=504&h=685)
+
+以上で SORACOM ユーザーコンソール上での作業は終了です。
 
 ## 5. スケッチを作成する
 
@@ -143,14 +145,15 @@ SIM の取り出し方も一緒に紹介いたします
 
 ## 6. 確認
 
-### 6-1. [SORACOM Webコンソール](https://console.soracom.io/) で 左上[Menu] > [SIM 管理]
+### 6-1. SORACOM ユーザーコンソールで 左上 [Menu] > [SIM 管理] をクリック
 
-![soracom-menu](https://docs.google.com/drawings/d/e/2PACX-1vRhgmsjqpncv2HQ0jAZwiYf0knTfvmCMl6x_flrdeGQV4N60trp8M981gCAfitVSmXU4tqAYm6MmyRb/pub?w=331&h=410)
-![soracom-sim-mgr](https://docs.google.com/drawings/d/e/2PACX-1vTUi6LN6Hsctv4KdaZj8uOUFg_ZyROx73f1TzFq41KIlRzjUmE_bc2NR5UnS8cn15TD_S2s8FA-DHzA/pub?w=353&h=290)
+※ 画面が切り替わらない場合は、左上の SORACOM ロゴをクリックしてください。
 
-### 6-2. Wio LTE に取り付けている SIM を SORACOM Webコンソール上で選択し [操作] > [データを確認]
+![2020ui/go-subscribers](https://docs.google.com/drawings/d/e/2PACX-1vTBanBl1fCksfHzKv4oWGIFHMC1wqPht7FOVK41P1x5eDNVvR9p0wL7KknihZ_oWZrV-AlPsOQHm58P/pub?w=522&h=432)
 
-![harvest-view](https://docs.google.com/drawings/d/e/2PACX-1vRGN09AF9n0GafAg8Ut9s8QYAmEd4h5Oj4fTYUQjqKEFXCj_aIRjyS3u5zpim0eqtnnh-csIl6sAHaU/pub?w=526&h=489)
+### 6-2. Wio LTE に取り付けている SIM を SORACOM ユーザーコンソール上で選択し [操作] > [データを確認] をクリック
+
+![go-data-viewing](https://docs.google.com/drawings/d/e/2PACX-1vShkLChMsTxM5Mx9n2BLL5yQ7fgNIF-LP_dtUJgoFNtm-TZF-LCEJ8XfYDPgHQwAEGOEt6XUECiPLQD/pub?w=359&h=354)
 
 下図のように SORACOM Harvest 上で稼働時間が表示されるようになります  
 ※自動更新を ON にすると、画面の再描画が自動的に行われます  
