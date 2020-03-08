@@ -105,16 +105,15 @@ SIM の取り出し方も一緒に紹介いたします
 
 #### 4-5. 変更後のグループが先ほど作成した **sim-group-name1** になっていることを確認して [グループ変更] をクリック
 
-![2020ui/do-change-group](https://docs.google.com/drawings/d/e/2PACX-1vSqolUxOD7iC3ztSxtOUcw4V6fYz61hFBPCSZ2IOCot0VdwvTI6owqWQ_qEP4WrnJk1sg0AbIix5Poo/pub?w=776&h=393)
+![2020ui/do-change-group/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vSqolUxOD7iC3ztSxtOUcw4V6fYz61hFBPCSZ2IOCot0VdwvTI6owqWQ_qEP4WrnJk1sg0AbIix5Poo/pub?w=776&h=393)
 
 ここまでの作業の結果、SIM に SIM グループが設定されます。
 
-![2020ui/check-sim-group](https://docs.google.com/drawings/d/e/2PACX-1vQYm7QZVFjbgohMSLaSg9Jn9vVvzAi2-8NZz0T1e4umQ048ZISEi5IPipvwoeFOCo-maJSjafKRgHLi/pub?w=498&h=100
-)
+![2020ui/check-sim-group/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vQYm7QZVFjbgohMSLaSg9Jn9vVvzAi2-8NZz0T1e4umQ048ZISEi5IPipvwoeFOCo-maJSjafKRgHLi/pub?w=498&h=100)
 
 ### 4-6. SIM 管理画面で、先ほど作成した "SIM グループ名" をクリック
 
-![2020ui/go-sim-group-config](https://docs.google.com/drawings/d/e/2PACX-1vTxef9ZRuhhjbTDPhrTsRYKq2q-ezDbYpjTJ0uOPkplUNlKF7q5yP575l2l7Jfe0NPddkG5mIENyZFn/pub?w=498&h=100)
+![2020ui/go-sim-group-config/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vTxef9ZRuhhjbTDPhrTsRYKq2q-ezDbYpjTJ0uOPkplUNlKF7q5yP575l2l7Jfe0NPddkG5mIENyZFn/pub?w=498&h=100)
 
 ### 4-7. SIM グループ設定画面で [SORACOM Harvest 設定] > スイッチを "ON" にして [保存] をクリック
 

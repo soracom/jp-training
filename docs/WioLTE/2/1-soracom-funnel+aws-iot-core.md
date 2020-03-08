@@ -70,7 +70,7 @@ Wio LTE の microUSB ケーブルを抜き、電源を OFF にしてください
 
 ### 2-2. SIM 管理画面で、先ほど作成した SIM グループ名をクリック
 
-![2020ui/go-sim-group-config](https://docs.google.com/drawings/d/e/2PACX-1vTxef9ZRuhhjbTDPhrTsRYKq2q-ezDbYpjTJ0uOPkplUNlKF7q5yP575l2l7Jfe0NPddkG5mIENyZFn/pub?w=498&h=100)
+![2020ui/go-sim-group-config/sim-group-name1](https://docs.google.com/drawings/d/e/2PACX-1vTxef9ZRuhhjbTDPhrTsRYKq2q-ezDbYpjTJ0uOPkplUNlKF7q5yP575l2l7Jfe0NPddkG5mIENyZFn/pub?w=498&h=100)
 
 ### 2-3. SIM グループ設定画面で [SORACOM Funnel 設定] をクリック
 
