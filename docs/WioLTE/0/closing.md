@@ -25,13 +25,13 @@ SORACOM IoT SIM (plan-D) は **実際の通信の有無に限らず** 基本料�
 
 ### クーポンの登録方法
 
-[クーポンコードの使い方](https://soracom.zendesk.com/hc/ja/articles/218121348-%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)をご覧ください
+[Grove IoT スターターキット for SORACOM](https://soracom.jp/products/kit/grovestarter_kit_lte/)等に同梱されているクーポンの利用方法は、[クーポンコードの使い方](https://soracom.zendesk.com/hc/ja/articles/218121348-%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)をご覧ください
 
 ※その他[クーポンに関する注意事項](https://soracom.zendesk.com/hc/ja/articles/115002423011-%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E9%81%A9%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%81%A6%E3%82%82%E6%96%99%E9%87%91%E3%81%8C%E8%AB%8B%E6%B1%82%E3%81%99%E3%82%8B%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A7%E3%81%99%E3%81%8B-)もご参照ください
 
 ### 長期利用割引
 
-IoT SIM のご契約期間をお約束いただくことで、基本料金が割引になる仕組みをご検討ください
+ご契約期間をお約束いただくことで、基本料金が割引になる仕組みをご検討ください
 
 [長期利用割引 - 特定地域向け IoT SIM](https://soracom.jp/services/air/cellular/discount_price/)
 
@@ -70,20 +70,29 @@ Wio LTE を初期化しておくことで、次回起動時に不用意な通信
 
 ## 【作業】SIM からグループを解除する
 
-### 解除対象の SIM(sim-name 参照)を選択 > [操作] > [所属グループ変更]
+### 1-1. SORACOM ユーザーコンソールで 左上 [Menu] > [SIM 管理] をクリック
 
-![select-sim-for-unjoin-group](https://docs.google.com/drawings/d/e/2PACX-1vQkkRsAJ7T2qT2cbxaB08FFgIHzdTOT2Bkm3gCHesGNCyUFnO5MIbLQlrVXSbVxdEVKJkXjWwWt7Dqz/pub?w=519&h=398)
+※ 画面が切り替わらない場合は、左上の SORACOM ロゴをクリックしてください。
 
-### [グループを解除]
+![2020ui/go-subscribers](https://docs.google.com/drawings/d/e/2PACX-1vTBanBl1fCksfHzKv4oWGIFHMC1wqPht7FOVK41P1x5eDNVvR9p0wL7KknihZ_oWZrV-AlPsOQHm58P/pub?w=522&h=432)
 
-![dialog-for-unjoin-group](https://docs.google.com/drawings/d/e/2PACX-1vS3LV8AjZCeJSinZWKHO40L5hx8BIFpdC9RLoY9ebhvxdbSBHrFphDtYS5jjqTUHQU8cEH-LPUqOVnu/pub?w=616&h=325)
+### 1-2. Wio LTE に取り付けている SIM(sim-name1 を参照) を選択 > [操作] > [所属グループ変更] をクリック
+
+![2020ui/go-change-group](https://docs.google.com/drawings/d/e/2PACX-1vT6I2WTkoE6_J2J4IBIrbAw4TSgcVcptmQWkE8KsUvc3bGZXdIfWnWLVN148gEvlyhN0XGr0yt0firC/pub?w=364&h=290)
+
+### 1-3. [新しい所属グループ] > "グループ解除" を選択して、変更後のグループが "(なし)" になっていることを確認して [グループ変更] をクリック
+
+![2020ui/unjoin-on-change-group-dialog](https://docs.google.com/drawings/d/e/2PACX-1vT6fskJ8TtXfaNtXwrNiZPNi0WDu44KoxLd6OzOmkantzXQex43Hp1HrXwrwCPr-ub5-5I7c19q3L6L/pub?w=629&h=318)
 
 解除されると SIM 一覧で "グループ" が空欄となります
 
 ![sim-list-empty-group](https://docs.google.com/drawings/d/e/2PACX-1vSTSwapE1H6qSFTYj04Jzq5WDzsCHmfDUBxei1F0LD3xadH7yuV13L-TawmIbUdI6sNlzS_AH0coAiB/pub?w=554&h=100)
 
-以上で終了です
+以上で終了です。
 
 ### 本コンテンツについて
+
+本コンテンツはハンズオン受講後も閲覧いただくことができます。ブックマークは https://soracom.github.io/jp-training/WioLTE/ のアドレスをご利用ください。  
+ハンズオン受講のために用意された進捗表、AWS 環境はハンズオン受講後に削除されます。ご自分で環境構築をする方法はハンズオンテキスト内に記載されていますので、そちらをご利用ください。（環境構築において弊社ではサポとしかねますのでご留意ください。）
 
 本コンテンツの著作は株式会社ソラコムに帰属します。再利用についてはソラコムへお問合せください。

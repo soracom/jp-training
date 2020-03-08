@@ -1,4 +1,4 @@
-# 1-1.セットアップ〜動作確認
+<h1 id="setup">1-1.セットアップ〜動作確認</h1>
 
 ## 準備するもの
 
@@ -105,7 +105,7 @@ RSTボタンを利用した通常モードへの移行
 
 後述する「Virtual COM Port ドライバ」がインストールされていれば、デバイスマネージャの *ユニバーサル シリアル バス デバイス* (Windows 7 の場合は *Universal Serial Bus Devices*) の一覧に **STMicroelectronics Virtual COM Port** が表示されていれば、通常モードで動作しています
 
-「不明なデバイス」等になっている場合は [Windows 向け追加のインストール](1-setup-windows)の「Virtual COM Port ドライバ」をインストールしてください
+「不明なデバイス」等になっている場合は [Windows 向け追加のインストール](../0/prepare-win){:target="_blank"} の「Virtual COM Port ドライバ」をインストールしてください
 
 ![Windows 通常モードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-normal-win.png)
 
@@ -148,9 +148,9 @@ DFUモードへの移行方法
 
 ![macOS DFUモードの時のデバイスマネージャの表示](https://dev.soracom.io/img/gs_wio-lte/basic-dfu-macos.png)
 
-# <a name="LED">【作業】ステップ 1: LED点灯</a>
+<h1 id="LED">【作業】 LED を点灯してみる</h1>
 
-Wio LTE ライブラリに付属しているスケッチ例から、内蔵のLEDを点灯してみましょう
+Wio LTE ライブラリに付属しているスケッチ例から、内蔵の LED を点灯してみましょう。
 
 ※Wio LTE 開発ツールの使い方を学びます
 
@@ -207,7 +207,7 @@ DFU end
 
 達成状況を運営表へご記入ください。
 
-* [1-2.デバイス稼働時間を SORACOM Harvest で可視化](2-uptime) に進んで下さい
+* [1-2.デバイス稼働時間を SORACOM Harvest Data で可視化](2-uptime) に進んで下さい
 * [目次ページへ戻る](../index)
 
 ## うまく動かなかったら（トラブルシュート）
