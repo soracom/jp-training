@@ -80,7 +80,7 @@ Wio LTE を初期化しておくことで、次回起動時に不用意な通信
 
 ![2020ui/go-change-group](https://docs.google.com/drawings/d/e/2PACX-1vT6I2WTkoE6_J2J4IBIrbAw4TSgcVcptmQWkE8KsUvc3bGZXdIfWnWLVN148gEvlyhN0XGr0yt0firC/pub?w=364&h=290)
 
-### 4-3. [新しい所属グループ] > "グループ解除" を選択して、変更後のグループが "(なし)" になっていることを確認して [グループ変更] をクリック
+### 1-3. [新しい所属グループ] > "グループ解除" を選択して、変更後のグループが "(なし)" になっていることを確認して [グループ変更] をクリック
 
 ![2020ui/unjoin-on-change-group-dialog](https://docs.google.com/drawings/d/e/2PACX-1vT6fskJ8TtXfaNtXwrNiZPNi0WDu44KoxLd6OzOmkantzXQex43Hp1HrXwrwCPr-ub5-5I7c19q3L6L/pub?w=629&h=318)
 
