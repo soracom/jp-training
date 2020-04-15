@@ -157,17 +157,17 @@ C:\Program Files (x86)\STMicroelectronics\Software\Virtual comport driver\Win8\d
 
 Wio LTE にプログラムを書き込む際に必要なドライバです。
 
-### 5-1. [Zadigサイト](http://zadig.akeo.ie/){:target="_blank"} の Download にある **Zadig 2.4** をクリックして `zadig-2.4.exe` をダウンロードします
+### 5-1. [Zadigサイト](http://zadig.akeo.ie/){:target="_blank"} の Download にある **Zadig 2.5** をクリックして `zadig-2.5.exe` をダウンロードします
 
 ![インストールの様子 wio-lte-handson / download-zadig](https://docs.google.com/drawings/d/e/2PACX-1vTX0TOFbG8GpppIHkN3u5gEjnHQOW-Uu26KFuK8sja4B6GzJslDGLmtdU620LYjW2jW3g8FfiGkigvY/pub?w=455&h=233)
 
 ※ 上記でダウンロードできない場合は [ここからダウンロード](https://1drv.ms/u/s!Auk44HCq4iKog4BP5WiPepqRJ9sLpg?e=o0h0J6){:target="_blank"} してください
 
-<h3 id="bootzadig">5-2. zadig-2.4.exe を起動する</h3>
+<h3 id="bootzadig">5-2. zadig-2.5.exe を起動する</h3>
 
 ※ 最初に表示されるダイアログ(Zadig update policy)は [No] としておいてください
 
-### 5-3. zadig-2.4.exe の [Options] > [List All Devices] を選択する
+### 5-3. zadig-2.5.exe の [Options] > [List All Devices] を選択する
 
 ![インストールの様子 wio-lte-handson / zadig-list-all-devices](https://docs.google.com/drawings/d/e/2PACX-1vQ0BPpg4cOZXuuvSl2X7mN3Z86WjTb0LmZ-NCpgwhSmop_S8zCYyR-9RevO9OrQmAFsFA06NI1GSDeb/pub?w=573&h=253)
 
@@ -191,7 +191,7 @@ DFU モードへの移行方法
 
 ### 5-5. 一覧から **STM32 BOOTLOADER** を選んだ後、Driver欄の左が *STTub30* になっていることを確認し、右を *WinUSB* に変更してから、 Replace Driver をクリックします
 
-※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「[5-2. zadig-2.4.exe を起動する](#bootzadig)」からやり直してください。
+※ *STTub30* ではなく *(None)* と表示されることがあります。その場合は一度 Zadig を終了した後、 1~2 分待ってから「[5-2. zadig-2.5.exe を起動する](#bootzadig)」からやり直してください。
 
 `STM32 BOOTLOADER` が一覧に表示されない場合はDFU モードへの移行へ失敗しています。（Wio LTE 本体がない場合も同様に表示されません）  
 「DFU モードへの切り替え方」を再度行ってください。（成功すれば一覧に表示されます）
@@ -200,7 +200,7 @@ DFU モードへの移行方法
 
 Replace Driver が失敗する時は PC への管理者権限、インターネット接続を確認してください。
 
-※ `zadig-2.4.exe` は必要なファイルをインターネットから入手することがあります。アンチウィルスソフトによっては、不定のソフトウェアからの通信をブロックするものがあるため、通信設定を管理者に確認するようにしてください。
+※ `zadig-2.5.exe` は必要なファイルをインターネットから入手することがあります。アンチウィルスソフトによっては、不定のソフトウェアからの通信をブロックするものがあるため、通信設定を管理者に確認するようにしてください。
 
 ## 以上で、事前準備は終了です
 
