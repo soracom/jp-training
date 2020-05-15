@@ -19,6 +19,12 @@ Windows 上で Wio LTE を用いた開発を行うための環境準備を行い
 * Virtual COM Port ドライバ
 * WinUSB ドライバ
 
+**手順書に沿った開発構築手順は動画でもご覧いただけます。そちらもあわせてご覧ください。**
+
+[![](http://img.youtube.com/vi/HCdqJ-btWH4/hqdefault.jpg)](https://youtu.be/HCdqJ-btWH4)
+
+[YouTube で見る](https://youtu.be/HCdqJ-btWH4){:target="_blank"}
+
 ## 1. Arduino IDE
 
 Wio LTE の開発（ソースコード記述、コンパイル、バイナリファイル転送）には、Arduino IDEを利用します。

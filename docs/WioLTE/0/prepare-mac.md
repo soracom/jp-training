@@ -19,6 +19,13 @@ Wio LTE を使うためには、開発環境の準備を行います
 * Homebrew
     * libusb
 
+
+**手順書に沿った開発構築手順は動画でもご覧いただけます。そちらもあわせてご覧ください。**
+
+[![](http://img.youtube.com/vi/sD20GlRIIrU/hqdefault.jpg)](https://youtu.be/sD20GlRIIrU)
+
+[YouTube で見る](https://youtu.be/sD20GlRIIrU){:target="_blank"}
+
 ## 1. Arduino IDE
 
 Wio LTE の開発（ソースコード記述、コンパイル、バイナリファイル転送）には、Arduino IDEを利用します。 Arduino のサイトから [Arduino IDE をダウンロード](https://www.arduino.cc/en/main/software)し、表記に従ってインストールしてください
