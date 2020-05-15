@@ -23,7 +23,7 @@ Windows 上で Wio LTE を用いた開発を行うための環境準備を行い
 
 [![](http://img.youtube.com/vi/HCdqJ-btWH4/hqdefault.jpg)](https://youtu.be/HCdqJ-btWH4)
 
-[YouTube で見る](https://youtu.be/HCdqJ-btWH4)
+[YouTube で見る](https://youtu.be/HCdqJ-btWH4){:target="_blank"}
 
 ## 1. Arduino IDE
 

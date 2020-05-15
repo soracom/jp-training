@@ -24,7 +24,7 @@ Wio LTE を使うためには、開発環境の準備を行います
 
 [![](http://img.youtube.com/vi/sD20GlRIIrU/hqdefault.jpg)](https://youtu.be/sD20GlRIIrU)
 
-[YouTube で見る](https://youtu.be/sD20GlRIIrU)
+[YouTube で見る](https://youtu.be/sD20GlRIIrU){:target="_blank"}
 
 ## 1. Arduino IDE
 
